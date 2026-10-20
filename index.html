@@ -161,6 +161,75 @@
           .market-card-actions button{font-size:9px;padding:7px 2px}
         }
 
+            
+        /* Consistent, subtle interaction feedback for touch and mouse */
+        button, a, [role="button"]{
+          -webkit-tap-highlight-color:rgba(217,119,6,.12);
+        }
+        button, a{
+          transition-property:color,background-color,border-color,box-shadow,opacity,transform;
+          transition-duration:180ms;
+          transition-timing-function:ease-out;
+        }
+        button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible{
+          outline:2px solid rgba(217,119,6,.8);
+          outline-offset:3px;
+        }
+        button:not(:disabled):active, .mobile-quick-action:active{
+          transform:scale(.985);
+        }
+        .cat-btn{
+          position:relative;
+          border:1px solid #e2e8f0;
+          background:rgba(255,255,255,.78);
+          box-shadow:0 1px 2px rgba(15,23,42,.025);
+          transition:background-color .18s ease,border-color .18s ease,color .18s ease,box-shadow .18s ease,transform .18s ease;
+        }
+        .cat-btn:hover{
+          border-color:#fbbf24;
+          background:#fffbeb;
+          color:#92400e;
+        }
+        .cat-btn.active{
+          background:#fff7ed!important;
+          color:#92400e!important;
+          border-color:#f59e0b!important;
+          box-shadow:inset 0 0 0 1px rgba(217,119,6,.12),0 1px 3px rgba(15,23,42,.05)!important;
+          font-weight:800;
+        }
+        .cat-btn.active::after{
+          content:"";
+          position:absolute;
+          left:12px;right:12px;bottom:4px;
+          height:2px;border-radius:999px;
+          background:#d97706;
+          opacity:.72;
+        }
+        .product-card-market{
+          transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;
+        }
+        .product-card-market:active{
+          border-color:#fbbf24;
+        }
+        .market-card-actions button:active,.chat-question:active{
+          box-shadow:inset 0 0 0 1px rgba(217,119,6,.24);
+        }
+        @media(hover:hover) and (pointer:fine){
+          .product-card-market:hover{
+            border-color:#cbd5e1;
+            box-shadow:0 8px 24px rgba(15,23,42,.08);
+            transform:translateY(-2px);
+          }
+        }
+        @media(prefers-reduced-motion:reduce){
+          *,*::before,*::after{
+            scroll-behavior:auto!important;
+            animation-duration:.01ms!important;
+            animation-iteration-count:1!important;
+            transition-duration:.01ms!important;
+          }
+        }
+
     </style>
 </head>
 <body class="bg-lightBg text-slate-900 antialiased selection:bg-amberAccent selection:text-white">
@@ -1079,14 +1148,16 @@
           messages.scrollTop=messages.scrollHeight;
         }
 
-        // FILTER CATEGORY TABS
+        // FILTER CATEGORY TABS — explicit selected state, independent of the global event object
         function filterCategory(cat) {
             const buttons = document.querySelectorAll('.cat-btn');
-            buttons.forEach(b => {
-                b.classList.remove('active', 'bg-navyPrimary', 'text-white');
-                b.classList.add('bg-white', 'text-slate-700');
+            buttons.forEach(button => {
+                const selected = button.getAttribute('onclick') === `filterCategory('${cat}')`;
+                button.classList.toggle('active', selected);
+                button.classList.remove('bg-navyPrimary', 'text-white');
+                button.classList.add('bg-white', 'text-slate-700');
+                button.setAttribute('aria-pressed', selected ? 'true' : 'false');
             });
-            event.target.classList.add('active', 'bg-navyPrimary', 'text-white');
 
             if(cat === 'all') {
                 renderProducts(PRODUCTS_DATA);
