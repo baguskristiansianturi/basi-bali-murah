@@ -39,14 +39,13 @@
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; }
-        ::-webkit-scrollbar { width: 8px; height: 8px; }
-        ::-webkit-scrollbar-track { background: #0F172A; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #D97706; }
-        #leafletMap { height: 280px; width: 100%; border-radius: 0.75rem; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        body{font-family:'Inter',sans-serif;background:#F8FAFC;color:#0F172A}
+        ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#334155;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#D97706}
+        #leafletMap{height:280px;width:100%;border-radius:.75rem}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+        .mobile-quickbar{display:none}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
+        .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}
+        @media(max-width:639px){body{padding-bottom:76px}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:55;bottom:0;left:0;right:0;padding:8px 14px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid #e2e8f0;gap:10px}.mobile-quick-action{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;border-radius:12px;background:#0F172A;color:white;font-size:13px;font-weight:800;position:relative}.mobile-quick-action:first-child{background:#D97706;color:#fff}.mobile-quick-action i{font-size:16px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:18px;padding:2px 5px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
+        @media(min-width:640px){.product-open{display:block;padding:0}.market-product-image{width:100%;height:175px;border-radius:0}.market-product-copy{padding:14px}}
     </style>
 </head>
 <body class="bg-lightBg text-slate-900 antialiased selection:bg-amberAccent selection:text-white">
@@ -75,14 +74,12 @@
                 
                 <!-- Brand Logo -->
                 <a href="#" class="flex items-center space-x-3 group shrink-0">
-                    <div class="w-11 h-11 bg-navyPrimary rounded-xl flex items-center justify-center text-amberAccent font-black text-xl border border-steelBorder shadow">
-                        BSU
-                    </div>
+                    <div class="w-11 h-11 bg-navyPrimary rounded-xl flex items-center justify-center border border-steelBorder shadow" aria-label="Logo Beli Bagus Beli Murah"><svg viewBox="0 0 44 44" width="34" height="34" aria-hidden="true"><path d="M7 8h18a7 7 0 0 1 0 14H7z" fill="#D97706"/><path d="M7 23h23a7 7 0 0 1 0 14H7z" fill="#F8FAFC"/><path d="M13 13h11a2 2 0 0 1 0 4H13z" fill="#0F172A"/><path d="M13 28h15a2 2 0 0 1 0 4H13z" fill="#0F172A"/></svg></div>
                     <div class="flex flex-col">
                         <span class="text-xl font-black tracking-tight text-navyPrimary group-hover:text-amberAccent transition-colors">
-                            BALI STEEL <span class="text-amberAccent">UTAMA</span>
+                            BELI BAGUS <span class="text-amberAccent">BELI MURAH</span>
                         </span>
-                        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Distributor &amp; Toko Besi Bali</span>
+                        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Material Bangunan Bali</span>
                     </div>
                 </a>
 
@@ -128,7 +125,7 @@
         <div id="mobileMenu" class="hidden lg:hidden bg-slate-900 border-b border-steelBorder px-4 py-4 space-y-3 text-xs font-medium text-slate-200">
             <a href="#katalog" class="block py-1 hover:text-amberAccent">Katalog Material Bangunan</a>
             <a href="#kalkulator" class="block py-1 text-amberAccent font-bold">Hitung Tonase Besi (Kalkulator)</a>
-            <a href="#keunggulan" class="block py-1 hover:text-amberAccent">Keunggulan Layanan BSU</a>
+            <a href="#keunggulan" class="block py-1 hover:text-amberAccent">Keunggulan Layanan BBM</a>
             <a href="#area-layanan" class="block py-1 hover:text-amberAccent">Cakupan Pengiriman Seluruh Bali</a>
         </div>
     </header>
@@ -140,15 +137,15 @@
                 
                 <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                     <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-slateNavy border border-steelBorder text-amberAccent text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-shield-halved"></i> Supplier Resmi Material Bangunan Bali
+                        <i class="fa-solid fa-shield-halved"></i> Katalog Material Bangunan Bali
                     </div>
 
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
-                        Distributor Besi SNI &amp; Material Bangunan Terpercaya di Bali
+                        Beli Bagus, Beli Murah untuk Kebutuhan Bangunan
                     </h1>
 
                     <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Menyediakan besi beton murni SNI, hollow galvanis, baja berat WF/H-Beam, atap galvalum, dan wiremesh dengan jaminan ukuran presisi. Melayani kebutuhan kontraktor, pengembang villa, toko bangunan, dan proyek pribadi di seluruh wilayah Bali.
+                        Temukan pilihan besi beton, hollow, baja berat, atap, dan material bangunan lain. Periksa spesifikasi, lalu tanyakan harga, ketersediaan stok, serta ongkos kirim sebelum memesan.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
@@ -169,8 +166,8 @@
                                 <i class="fa-solid fa-truck-ramp-box"></i>
                             </div>
                             <div class="text-left text-xs">
-                                <p class="text-white font-bold">Armada Pengiriman Mandiri</p>
-                                <p class="text-slate-400 text-[11px]">Siap antar langsung ke lokasi proyek Anda di seluruh Bali.</p>
+                                <p class="text-white font-bold">Pengiriman Perlu Dikonfirmasi</p>
+                                <p class="text-slate-400 text-[11px]">Tanyakan jangkauan, kendaraan, dan biaya kirim sesuai lokasi proyek.</p>
                             </div>
                         </div>
                     </div>
@@ -190,8 +187,8 @@
                         <i class="fa-solid fa-certificate"></i>
                     </div>
                     <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Garansi Presisi SNI</h4>
-                        <p class="text-xs text-slate-500 mt-1">Ukuran tebal &amp; berat sesuai standar SNI murni. Bebas dari besi banci.</p>
+                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Periksa Spesifikasi</h4>
+                        <p class="text-xs text-slate-500 mt-1">Cocokkan ukuran, tipe, dan merek dengan kebutuhan proyek Anda.</p>
                     </div>
                 </div>
 
@@ -200,8 +197,8 @@
                         <i class="fa-solid fa-truck-fast"></i>
                     </div>
                     <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Armada Kirim Sendiri</h4>
-                        <p class="text-xs text-slate-500 mt-1">Pengiriman cepat dengan truk engkel, double, dan truk crane khusus.</p>
+                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Cek Akses Pengiriman</h4>
+                        <p class="text-xs text-slate-500 mt-1">Konfirmasi jenis kendaraan dan jangkauan kirim untuk lokasi Anda.</p>
                     </div>
                 </div>
 
@@ -210,8 +207,8 @@
                         <i class="fa-solid fa-scissors"></i>
                     </div>
                     <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Layanan Custom Potong</h4>
-                        <p class="text-xs text-slate-500 mt-1">Bisa minta potong ukuran sesuai spesifikasi gambar kerja proyek Anda.</p>
+                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Tanyakan Layanan</h4>
+                        <p class="text-xs text-slate-500 mt-1">Ketersediaan potong ukuran perlu dikonfirmasi sebelum memesan.</p>
                     </div>
                 </div>
 
@@ -220,8 +217,8 @@
                         <i class="fa-solid fa-scale-balanced"></i>
                     </div>
                     <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Timbangan Transparan</h4>
-                        <p class="text-xs text-slate-500 mt-1">Penimbangan tonase dapat disaksikan langsung saat pemuatan di gudang.</p>
+                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Konfirmasi Sebelum Beli</h4>
+                        <p class="text-xs text-slate-500 mt-1">Pastikan stok, harga terbaru, satuan, dan biaya kirim sebelum transaksi.</p>
                     </div>
                 </div>
 
@@ -235,10 +232,10 @@
             
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
                 <div>
-                    <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Katalog Material Ready Stock</span>
+                    <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Katalog Material Bangunan</span>
                     <h2 class="text-2xl sm:text-3xl font-black text-navyPrimary mt-1">Pilih Produk &amp; Buat Pesanan</h2>
                 </div>
-                <p class="text-slate-500 text-xs sm:text-sm max-w-md">Tambahkan produk yang dibutuhkan ke keranjang belanja, tentukan titik lokasi proyek di peta Bali, dan kirim pesanan langsung ke WhatsApp Admin Sales.</p>
+                <p class="text-slate-500 text-xs sm:text-sm max-w-md">Buka detail produk, masukkan jumlah ke keranjang, lalu konfirmasi stok dan harga terbaru kepada admin sebelum transaksi.</p>
             </div>
 
             <!-- Category Filter Buttons -->
@@ -252,12 +249,29 @@
             </div>
 
             <!-- Dynamic Product Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productGrid">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6" id="productGrid">
                 <!-- Products dynamically inserted via JavaScript -->
             </div>
 
         </div>
     </section>
+
+    <!-- Mobile quick bar: cart and self-service FAQ -->
+    <nav class="mobile-quickbar" aria-label="Menu cepat"><button type="button" onclick="toggleCartDrawer()" class="mobile-quick-action"><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span><b id="mobileCartBadge">0</b></button><button type="button" onclick="openFaqPanel()" class="mobile-quick-action"><i class="fa-regular fa-comments"></i><span>Pusat Bantuan</span></button></nav>
+    <div id="faqOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[70] hidden" onclick="closeFaqPanel()"></div>
+    <aside id="faqPanel" class="faq-panel fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-[71] translate-x-full transition-transform duration-300 flex flex-col" aria-label="Pusat bantuan" aria-modal="true" role="dialog">
+      <div class="p-5 bg-navyPrimary text-white flex justify-between items-center"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Beli Bagus, Beli Murah</p><h3 class="text-lg font-extrabold">Pusat Bantuan</h3><p class="text-xs text-slate-300 mt-1">Jawaban cepat sebelum menghubungi admin</p></div><button type="button" onclick="closeFaqPanel()" class="text-white text-2xl p-2" aria-label="Tutup bantuan">&times;</button></div>
+      <div class="p-4 overflow-y-auto space-y-3 flex-1">
+        <details class="faq-item" open><summary>Apakah harga di katalog sudah pasti?</summary><p>Harga di katalog merupakan informasi awal dan bisa berubah. Konfirmasi harga terbaru kepada admin sebelum pembayaran.</p></details>
+        <details class="faq-item"><summary>Apakah semua produk tersedia?</summary><p>Stok, ukuran, merek, dan varian perlu dikonfirmasi terlebih dahulu karena dapat berubah.</p></details>
+        <details class="faq-item"><summary>Bagaimana cara mengetahui ongkos kirim?</summary><p>Siapkan alamat atau titik peta, daftar material, dan jumlah kebutuhan. Ongkos kirim dikonfirmasi setelah lokasi dan kendaraan diperiksa.</p></details>
+        <details class="faq-item"><summary>Bagaimana jika truk tidak bisa masuk?</summary><p>Pilih kondisi akses mobil engkel/truk 3/4 dan truk long pada formulir pengiriman. Tambahkan catatan tentang gang sempit, portal, atau titik bongkar.</p></details>
+        <details class="faq-item"><summary>Apakah pesanan langsung dikonfirmasi otomatis?</summary><p>Tidak. Pesan WhatsApp hanya mengirim detail permintaan. Tunggu konfirmasi admin mengenai stok, harga, kendaraan, ongkos kirim, dan pembayaran.</p></details>
+        <details class="faq-item"><summary>Bagaimana cara mengubah jumlah produk?</summary><p>Buka keranjang, lalu gunakan tombol minus dan plus di samping produk.</p></details>
+      </div><div class="p-4 border-t border-slate-200 bg-slate-50"><p class="text-xs text-slate-500 mb-3">Belum menemukan jawaban?</p><a class="w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Beli%20Bagus%2C%20Beli%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Tanya Admin via WhatsApp</a></div>
+    </aside>
+    <div id="productDetailOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[65] hidden" onclick="closeProductDetail()"></div>
+    <aside id="productDetailPanel" class="product-detail-panel fixed top-0 right-0 h-full w-full max-w-xl bg-white shadow-2xl z-[66] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Detail produk"><div class="p-5 bg-navyPrimary text-white flex items-center justify-between"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Detail produk</p><h3 id="detailTitle" class="text-lg font-extrabold">Informasi produk</h3></div><button type="button" onclick="closeProductDetail()" class="text-white text-2xl p-2" aria-label="Tutup detail">&times;</button></div><div id="productDetailContent" class="p-5 overflow-y-auto flex-1"></div><div class="p-4 border-t border-slate-200 grid grid-cols-2 gap-3"><button id="detailAddButton" type="button" class="border border-slate-300 rounded-xl py-3 text-sm font-bold text-navyPrimary"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><a id="detailAskButton" class="bg-navyPrimary text-white rounded-xl py-3 text-center text-sm font-bold" href="https://wa.me/628218187917" target="_blank" rel="noopener noreferrer">Tanya stok & harga</a></div></aside>
 
     <!-- 6. SHOPPING CART DRAWER (SLIDE-OVER MODAL) -->
     <div id="cartDrawerOverlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
@@ -509,7 +523,7 @@
     <section id="keunggulan" class="py-16 bg-white border-b border-slate-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Komitmen Layanan BSU</span>
+                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Komitmen Layanan BBM</span>
                 <h2 class="text-2xl sm:text-3xl font-black text-navyPrimary mt-1">Mengapa Kontraktor &amp; Builder Memilih Kami?</h2>
             </div>
 
@@ -519,7 +533,7 @@
                     <div class="w-12 h-12 bg-navyPrimary text-amberAccent rounded-xl flex items-center justify-center text-xl font-bold mb-4">
                         <i class="fa-solid fa-truck-moving"></i>
                     </div>
-                    <h3 class="text-base font-bold text-navyPrimary mb-2">Armada Pengiriman Mandiri</h3>
+                    <h3 class="text-base font-bold text-navyPrimary mb-2">Pengiriman Perlu Dikonfirmasi</h3>
                     <p class="text-xs text-slate-600 leading-relaxed">
                         Kami mengoperasikan armada truk milik sendiri (Pick-up, Engkel, Double, hingga Truk Crane) untuk menjamin pengiriman material besi sampai tepat waktu di lokasi proyek Anda tanpa bergantung pada pihak ketiga.
                     </p>
@@ -609,7 +623,7 @@
                 <div class="space-y-3">
                     <div class="flex items-center space-x-2">
                         <div class="w-8 h-8 bg-amberAccent rounded flex items-center justify-center text-white font-black text-base">
-                            BSU
+                            BBM
                         </div>
                         <span class="text-base font-extrabold text-white">BALI BESI MURAH</span>
                     </div>
@@ -823,37 +837,29 @@
             }
 
             productsToRender.forEach(p => {
-                const card = document.createElement('div');
-                card.className = 'bg-white rounded-xl border border-slate-200 overflow-hidden hover:border-amberAccent transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md';
+                const card = document.createElement('article');
+                card.className = 'product-card-market bg-white rounded-xl border border-slate-200 overflow-hidden hover:border-amberAccent transition-all duration-300 shadow-sm hover:shadow-md';
                 card.innerHTML = `
-                    <div>
-                        <div class="h-40 bg-slate-100 relative overflow-hidden">
-                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">
-                            <span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded absolute top-2.5 left-2.5 uppercase tracking-wider">${p.badge}</span>
-                            <span class="bg-navyPrimary text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded absolute bottom-2.5 right-2.5">${p.weightKg} Kg</span>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xs font-bold text-navyPrimary line-clamp-2">${p.title}</h3>
-                            <p class="text-[11px] text-slate-500 mt-1 font-mono">${p.spec}</p>
-                            
-                            <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-baseline justify-between">
-                                <span class="text-[10px] text-slate-500">Harga Material</span>
-                                <span class="text-sm font-black text-amberAccent">Rp ${p.price.toLocaleString('id-ID')}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-3 bg-slate-50 border-t border-slate-100 grid grid-cols-2 gap-2">
-                        <button onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2 rounded-lg text-xs transition-all flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-cart-plus text-amberAccent"></i> + Keranjang
-                        </button>
-                        <button onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2 rounded-lg text-xs transition-all flex items-center justify-center gap-1">
-                            Beli Langsung
-                        </button>
-                    </div>
-                `;
+                    <button type="button" class="product-open" onclick="openProductDetail('${p.id}')" aria-label="Lihat detail ${p.title}">
+                      <img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image">
+                      <div class="market-product-copy"><span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded inline-flex mb-2 uppercase tracking-wider">${p.badge}</span><h3 class="text-sm sm:text-base font-bold text-navyPrimary leading-snug">${p.title}</h3><p class="text-xs text-slate-500 mt-1">${p.spec}</p><p class="text-[11px] text-slate-500 mt-2"><i class="fa-solid fa-weight-hanging mr-1"></i> Estimasi berat: ${p.weightKg} kg / unit</p><strong class="block text-lg font-black text-amberAccent mt-2">Rp ${p.price.toLocaleString('id-ID')}</strong><span class="block text-[11px] text-slate-500 mt-1">Harga & stok perlu dikonfirmasi</span><span class="inline-flex items-center gap-1 text-xs font-bold text-navyPrimary mt-3 underline underline-offset-2">Lihat spesifikasi lengkap <i class="fa-solid fa-chevron-right"></i></span></div>
+                    </button><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Beli / Tanyakan</button></div>`;
                 grid.appendChild(card);
             });
         }
+
+        // Marketplace-style detail and FAQ panels
+        function openProductDetail(productId) {
+          const p=PRODUCTS_DATA.find(item=>item.id===productId); if(!p)return;
+          document.getElementById('detailTitle').textContent=p.title;
+          document.getElementById('productDetailContent').innerHTML=`<img src="${p.image}" alt="${p.title}" class="w-full h-56 sm:h-72 object-cover rounded-xl bg-slate-100"><div class="mt-4 flex items-start justify-between gap-3"><h4 class="text-lg font-extrabold text-navyPrimary">${p.title}</h4><span class="${p.badgeStyle} border rounded-md px-2 py-1 text-[10px] font-bold">${p.badge}</span></div><p class="text-xl font-black text-amberAccent mt-3">Rp ${p.price.toLocaleString('id-ID')} <span class="text-xs text-slate-500 font-normal">/ unit (estimasi)</span></p><div class="border border-slate-200 rounded-xl mt-4 overflow-hidden"><div class="bg-slate-50 px-4 py-3 font-bold text-sm">Spesifikasi produk</div><dl class="p-4 grid grid-cols-[120px_1fr] gap-y-3 text-sm"><dt class="text-slate-500">Kategori</dt><dd class="font-semibold">${({beton:'Besi beton',hollow:'Hollow & pipa',profile:'Baja berat',atap:'Atap & baja ringan',wiremesh:'Wiremesh & plat'})[p.category]||p.category}</dd><dt class="text-slate-500">Tipe / ukuran</dt><dd class="font-semibold">${p.spec}</dd><dt class="text-slate-500">Estimasi berat</dt><dd class="font-semibold">${p.weightKg} kg per unit</dd><dt class="text-slate-500">Stok</dt><dd class="font-semibold text-amber-700">Konfirmasi ke admin</dd><dt class="text-slate-500">Harga</dt><dd class="font-semibold">Perlu konfirmasi sebelum transaksi</dd></dl></div><div class="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-4 text-xs leading-relaxed text-amber-900"><strong>Mohon periksa kembali:</strong> spesifikasi dan estimasi harga di halaman ini bukan konfirmasi stok. Tanyakan ukuran, merek, jumlah, harga terbaru, dan ongkos kirim sebelum membayar.</div>`;
+          document.getElementById('detailAddButton').onclick=()=>{addToCart(p.id);closeProductDetail();};
+          document.getElementById('detailAskButton').href='https://wa.me/628218187917?text='+encodeURIComponent('Halo Beli Bagus, Beli Murah. Saya ingin cek stok dan harga terbaru untuk: '+p.title+' ('+p.spec+'). Mohon info ketersediaan dan ongkos kirim.');
+          document.getElementById('productDetailOverlay').classList.remove('hidden');document.getElementById('productDetailPanel').classList.remove('translate-x-full');document.body.classList.add('panel-open');
+        }
+        function closeProductDetail(){document.getElementById('productDetailOverlay').classList.add('hidden');document.getElementById('productDetailPanel').classList.add('translate-x-full');document.body.classList.remove('panel-open');}
+        function openFaqPanel(){document.getElementById('faqOverlay').classList.remove('hidden');document.getElementById('faqPanel').classList.remove('translate-x-full');document.body.classList.add('panel-open');}
+        function closeFaqPanel(){document.getElementById('faqOverlay').classList.add('hidden');document.getElementById('faqPanel').classList.add('translate-x-full');document.body.classList.remove('panel-open');}
 
         // FILTER CATEGORY TABS
         function filterCategory(cat) {
@@ -951,6 +957,7 @@
             const totalItems = shoppingCart.reduce((sum, i) => sum + i.qty, 0);
             badge.innerText = totalItems;
             itemCountHeader.innerText = totalItems;
+            const mobileBadge=document.getElementById('mobileCartBadge'); if(mobileBadge) mobileBadge.innerText=totalItems;
 
             if(shoppingCart.length === 0) {
                 container.innerHTML = '';
