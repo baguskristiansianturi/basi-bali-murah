@@ -262,8 +262,8 @@
             <div class="hidden md:flex items-center space-x-6 text-xs text-slate-300">
                 <span><i class="fa-solid fa-truck text-amberAccent mr-1"></i> Pengiriman perlu dikonfirmasi</span>
                 <span><i class="fa-solid fa-scissors text-amberAccent mr-1"></i> Tanyakan layanan potong</span>
-                <a href="https://wa.me/628218187917" target="_blank" class="hover:text-amberAccent font-medium transition-colors">
-                    <i class="fa-brands fa-whatsapp text-emeraldSuccess mr-1"></i> Hotline: 0821-8187-917
+                <a href="#penawaran" class="hover:text-amberAccent font-medium transition-colors">
+                    <i class="fa-solid fa-file-invoice text-amberAccent mr-1"></i> Ajukan permintaan penawaran
                 </a>
             </div>
         </div>
@@ -355,8 +355,8 @@
                         <a href="#katalog" class="bg-amberAccent hover:bg-amberHover text-white font-bold px-7 py-3.5 rounded-xl shadow transition-all text-center flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
                             <i class="fa-solid fa-bag-shopping"></i> Lihat Katalog &amp; Order
                         </a>
-                        <a href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah,%20saya%20ingin%20konsultasi%20kebutuhan%20proyek." target="_blank" class="bg-slateNavy hover:bg-slate-800 text-slate-200 font-bold px-7 py-3.5 rounded-xl border border-steelBorder transition-all text-center flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
-                            <i class="fa-brands fa-whatsapp text-emeraldSuccess text-base"></i> Tanya Penawaran
+                        <a href="#penawaran" class="bg-slateNavy hover:bg-slate-800 text-slate-200 font-bold px-7 py-3.5 rounded-xl border border-steelBorder transition-all text-center flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
+                            <i class="fa-solid fa-file-invoice text-amberAccent text-base"></i> Tanya Penawaran
                         </a>
                     </div>
                 </div>
@@ -480,11 +480,11 @@
           <button type="button" onclick="askLiveChat('Cara memesan')" class="chat-question">Cara memesan</button>
           <button type="button" onclick="askLiveChat('Kendaraan dan akses lokasi')" class="chat-question">Akses kendaraan</button>
         </div>
-        <a class="mt-3 w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Chat Admin via WhatsApp</a>
+        <a class="mt-3 w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="#penawaran"><i class="fa-solid fa-file-invoice text-lg"></i> Isi Form Penawaran</a>
       </div>
     </aside>
         <div id="productDetailOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[65] hidden" onclick="closeProductDetail()"></div>
-    <aside id="productDetailPanel" class="product-detail-panel fixed top-0 right-0 h-full w-full max-w-5xl bg-white shadow-2xl z-[66] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Detail produk"><div class="p-5 bg-navyPrimary text-white flex items-center justify-between"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Detail produk</p><h3 id="detailTitle" class="text-lg font-extrabold">Informasi produk</h3></div><button type="button" onclick="closeProductDetail()" class="text-white text-2xl p-2" aria-label="Tutup detail">&times;</button></div><div id="productDetailContent" class="p-5 overflow-y-auto flex-1"></div><div class="p-4 border-t border-slate-200 grid grid-cols-2 gap-3"><button id="detailAddButton" type="button" class="border border-slate-300 rounded-xl py-3 text-sm font-bold text-navyPrimary"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><a id="detailAskButton" class="bg-navyPrimary text-white rounded-xl py-3 text-center text-sm font-bold" href="https://wa.me/628218187917" target="_blank" rel="noopener noreferrer">Tanya stok & harga</a></div></aside>
+    <aside id="productDetailPanel" class="product-detail-panel fixed top-0 right-0 h-full w-full max-w-5xl bg-white shadow-2xl z-[66] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Detail produk"><div class="p-5 bg-navyPrimary text-white flex items-center justify-between"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Detail produk</p><h3 id="detailTitle" class="text-lg font-extrabold">Informasi produk</h3></div><button type="button" onclick="closeProductDetail()" class="text-white text-2xl p-2" aria-label="Tutup detail">&times;</button></div><div id="productDetailContent" class="p-5 overflow-y-auto flex-1"></div><div class="p-4 border-t border-slate-200 grid grid-cols-2 gap-3"><button id="detailAddButton" type="button" class="border border-slate-300 rounded-xl py-3 text-sm font-bold text-navyPrimary"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><a id="detailAskButton" class="bg-navyPrimary text-white rounded-xl py-3 text-center text-sm font-bold" href="#penawaran" onclick="prepareQuoteFromProduct('')" >Tanya stok &amp; harga</a></div></aside>
 
     <!-- 6. SHOPPING CART DRAWER (SLIDE-OVER MODAL) -->
     <div id="cartDrawerOverlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
@@ -858,6 +858,18 @@
 
     <!-- JAVASCRIPT LOGIC & APPLICATION ENGINE -->
     <script>
+        // Configure only after the business owner confirms the official WhatsApp number (international format, digits only).
+        const WHATSAPP_NUMBER = '';
+
+        function sendBusinessWhatsApp(message) {
+            if (!WHATSAPP_NUMBER) {
+                alert('Nomor WhatsApp resmi bisnis belum dikonfirmasi. Pesan belum terkirim. Silakan gunakan form permintaan penawaran atau konfirmasi nomor kontak sebelum situs diluncurkan.');
+                return false;
+            }
+            window.open('https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+            return true;
+        }
+
         // MASTER PRODUCTS DATA
         const PRODUCTS_DATA = [
             {
@@ -1102,8 +1114,22 @@
             addButton.title = isBaseSize ? '' : 'Ukuran alternatif harus dikonfirmasi dulu sebelum masuk keranjang.';
           }
           const message = 'Halo Bali Besi Murah. Saya ingin cek stok dan harga terbaru untuk: ' + p.title + '. Ukuran yang saya pilih: ' + size + '. Mohon info ketersediaan, berat, harga, dan ongkos kirim ke lokasi saya.';
-          document.getElementById('detailAskButton').href='https://wa.me/628218187917?text='+encodeURIComponent(message);
+          document.getElementById('detailAskButton').href='#penawaran';
+          document.getElementById('detailAskButton').onclick=(event)=>{event.preventDefault();prepareQuoteFromProduct(p.id);};
         }
+        function prepareQuoteFromProduct(productId) {
+          const p = PRODUCTS_DATA.find(item => item.id === productId);
+          if (!p) return;
+          const size = document.getElementById('productSizeSelect')?.value || p.baseSize || p.spec;
+          const materialField = document.getElementById('quoteMaterial');
+          const notesField = document.getElementById('quoteNotes');
+          if (materialField) materialField.value = p.title + ' — ' + size;
+          if (notesField && !notesField.value) notesField.value = 'Mohon konfirmasi spesifikasi, merek, stok, berat, harga, dan ongkos kirim.';
+          closeProductDetail();
+          document.getElementById('penawaran')?.scrollIntoView({behavior:'smooth',block:'start'});
+          setTimeout(() => materialField?.focus({preventScroll:true}), 250);
+        }
+
         function openProductDetail(productId) {
           const p=PRODUCTS_DATA.find(item=>item.id===productId); if(!p)return;
           document.getElementById('detailTitle').textContent=p.title;
@@ -1317,7 +1343,7 @@
 
             const totalQty = shoppingCart.reduce((sum, i) => sum + i.qty, 0);
             const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = null;
+            const totalPrice = 0;
             document.getElementById('checkoutSummaryQty').innerText = `${totalQty} item barang`;
             document.getElementById('checkoutSummaryWeight').innerText = `${totalWeight.toFixed(1)} Kg (${(totalWeight/1000).toFixed(2)} Ton)`;
             document.getElementById('checkoutSummaryPrice').innerText = 'Menunggu penawaran';
@@ -1427,7 +1453,7 @@
             const accessLong = document.getElementById('accessLong').value;
 
             const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = null;
+            const totalPrice = 0;
 
             let itemsText = '';
             shoppingCart.forEach((item, index) => {
@@ -1457,13 +1483,10 @@
                 `----------------------------------------\n` +
                 `Mohon konfirmasi stok, harga, kendaraan yang sesuai, ongkos kirim, dan petunjuk pembayaran sebelum transaksi. Terima kasih.`;
 
-            const adminPhone = "628218187917";
-            const encodedUrl = `https://wa.me/${adminPhone}?text=${encodeURIComponent(waMessage)}`;
-
+            if (!sendBusinessWhatsApp(waMessage)) return;
             shoppingCart = [];
             updateCartUI();
             closeCheckoutModal();
-            window.open(encodedUrl, '_blank');
         }
 
         // STEEL WEIGHT CALCULATOR (RAB TOOL)
@@ -1489,7 +1512,7 @@
                 '',
                 'Mohon informasi harga khusus, ketersediaan, dan estimasi pengiriman. Terima kasih.'
             ].filter(Boolean).join('\n');
-            window.open('https://wa.me/628218187917?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+            sendBusinessWhatsApp(message);
         }
 
         // INITIALIZE APPLICATION
