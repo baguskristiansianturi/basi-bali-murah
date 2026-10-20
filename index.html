@@ -1,1250 +1,138 @@
-<!DOCTYPE html>
-<html lang="id" class="scroll-smooth">
+<!doctype html>
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BALI STEEL UTAMA | Distributor &amp; Toko Besi Material Bangunan Bali</title>
-    <meta name="description" content="Distributor resmi besi beton SNI, besi hollow galvanis, baja berat WF, atap spandek galvalum, dan wiremesh terlengkap di Bali. Layanan pesan online &amp; pengiriman armada cepat ke seluruh kabupaten di Bali.">
-    <meta name="keywords" content="toko besi bali, distributor besi beton denpasar, supplier besi badung, jual hollow galvanis gianyar, harga besi wf tabanan, wiremesh buleleng, baja ringan kuta bali">
-    
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navyPrimary: '#0F172A',
-                        slateNavy: '#1E293B',
-                        steelBorder: '#334155',
-                        amberAccent: '#D97706',
-                        amberHover: '#B45309',
-                        lightBg: '#F8FAFC',
-                        emeraldSuccess: '#059669',
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-
-    <!-- Google Fonts Inter & FontAwesome Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Leaflet.js Maps for Location Pinpoint -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #0F172A; }
-        ::-webkit-scrollbar { width: 8px; height: 8px; }
-        ::-webkit-scrollbar-track { background: #0F172A; }
-        ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #D97706; }
-        #leafletMap { height: 280px; width: 100%; border-radius: 0.75rem; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-    
-        /* Responsive refinements for GitHub Pages and small-screen Android devices */
-        *, *::before, *::after { box-sizing: border-box; }
-        html { scroll-padding-top: 88px; overflow-x: clip; }
-        body { min-width: 320px; max-width: 100%; overflow-x: clip; }
-        img, video, canvas, svg { max-width: 100%; }
-        button, input, select, textarea { max-width: 100%; }
-        #productGrid { min-width: 0; }
-        #leafletMap { min-height: 230px; max-width: 100%; }
-        #cartDrawer { max-width: 100vw; }
-        #checkoutModal { overflow-y: auto; overscroll-behavior: contain; }
-        #checkoutModal > div { max-height: calc(100dvh - 24px); overflow-y: auto; }
-        #mobileMenu { max-width: 100%; }
-        .touch-target, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
-        @media (max-width: 767px) {
-            html { scroll-padding-top: 76px; }
-            body { padding-bottom: env(safe-area-inset-bottom); }
-            header { max-width: 100%; }
-            header .max-w-7xl, header .max-w-6xl { width: 100%; }
-            #mobileMenu { padding-bottom: 12px; }
-            #mobileMenu a { display: block; padding: 12px 14px; min-height: 44px; }
-            #mobileSearchInput, #searchInput, input, select, textarea { font-size: 16px; }
-            #productGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-            #productGrid > * { min-width: 0; }
-            #productGrid img { width: 100%; height: auto; object-fit: cover; }
-            #cartDrawer { width: min(100vw, 420px) !important; }
-            #checkoutModal { padding: 10px !important; align-items: flex-start; }
-            #checkoutModal > div { width: 100%; max-width: 100%; margin: 0 auto; max-height: calc(100dvh - 20px); }
-            #leafletMap { height: 240px; }
-            .overflow-x-auto { -webkit-overflow-scrolling: touch; }
-            a, button { touch-action: manipulation; }
-        }
-        @media (max-width: 380px) {
-            #productGrid { grid-template-columns: minmax(0, 1fr); }
-            #cartDrawer { width: 100vw !important; }
-            #checkoutModal { padding: 6px !important; }
-            #checkoutModal > div { max-height: calc(100dvh - 12px); }
-        }
-        @media (prefers-reduced-motion: reduce) {
-            html { scroll-behavior: auto !important; }
-            *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-        }
-
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#142b3b">
+  <title>Bali Besi Murah | Besi, Semen, Pasir & Material Bangunan Bali</title>
+  <meta name="description" content="Cari besi, seng atap, pasir, Semen Gresik, Semen Dynamix, bata ringan, kawat bendrat, dan kayu pasang untuk kebutuhan bangunan di Bali. Tanyakan ukuran, stok, harga terbaru, dan pengiriman.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://baguskristiansianturi.github.io/basi-bali-murah/">
+  <link rel="icon" href="assets/images/besi.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:title" content="Bali Besi Murah | Material Bangunan Bali">
+  <meta property="og:description" content="Temukan kategori material bangunan, lalu tanyakan ukuran, stok, harga terbaru, dan pengiriman.">
+  <meta property="og:url" content="https://baguskristiansianturi.github.io/basi-bali-murah/">
+  <meta property="og:image" content="https://baguskristiansianturi.github.io/basi-bali-murah/assets/images/hero-material.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Bali Besi Murah",
+    "url":"https://baguskristiansianturi.github.io/basi-bali-murah/",
+    "description":"Katalog material bangunan untuk membantu pelanggan menanyakan spesifikasi, stok, harga, dan pengiriman di Bali."
+  }
+  </script>
+  <script src="assets/js/main.js" defer></script>
 </head>
-<body class="bg-lightBg text-slate-900 antialiased selection:bg-amberAccent selection:text-white">
-
-    <!-- 1. TOP ANNOUNCEMENT BAR -->
-    <div class="bg-navyPrimary text-slate-300 text-xs py-2.5 px-4 border-b border-steelBorder">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center space-x-2 text-[11px] sm:text-xs">
-                <span class="bg-amberAccent text-white font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Layanan Bali</span>
-                <span>Pusat Distributor Besi &amp; Baja Konstruksi SNI Terlengkap di Bali</span>
-            </div>
-            <div class="hidden md:flex items-center space-x-6 text-xs text-slate-300">
-                <span><i class="fa-solid fa-truck text-amberAccent mr-1"></i> Pengiriman Seluruh Bali</span>
-                <span><i class="fa-solid fa-scissors text-amberAccent mr-1"></i> Gratis Potong Ukuran</span>
-                <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-amberAccent font-medium transition-colors">
-                    <i class="fa-brands fa-whatsapp text-emeraldSuccess mr-1"></i> Hotline: 0812-3456-7890
-                </a>
-            </div>
-        </div>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <header class="site-header">
+    <div class="container nav-row">
+      <a class="brand" href="#beranda" aria-label="Bali Besi Murah, halaman utama">
+        <span class="brand-mark" aria-hidden="true">BB</span>
+        <span><span class="brand-name">Bali Besi Murah</span><span class="brand-sub">Material bangunan untuk proyek Anda</span></span>
+      </a>
+      <nav class="nav-links" id="primaryNav" aria-label="Navigasi utama">
+        <a href="#kategori">Kategori</a><a href="#produk">Katalog produk</a><a href="#cara-pesan">Cara pesan</a><a href="#tentang">Tentang kami</a>
+      </nav>
+      <div class="nav-actions"><a class="button button-primary" href="#produk">Lihat katalog <span aria-hidden="true">↗</span></a><button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka navigasi" aria-controls="primaryNav" aria-expanded="false">☰</button></div>
     </div>
+  </header>
 
-    <!-- 2. HEADER & NAVIGATION -->
-    <header class="sticky top-0 z-40 bg-white border-b border-slate-200 shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20 gap-4">
-                
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center space-x-3 group shrink-0">
-                    <div class="w-11 h-11 bg-navyPrimary rounded-xl flex items-center justify-center text-amberAccent font-black text-xl border border-steelBorder shadow">
-                        BSU
-                    </div>
-                    <div class="flex flex-col">
-                        <span class="text-xl font-black tracking-tight text-navyPrimary group-hover:text-amberAccent transition-colors">
-                            BALI STEEL <span class="text-amberAccent">UTAMA</span>
-                        </span>
-                        <span class="text-[10px] uppercase tracking-widest text-slate-500 font-semibold">Distributor &amp; Toko Besi Bali</span>
-                    </div>
-                </a>
-
-                <!-- Desktop Search Bar -->
-                <div class="hidden md:flex flex-1 max-w-md mx-6 relative">
-                    <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Cari besi beton 12mm, hollow galvanis, WF 150, spandek..." class="w-full bg-slate-50 border border-slate-300 rounded-xl pl-10 pr-4 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-amberAccent focus:bg-white transition-all">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
-                </div>
-
-                <!-- Navigation & Cart Trigger -->
-                <div class="flex items-center space-x-4">
-                    <nav class="hidden lg:flex space-x-6 text-xs font-semibold text-slate-700">
-                        <a href="#katalog" class="hover:text-amberAccent transition-colors py-1">Katalog Produk</a>
-                        <a href="#kalkulator" class="hover:text-amberAccent transition-colors py-1 flex items-center gap-1"><i class="fa-solid fa-calculator text-amberAccent"></i> Hitung Berat Besi</a>
-                        <a href="#keunggulan" class="hover:text-amberAccent transition-colors py-1">Layanan Proyek</a>
-                        <a href="#area-layanan" class="hover:text-amberAccent transition-colors py-1">Cakupan Pengiriman</a>
-                    </nav>
-
-                    <!-- Cart Trigger Button -->
-                    <button onclick="toggleCartDrawer()" class="relative bg-navyPrimary hover:bg-slateNavy text-white px-4 py-2.5 rounded-xl transition-all flex items-center gap-2.5 shadow">
-                        <i class="fa-solid fa-cart-shopping text-sm text-amberAccent"></i>
-                        <span class="hidden sm:inline text-xs font-bold">Keranjang</span>
-                        <span id="cartBadge" class="bg-amberAccent text-white font-extrabold text-[11px] px-2 py-0.5 rounded-full">0</span>
-                    </button>
-
-                    <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" class="lg:hidden text-slate-700 hover:text-navyPrimary p-2 text-2xl focus:outline-none">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Mobile Search Bar -->
-            <div class="pb-3.5 md:hidden">
-                <div class="relative">
-                    <input type="text" id="mobileSearchInput" onkeyup="filterProductsMobile()" placeholder="Cari produk besi..." class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-9 pr-4 py-2 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-amberAccent">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
-                </div>
-            </div>
+  <main id="konten">
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Katalog material bangunan</span>
+          <h1>Material yang tepat, untuk <span>proyek yang berjalan.</span></h1>
+          <p class="hero-copy">Temukan pilihan material bangunan mulai dari besi, seng atap, pasir, semen, bata ringan, kawat bendrat hingga kayu pasang. Tanyakan spesifikasi, stok, harga terbaru, dan pengiriman sebelum memesan.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#produk">Jelajahi produk <span aria-hidden="true">→</span></a><a class="button button-outline" href="#cara-pesan">Cara pemesanan</a></div>
+          <p class="hero-note">Harga dan ketersediaan dapat berubah. Konfirmasi detail produk dan ongkos kirim sebelum transaksi.</p>
         </div>
-
-        <!-- Mobile Navigation Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-slate-900 border-b border-steelBorder px-4 py-4 space-y-3 text-xs font-medium text-slate-200">
-            <a href="#katalog" class="block py-1 hover:text-amberAccent">Katalog Material Bangunan</a>
-            <a href="#kalkulator" class="block py-1 text-amberAccent font-bold">Hitung Tonase Besi (Kalkulator)</a>
-            <a href="#keunggulan" class="block py-1 hover:text-amberAccent">Keunggulan Layanan BSU</a>
-            <a href="#area-layanan" class="block py-1 hover:text-amberAccent">Cakupan Pengiriman Seluruh Bali</a>
+        <div class="hero-art">
+          <img class="hero-image" src="assets/images/hero-material.svg" alt="Ilustrasi berbagai material bangunan untuk kebutuhan proyek" width="900" height="760" fetchpriority="high">
+          <div class="hero-badge"><strong>Mulai dari kebutuhan Anda</strong><span>Pilih material, tentukan spesifikasi, lalu minta penawaran.</span></div>
         </div>
-    </header>
-
-    <!-- 3. HERO BANNER -->
-    <section class="bg-navyPrimary text-white py-14 lg:py-20 border-b border-steelBorder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-                
-                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-md bg-slateNavy border border-steelBorder text-amberAccent text-xs font-bold uppercase tracking-wider">
-                        <i class="fa-solid fa-shield-halved"></i> Supplier Resmi Material Bangunan Bali
-                    </div>
-
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
-                        Distributor Besi SNI &amp; Material Bangunan Terpercaya di Bali
-                    </h1>
-
-                    <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Menyediakan besi beton murni SNI, hollow galvanis, baja berat WF/H-Beam, atap galvalum, dan wiremesh dengan jaminan ukuran presisi. Melayani kebutuhan kontraktor, pengembang villa, toko bangunan, dan proyek pribadi di seluruh wilayah Bali.
-                    </p>
-
-                    <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
-                        <a href="#katalog" class="bg-amberAccent hover:bg-amberHover text-white font-bold px-7 py-3.5 rounded-xl shadow transition-all text-center flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
-                            <i class="fa-solid fa-bag-shopping"></i> Lihat Katalog &amp; Order
-                        </a>
-                        <a href="https://wa.me/6281234567890?text=Halo%20Bali%20Steel%20Utama,%20saya%20ingin%20konsultasi%20kebutuhan%20proyek." target="_blank" class="bg-slateNavy hover:bg-slate-800 text-slate-200 font-bold px-7 py-3.5 rounded-xl border border-steelBorder transition-all text-center flex items-center justify-center gap-2 text-xs uppercase tracking-wider">
-                            <i class="fa-brands fa-whatsapp text-emeraldSuccess text-base"></i> Konsultasi Proyek WA
-                        </a>
-                    </div>
-                </div>
-
-                <div class="lg:col-span-5">
-                    <div class="bg-slateNavy border border-steelBorder rounded-2xl p-3 shadow-2xl relative">
-                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Gudang Stok Besi Bali Steel Utama" class="w-full h-72 object-cover rounded-xl">
-                        <div class="mt-3 p-3 bg-navyPrimary rounded-xl border border-steelBorder/80 flex items-center gap-3">
-                            <div class="w-10 h-10 rounded-lg bg-amberAccent text-white flex items-center justify-center font-bold text-lg shrink-0">
-                                <i class="fa-solid fa-truck-ramp-box"></i>
-                            </div>
-                            <div class="text-left text-xs">
-                                <p class="text-white font-bold">Armada Pengiriman Mandiri</p>
-                                <p class="text-slate-400 text-[11px]">Siap antar langsung ke lokasi proyek Anda di seluruh Bali.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+      </div>
     </section>
 
-    <!-- 4. TRUST BADGES / KEY VALUE PROPOSITIONS -->
-    <section class="bg-white border-b border-slate-200 py-8">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="flex items-start space-x-3.5">
-                    <div class="w-10 h-10 rounded-lg bg-amberAccent/10 text-amberAccent flex items-center justify-center text-xl shrink-0 font-bold">
-                        <i class="fa-solid fa-certificate"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Garansi Presisi SNI</h4>
-                        <p class="text-xs text-slate-500 mt-1">Ukuran tebal &amp; berat sesuai standar SNI murni. Bebas dari besi banci.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-3.5">
-                    <div class="w-10 h-10 rounded-lg bg-amberAccent/10 text-amberAccent flex items-center justify-center text-xl shrink-0 font-bold">
-                        <i class="fa-solid fa-truck-fast"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Armada Kirim Sendiri</h4>
-                        <p class="text-xs text-slate-500 mt-1">Pengiriman cepat dengan truk engkel, double, dan truk crane khusus.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-3.5">
-                    <div class="w-10 h-10 rounded-lg bg-amberAccent/10 text-amberAccent flex items-center justify-center text-xl shrink-0 font-bold">
-                        <i class="fa-solid fa-scissors"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Layanan Custom Potong</h4>
-                        <p class="text-xs text-slate-500 mt-1">Bisa minta potong ukuran sesuai spesifikasi gambar kerja proyek Anda.</p>
-                    </div>
-                </div>
-
-                <div class="flex items-start space-x-3.5">
-                    <div class="w-10 h-10 rounded-lg bg-amberAccent/10 text-amberAccent flex items-center justify-center text-xl shrink-0 font-bold">
-                        <i class="fa-solid fa-scale-balanced"></i>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Timbangan Transparan</h4>
-                        <p class="text-xs text-slate-500 mt-1">Penimbangan tonase dapat disaksikan langsung saat pemuatan di gudang.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
+    <section class="trust-strip" aria-label="Panduan belanja">
+      <div class="container trust-grid">
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">⌕</span><div><strong>Pilih material</strong><span>Cari berdasarkan kategori</span></div></div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">✓</span><div><strong>Konfirmasi spesifikasi</strong><span>Ukuran, jumlah, dan satuan</span></div></div>
+        <div class="trust-item"><span class="trust-icon" aria-hidden="true">↗</span><div><strong>Minta penawaran</strong><span>Periksa stok dan biaya kirim</span></div></div>
+      </div>
     </section>
 
-    <!-- 5. E-COMMERCE PRODUCT CATALOG -->
-    <section id="katalog" class="py-16 bg-lightBg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
-                <div>
-                    <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Katalog Material Ready Stock</span>
-                    <h2 class="text-2xl sm:text-3xl font-black text-navyPrimary mt-1">Pilih Produk &amp; Buat Pesanan</h2>
-                </div>
-                <p class="text-slate-500 text-xs sm:text-sm max-w-md">Tambahkan produk yang dibutuhkan ke keranjang belanja, tentukan titik lokasi proyek di peta Bali, dan kirim pesanan langsung ke WhatsApp Admin Sales.</p>
-            </div>
-
-            <!-- Category Filter Buttons -->
-            <div class="flex overflow-x-auto no-scrollbar space-x-2 pb-3 mb-8 border-b border-slate-200 text-xs font-semibold">
-                <button onclick="filterCategory('all')" class="cat-btn active bg-navyPrimary text-white px-4 py-2.5 rounded-lg whitespace-nowrap transition-all shadow-sm">Semua Produk</button>
-                <button onclick="filterCategory('beton')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Besi Beton SNI</button>
-                <button onclick="filterCategory('hollow')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Hollow Galvanis &amp; Pipa</button>
-                <button onclick="filterCategory('profile')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Baja Berat (WF / H-Beam)</button>
-                <button onclick="filterCategory('atap')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Atap Galvalum &amp; Spandek</button>
-                <button onclick="filterCategory('wiremesh')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Wiremesh &amp; Plat</button>
-            </div>
-
-            <!-- Dynamic Product Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6" id="productGrid">
-                <!-- Products dynamically inserted via JavaScript -->
-            </div>
-
+    <section class="section" id="kategori">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Temukan kebutuhan</span><h2>Belanja berdasarkan kategori</h2><p>Mulai dari material struktur hingga kebutuhan pasangan. Pilih kategori untuk melihat produk yang tersedia di katalog.</p></div><a class="text-link" href="#produk">Lihat semua produk →</a></div>
+        <div class="category-grid">
+          <a class="category-card" href="#produk" data-category-link="besi"><div class="category-art"><img src="assets/images/besi.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Besi & baja</h3><p>Tanyakan jenis, diameter, panjang, dan jumlah material.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="atap"><div class="category-art"><img src="assets/images/atap.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Seng & atap</h3><p>Pilihan profil, ketebalan, panjang, dan warna sesuai stok.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="pasir"><div class="category-art"><img src="assets/images/pasir.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Pasir</h3><p>Konfirmasi jenis, volume, satuan, dan ongkos kirim.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="semen"><div class="category-art"><img src="assets/images/semen.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Semen</h3><p>Semen Gresik dan Semen Dynamix; tanyakan stok terbaru.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="dinding"><div class="category-art"><img src="assets/images/bata-ringan.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Bata ringan</h3><p>Sampaikan ketebalan dan kebutuhan volume proyek.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="pelengkap"><div class="category-art"><img src="assets/images/bendrat.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Kawat bendrat</h3><p>Tanyakan ukuran gulungan, berat, dan jumlah.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="kayu"><div class="category-art"><img src="assets/images/kayu.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Kayu pasang</h3><p>Konfirmasi jenis kayu, ukuran, panjang, dan jumlah.</p><div class="category-foot"><span>Lihat pilihan</span><span class="arrow">↗</span></div></a>
+          <a class="category-card" href="#produk" data-category-link="semua"><div class="category-art"><img src="assets/images/hero-material.svg" alt="" loading="lazy" width="600" height="400"></div><h3>Semua material</h3><p>Lihat katalog dan cari berdasarkan nama produk.</p><div class="category-foot"><span>Buka katalog</span><span class="arrow">↗</span></div></a>
         </div>
+      </div>
     </section>
 
-    <!-- 6. SHOPPING CART DRAWER (SLIDE-OVER MODAL) -->
-    <div id="cartDrawerOverlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden transition-opacity"></div>
-    <aside id="cartDrawer" class="fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
-        
-        <div class="p-5 bg-navyPrimary text-white flex justify-between items-center">
-            <div class="flex items-center gap-2.5">
-                <i class="fa-solid fa-cart-shopping text-amberAccent text-base"></i>
-                <h3 class="font-extrabold text-base">Keranjang Belanja</h3>
-                <span class="text-xs text-slate-400 font-normal">(<span id="cartItemCount">0</span> barang)</span>
-            </div>
-            <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white text-xl p-1">
-                <i class="fa-solid fa-xmark"></i>
-            </button>
+    <section class="section section-soft" id="produk">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Katalog produk</span><h2>Cari material yang Anda perlukan</h2><p>Gunakan pencarian atau filter kategori. Harga dan stok perlu dikonfirmasi agar penawaran sesuai kebutuhan dan lokasi proyek.</p></div></div>
+        <div class="product-toolbar"><label class="search-box"><span aria-hidden="true">⌕</span><span class="sr-only">Cari produk</span><input id="productSearch" type="search" placeholder="Cari besi, semen, bata ringan..." autocomplete="off"></label></div>
+        <div class="filter-list" role="group" aria-label="Filter kategori produk">
+          <button class="filter-chip" type="button" data-filter="semua" aria-pressed="true">Semua produk</button>
+          <button class="filter-chip" type="button" data-filter="besi" aria-pressed="false">Besi & baja</button>
+          <button class="filter-chip" type="button" data-filter="atap" aria-pressed="false">Seng & atap</button>
+          <button class="filter-chip" type="button" data-filter="pasir" aria-pressed="false">Pasir</button>
+          <button class="filter-chip" type="button" data-filter="semen" aria-pressed="false">Semen</button>
+          <button class="filter-chip" type="button" data-filter="dinding" aria-pressed="false">Bata ringan</button>
+          <button class="filter-chip" type="button" data-filter="pelengkap" aria-pressed="false">Kawat bendrat</button>
+          <button class="filter-chip" type="button" data-filter="kayu" aria-pressed="false">Kayu pasang</button>
         </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"><div class="empty-state">Memuat katalog produk…</div></div>
+        <p class="notice" id="contactNote" role="status">Catatan: nomor WhatsApp resmi toko belum diatur. Katalog ini belum menampilkan harga atau klaim stok agar tidak memberikan informasi yang keliru.</p>
+      </div>
+    </section>
 
-        <!-- Items Container -->
-        <div class="flex-1 overflow-y-auto p-5 space-y-4" id="cartItemsContainer">
-            <div id="cartEmptyState" class="text-center py-20 space-y-3">
-                <i class="fa-solid fa-basket-shopping text-5xl text-slate-300"></i>
-                <p class="text-slate-500 text-xs font-medium">Keranjang belanja Anda masih kosong.</p>
-                <button onclick="toggleCartDrawer()" class="bg-navyPrimary text-white font-bold px-4 py-2 rounded-lg text-xs">Pilih Material di Katalog</button>
-            </div>
+    <section class="section" id="cara-pesan">
+      <div class="container">
+        <div class="section-head"><div><span class="eyebrow">Mudah dan jelas</span><h2>Bagaimana cara memesan?</h2><p>Siapkan detail kebutuhan sebelum meminta penawaran supaya ukuran, jumlah, dan biaya pengiriman dapat diperiksa dengan tepat.</p></div></div>
+        <div class="how-grid">
+          <article class="how-card"><span class="step-number">01</span><h3>Pilih produk</h3><p>Cari nama material atau pilih kategori. Jika ada ukuran dan spesifikasi, siapkan detailnya.</p></article>
+          <article class="how-card"><span class="step-number">02</span><h3>Konfirmasi harga & stok</h3><p>Pastikan harga terbaru, satuan jual, ketersediaan, dan alternatif produk bila diperlukan.</p></article>
+          <article class="how-card"><span class="step-number">03</span><h3>Pastikan pengiriman</h3><p>Berikan lokasi proyek dan jumlah pesanan. Konfirmasikan ongkos kirim, jadwal, serta cara pembayaran sebelum transaksi.</p></article>
         </div>
+      </div>
+    </section>
 
-        <!-- Summary Footer -->
-        <div class="p-5 border-t border-slate-200 bg-slate-50 space-y-3">
-            <div class="space-y-1.5 text-xs">
-                <div class="flex justify-between text-slate-600">
-                    <span>Estimasi Tonase Berat:</span>
-                    <span id="cartTotalWeight" class="font-mono font-bold text-navyPrimary">0.0 Kg</span>
-                </div>
-                <div class="flex justify-between text-slate-900 text-sm font-black pt-1 border-t border-slate-200">
-                    <span>Total Estimasi Material:</span>
-                    <span id="cartTotalPrice" class="text-amberAccent font-bold text-base">Rp 0</span>
-                </div>
-            </div>
-
-            <button id="btnProceedCheckout" onclick="openCheckoutModal()" disabled class="w-full bg-slate-300 text-slate-500 cursor-not-allowed font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all">
-                <span>Lanjut ke Checkout Alamat Bali</span>
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
+    <section class="section section-soft" id="tentang">
+      <div class="container">
+        <div class="cta-band">
+          <div><span class="eyebrow">Bali Besi Murah</span><h2>Belum menemukan material yang dicari?</h2><p>Mulai dari nama produk dan spesifikasinya. Ketersediaan ukuran, warna, merek, harga, dan jangkauan pengiriman perlu dikonfirmasi sebelum pemesanan.</p></div>
+          <a class="button button-primary" href="#produk">Cari di katalog <span aria-hidden="true">→</span></a>
         </div>
-    </aside>
+      </div>
+    </section>
+  </main>
 
-    <!-- 7. CHECKOUT FORM MODAL & BALI REGIONS + PINPOINT MAP -->
-    <div id="checkoutModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden overflow-y-auto p-4 sm:p-6">
-        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden my-6 border border-slate-200">
-            
-            <div class="p-5 bg-navyPrimary text-white flex justify-between items-center">
-                <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-lg bg-amberAccent text-white flex items-center justify-center font-bold">
-                        <i class="fa-solid fa-truck-ramp-box"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-extrabold text-base">Formulir Checkout &amp; Lokasi Pengiriman Bali</h3>
-                        <p class="text-[11px] text-slate-300">Isi data pemesan &amp; tandai lokasi proyek di peta se-Bali.</p>
-                    </div>
-                </div>
-                <button onclick="closeCheckoutModal()" class="text-slate-400 hover:text-white text-xl p-1">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <form id="checkoutForm" onsubmit="submitOrderToWhatsApp(event)" class="p-6 space-y-6">
-                
-                <!-- Section 1: Customer Contact -->
-                <div class="space-y-3">
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-amberAccent border-b border-slate-200 pb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-user"></i> 1. Informasi Pemesan / Kontraktor
-                    </h4>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Nama Lengkap / Nama Usaha Proyek *</label>
-                            <input type="text" id="custName" required placeholder="Contoh: Made Suardana / PT Bali Kontruksi" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-amberAccent focus:bg-white">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Nomor WhatsApp Aktif *</label>
-                            <input type="tel" id="custPhone" required placeholder="081234567890" class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-amberAccent focus:bg-white">
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Section 2: Bali Structured Address -->
-                <div class="space-y-3">
-                    <h4 class="text-xs font-bold uppercase tracking-wider text-amberAccent border-b border-slate-200 pb-2 flex items-center gap-2">
-                        <i class="fa-solid fa-location-dot"></i> 2. Wilayah &amp; Alamat Pengiriman
-                    </h4>
-                    
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Kabupaten / Kota di Bali *</label>
-                            <select id="regKabupaten" onchange="updateKecamatanDropdown()" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-amberAccent focus:bg-white">
-                                <option value="">-- Pilih Kabupaten / Kota --</option>
-                                <option value="Denpasar">Kota Denpasar</option>
-                                <option value="Badung">Kabupaten Badung</option>
-                                <option value="Gianyar">Kabupaten Gianyar</option>
-                                <option value="Tabanan">Kabupaten Tabanan</option>
-                                <option value="Buleleng">Kabupaten Buleleng</option>
-                                <option value="Karangasem">Kabupaten Karangasem</option>
-                                <option value="Klungkung">Kabupaten Klungkung</option>
-                                <option value="Bangli">Kabupaten Bangli</option>
-                                <option value="Jembrana">Kabupaten Jembrana</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-xs font-semibold text-slate-700 mb-1">Kecamatan *</label>
-                            <select id="regKecamatan" required class="w-full bg-slate-50 border border-slate-300 rounded-lg px-3.5 py-2.5 text-xs text-slate-800 focus:outline-none focus:border-amberAccent focus:bg-white">
-                                <option value="">-- Pilih Kabupaten Dahulu --</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-xs font-semibold text-slate-700 mb-1">Alamat Detail / Patokan Jalan / Gang Proyek *</label>
-                        <textarea id="custAddress" rows="2" required placeholder="Jl. Sunset Road No. 88, Gang Belakang Bengkel, Sebelah Villa Anggrek..." class="w-full bg-slate-50 border border-slate-300 rounded-lg p-3 text-xs text-slate-800 focus:outline-none focus:border-amberAccent focus:bg-white"></textarea>
-                    </div>
-                </div>
-
-                <!-- Section 3: Interactive Map Pinpoint -->
-                <div class="space-y-3">
-                    <div class="flex justify-between items-center border-b border-slate-200 pb-2">
-                        <h4 class="text-xs font-bold uppercase tracking-wider text-amberAccent flex items-center gap-2">
-                            <i class="fa-solid fa-map-location-dot"></i> 3. Penitik Lokasi Proyek (Peta Presisi)
-                        </h4>
-                        <button type="button" onclick="getCurrentLocationGPS()" class="bg-slate-100 hover:bg-slate-200 text-navyPrimary text-[11px] font-bold px-3 py-1.5 rounded-lg border border-slate-300 flex items-center gap-1 transition-all">
-                            <i class="fa-solid fa-crosshairs text-amberAccent"></i>
-                            <span>Gunakan GPS Saya</span>
-                        </button>
-                    </div>
-
-                    <p class="text-[11px] text-slate-500">Klik atau geser penanda di peta untuk memastikan armada pengiriman tidak salah alamat:</p>
-                    
-                    <div id="leafletMap" class="shadow-inner border border-slate-300"></div>
-
-                    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-200 flex items-center justify-between text-[11px]">
-                        <span class="text-slate-500 font-medium">Koordinat Terpilih:</span>
-                        <span id="coordsDisplay" class="font-mono text-navyPrimary font-bold">-8.670458, 115.212629</span>
-                        <input type="hidden" id="custLat" value="-8.670458">
-                        <input type="hidden" id="custLng" value="115.212629">
-                    </div>
-                </div>
-
-                <!-- Section 4: Bill Summary -->
-                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-2">
-                    <div class="text-xs font-bold text-navyPrimary uppercase tracking-wider">Ringkasan Pesanan Material:</div>
-                    <div class="flex justify-between text-xs text-slate-600">
-                        <span>Total Jumlah Barang:</span>
-                        <span id="checkoutSummaryQty" class="font-bold text-slate-900">0 item</span>
-                    </div>
-                    <div class="flex justify-between text-xs text-slate-600">
-                        <span>Estimasi Total Tonase:</span>
-                        <span id="checkoutSummaryWeight" class="font-mono font-bold text-navyPrimary">0 Kg</span>
-                    </div>
-                    <div class="flex justify-between text-sm text-navyPrimary font-black border-t border-slate-200 pt-2">
-                        <span>Total Biaya Material:</span>
-                        <span id="checkoutSummaryPrice" class="text-amberAccent font-bold text-base">Rp 0</span>
-                    </div>
-                    <p class="text-[10px] text-slate-500 italic pt-1">*Ongkos kirim armada dan metode pembayaran Transfer/COD akan dikonfirmasi manual oleh Admin CS via WhatsApp.</p>
-                </div>
-
-                <!-- Submit Button -->
-                <button type="submit" class="w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-extrabold py-4 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Kirim Pesanan ke WhatsApp Admin</span>
-                </button>
-            </form>
-
-        </div>
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand"><a class="brand" href="#beranda"><span class="brand-mark" aria-hidden="true">BB</span><span><span class="brand-name">Bali Besi Murah</span><span class="brand-sub">Material bangunan untuk proyek Anda</span></span></a><p class="footer-copy">Katalog material bangunan yang membantu Anda memulai pencarian dan menyiapkan detail kebutuhan proyek. Hubungi toko untuk konfirmasi stok, harga, dan pengiriman.</p></div>
+        <div><h3>Jelajahi</h3><div class="footer-links"><a href="#kategori">Kategori material</a><a href="#produk">Katalog produk</a><a href="#cara-pesan">Cara pemesanan</a></div></div>
+        <div><h3>Informasi sebelum memesan</h3><div class="footer-links"><span>Konfirmasi harga dan stok</span><span>Pastikan ukuran dan satuan</span><span>Periksa biaya pengiriman</span></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Bali Besi Murah.</span><span>Informasi produk dapat berubah; konfirmasi sebelum transaksi.</span></div>
     </div>
-
-    <!-- 8. STEEL WEIGHT CALCULATOR (RAB TOOL) -->
-    <section id="kalkulator" class="py-16 bg-navyPrimary text-white border-y border-steelBorder">
-        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-2 mb-10">
-                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Kalkulator Estimasi Tonase</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white">Hitung Kebutuhan Berat Besi Proyek</h2>
-                <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto">Gunakan kalkulator ini untuk mengestimasi berat total (kg/ton) berdasarkan rumus standar besi SNI.</p>
-            </div>
-
-            <div class="bg-slateNavy rounded-2xl p-6 sm:p-8 shadow-xl border border-steelBorder">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Pilih Jenis Material</label>
-                            <select id="calcType" onchange="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                                <option value="beton_polos">Besi Beton Polos SNI (Diameter mm)</option>
-                                <option value="beton_ulir">Besi Beton Ulir TS420B (Diameter mm)</option>
-                                <option value="hollow">Besi Hollow / Pipa Kotak (Sisi mm x Tebal mm)</option>
-                                <option value="wf">Besi WF / H-Beam Standard (Tinggi Profil mm)</option>
-                            </select>
-                        </div>
-
-                        <div id="dimGroup1">
-                            <label id="lblDim1" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Diameter Besi (mm)</label>
-                            <input type="number" id="calcDim1" value="12" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                        </div>
-
-                        <div id="dimGroup2" class="hidden">
-                            <label id="lblDim2" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Tebal Dinding (mm)</label>
-                            <input type="number" id="calcDim2" value="1.8" step="0.1" min="0.1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Panjang (Meter)</label>
-                                <input type="number" id="calcLength" value="12" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Jumlah (Batang)</label>
-                                <input type="number" id="calcQty" value="100" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="bg-navyPrimary rounded-xl p-6 border border-steelBorder flex flex-col justify-between">
-                        <div>
-                            <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Hasil Estimasi Tonase</div>
-                            <div class="text-3xl sm:text-4xl font-black text-amberAccent tracking-tight my-2" id="calcTotalWeight">106.5 <span class="text-base font-normal text-slate-300">Kg</span></div>
-                            <p class="text-[11px] text-slate-400 leading-relaxed mb-4" id="calcFormulaNote">
-                                *Perhitungan berdasarkan rumus toleransi berat standar SNI.
-                            </p>
-                        </div>
-
-                        <button onclick="sendCalcToWA()" class="w-full bg-amberAccent hover:bg-amberHover text-white font-bold py-3 px-4 rounded-lg shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all">
-                            <i class="fa-brands fa-whatsapp text-base"></i>
-                            <span>Kirim Hasil Hitungan ke Sales WA</span>
-                        </button>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 9. LAYANAN PROYEK B2B & B2C -->
-    <section id="keunggulan" class="py-16 bg-white border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-12">
-                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Komitmen Layanan BSU</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-navyPrimary mt-1">Mengapa Kontraktor &amp; Builder Memilih Kami?</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <div class="w-12 h-12 bg-navyPrimary text-amberAccent rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-truck-moving"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-navyPrimary mb-2">Armada Pengiriman Mandiri</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Kami mengoperasikan armada truk milik sendiri (Pick-up, Engkel, Double, hingga Truk Crane) untuk menjamin pengiriman material besi sampai tepat waktu di lokasi proyek Anda tanpa bergantung pada pihak ketiga.
-                    </p>
-                </div>
-
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <div class="w-12 h-12 bg-navyPrimary text-amberAccent rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-square-check"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-navyPrimary mb-2">Sertifikat Mill Test SNI</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Seluruh produk besi beton dan baja struktural kami dilengkapi sertifikat resmi pabrik (Mill Test Certificate). Menjamin keamanan struktur bangunan villa, gedung, maupun rumah tinggal.
-                    </p>
-                </div>
-
-                <div class="bg-slate-50 p-6 rounded-2xl border border-slate-200">
-                    <div class="w-12 h-12 bg-navyPrimary text-amberAccent rounded-xl flex items-center justify-center text-xl font-bold mb-4">
-                        <i class="fa-solid fa-handshake"></i>
-                    </div>
-                    <h3 class="text-base font-bold text-navyPrimary mb-2">Harga Distributor B2B &amp; B2C</h3>
-                    <p class="text-xs text-slate-600 leading-relaxed">
-                        Mendapatkan pasokan langsung dari pabrik utama membuat kami mampu memberikan penawaran harga kompetitif baik untuk pembelian eceran proyek rumah maupun suplai partai besar.
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- 10. CAKUPAN PENGIRIMAN BALI -->
-    <section id="area-layanan" class="py-12 bg-slate-100 border-b border-slate-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-8">
-                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Cakupan Distribusi</span>
-                <h2 class="text-xl sm:text-2xl font-black text-navyPrimary mt-1">Layanan Pengiriman Rutin Seluruh Kabupaten di Bali</h2>
-            </div>
-
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs">
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kota Denpasar</div>
-                    <p class="text-[11px] text-slate-500">Denpasar Barat, Timur, Utara, Selatan, Sanur, Renon.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Badung</div>
-                    <p class="text-[11px] text-slate-500">Canggu, Kuta, Kuta Selatan, Nusa Dua, Mengwi, Abiansemal.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Gianyar</div>
-                    <p class="text-[11px] text-slate-500">Ubud, Sukawati, Gianyar Kota, Blahbatuh, Payangan.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Tabanan</div>
-                    <p class="text-[11px] text-slate-500">Kediri, Tabanan Kota, Marga, Penebel, Selemadeg.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Buleleng</div>
-                    <p class="text-[11px] text-slate-500">Singaraja Kota, Seririt, Sukasada, Lovina.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Karangasem</div>
-                    <p class="text-[11px] text-slate-500">Amlapura, Manggis, Rendang, Padangbai.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Klungkung</div>
-                    <p class="text-[11px] text-slate-500">Semarapura, Dawan, Banjarangkan.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Bangli</div>
-                    <p class="text-[11px] text-slate-500">Bangli Kota, Kintamani, Susut.</p>
-                </div>
-                <div class="bg-white p-3 rounded-lg border border-slate-200">
-                    <div class="text-navyPrimary font-bold mb-1"><i class="fa-solid fa-location-dot text-amberAccent mr-1"></i> Kab. Jembrana</div>
-                    <p class="text-[11px] text-slate-500">Negara, Gilimanuk, Mendoyo.</p>
-                </div>
-                <div class="bg-navyPrimary text-white p-3 rounded-lg flex items-center justify-center text-center">
-                    <span class="font-bold text-xs"><i class="fa-solid fa-truck-fast text-amberAccent mr-1"></i> Siap Kirim Hari Ini</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 11. FOOTER -->
-    <footer class="bg-navyPrimary text-slate-400 py-12 text-xs border-t border-steelBorder">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
-                <div class="space-y-3">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-amberAccent rounded flex items-center justify-center text-white font-black text-base">
-                            BSU
-                        </div>
-                        <span class="text-base font-extrabold text-white">BALI STEEL UTAMA</span>
-                    </div>
-                    <p class="text-[11px] leading-relaxed text-slate-300">
-                        Distributor resmi besi &amp; baja material bangunan di Bali. Menyediakan Besi Beton SNI, Hollow Galvanis, WF, H-Beam, Wiremesh, &amp; Galvalum.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Alamat Gudang Utama</h4>
-                    <p class="text-[11px] leading-relaxed text-slate-300">
-                        Jl. Teuku Umar Barat No. 88 &amp; Jl. Mahendradatta, Padangsambian, Denpasar Barat, Bali 80119.
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Kontak Sales Admin</h4>
-                    <ul class="space-y-2 text-[11px] text-slate-300">
-                        <li><i class="fa-solid fa-phone text-amberAccent mr-2"></i> (0361) 890-1234</li>
-                        <li><i class="fa-brands fa-whatsapp text-emeraldSuccess mr-2"></i> +62 812-3456-7890</li>
-                        <li><i class="fa-solid fa-envelope text-amberAccent mr-2"></i> sales@balisteelutama.com</li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Metode Pembayaran</h4>
-                    <p class="text-[11px] text-slate-300 mb-2">Transfer Bank BCA / Mandiri / BRI atau COD (Cash on Delivery) setelah konfirmasi Admin Sales.</p>
-                </div>
-
-            </div>
-
-            <div class="border-t border-steelBorder pt-6 text-center text-[11px] flex flex-col sm:flex-row justify-between items-center gap-3 text-slate-400">
-                <p>&copy; 2026 BALI STEEL UTAMA. All Rights Reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-sm"></i></a>
-                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-sm"></i></a>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="hover:text-white text-emeraldSuccess"><i class="fa-brands fa-whatsapp text-sm"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/6281234567890?text=Halo%20Bali%20Steel%20Utama,%20saya%20ingin%20tanya%20stok%20dan%20harga%20besi." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emeraldSuccess hover:bg-emerald-700 text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-all transform hover:scale-105">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-        <span class="hidden md:inline text-xs font-bold pr-1">Chat Sales WA</span>
-    </a>
-
-    <!-- JAVASCRIPT LOGIC & APPLICATION ENGINE -->
-    <script>
-        // MASTER PRODUCTS DATA
-        const PRODUCTS_DATA = [
-            {
-                id: 'p1',
-                category: 'beton',
-                title: 'Besi Beton Polos 8mm TP280 SNI',
-                spec: 'Polos 8mm x 12m Full',
-                price: 52000,
-                weightKg: 4.74,
-                badge: 'SNI Presisi',
-                badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-                image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p2',
-                category: 'beton',
-                title: 'Besi Beton Polos 10mm TP280 SNI',
-                spec: 'Polos 10mm x 12m Full',
-                price: 78500,
-                weightKg: 7.40,
-                badge: 'Terlaris Proyek',
-                badgeStyle: 'bg-amber-100 text-amber-800 border-amber-300',
-                image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p3',
-                category: 'beton',
-                title: 'Besi Beton Ulir 13mm TS420B SNI',
-                spec: 'Ulir Sirip 13mm x 12m Full',
-                price: 132000,
-                weightKg: 12.50,
-                badge: 'High Tensile',
-                badgeStyle: 'bg-blue-100 text-blue-800 border-blue-300',
-                image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p4',
-                category: 'beton',
-                title: 'Besi Beton Ulir 16mm TS420B SNI',
-                spec: 'Ulir Sirip 16mm x 12m Full',
-                price: 198000,
-                weightKg: 18.96,
-                badge: 'SNI Presisi',
-                badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-                image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p5',
-                category: 'hollow',
-                title: 'Besi Hollow Galvanis 20x40 T1.2mm',
-                spec: '20mm x 40mm x 6 Meter',
-                price: 68000,
-                weightKg: 6.20,
-                badge: 'Anti Karat',
-                badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p6',
-                category: 'hollow',
-                title: 'Besi Hollow Galvanis 40x40 T1.6mm',
-                spec: '40mm x 40mm x 6 Meter',
-                price: 115000,
-                weightKg: 11.20,
-                badge: 'Anti Karat',
-                badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p7',
-                category: 'hollow',
-                title: 'Besi Hollow Hitam 50x100 T2.0mm',
-                spec: '50mm x 100mm x 6 Meter',
-                price: 245000,
-                weightKg: 22.50,
-                badge: 'Tebal Murni',
-                badgeStyle: 'bg-slate-100 text-slate-800 border-slate-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p8',
-                category: 'profile',
-                title: 'Besi Wide Flange (WF) 150x75 SNI',
-                spec: 'WF 150mm x 75mm x 12 Meter',
-                price: 2150000,
-                weightKg: 168.0,
-                badge: 'Baja Berat',
-                badgeStyle: 'bg-purple-100 text-purple-800 border-purple-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p9',
-                category: 'profile',
-                title: 'Besi WF 200x100 SNI Gunung Garuda',
-                spec: 'WF 200mm x 100mm x 12 Meter',
-                price: 3420000,
-                weightKg: 256.0,
-                badge: 'GG Sertifikat',
-                badgeStyle: 'bg-purple-100 text-purple-800 border-purple-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p10',
-                category: 'atap',
-                title: 'Kanal C Baja Ringan C75 T0.75mm',
-                spec: 'C75 x 75mm x 6m Galvalum AZ100',
-                price: 82000,
-                weightKg: 5.10,
-                badge: 'Galvalum AZ100',
-                badgeStyle: 'bg-amber-100 text-amber-800 border-amber-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p11',
-                category: 'atap',
-                title: 'Atap Spandek Galvalum Polos 0.30mm',
-                spec: 'Lebar Efektif 1m x Custom Meter',
-                price: 54000,
-                weightKg: 2.80,
-                badge: 'Per Meter',
-                badgeStyle: 'bg-blue-100 text-blue-800 border-blue-300',
-                image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
-            },
-            {
-                id: 'p12',
-                category: 'wiremesh',
-                title: 'Wiremesh Lembaran M8 SNI',
-                spec: 'Diameter 8mm (2.1m x 5.4m)',
-                price: 685000,
-                weightKg: 62.50,
-                badge: 'Cor Beton',
-                badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
-                image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
-            }
-        ];
-
-        // BALI REGIONS & DISTRICTS DATA
-        const BALI_REGIONS = {
-            'Denpasar': ['Denpasar Barat', 'Denpasar Timur', 'Denpasar Utara', 'Denpasar Selatan'],
-            'Badung': ['Kuta Utara (Canggu/Kerobokan)', 'Kuta', 'Kuta Selatan (Nusa Dua/Jimbaran)', 'Mengwi', 'Abiansemal', 'Petang'],
-            'Gianyar': ['Ubud', 'Sukawati', 'Gianyar Kota', 'Blahbatuh', 'Payangan', 'Tegallalang', 'Tampaksiring'],
-            'Tabanan': ['Kediri', 'Tabanan Kota', 'Marga', 'Penebel', 'Kerambitan', 'Selemadeg', 'Baturiti'],
-            'Buleleng': ['Singaraja Kota', 'Seririt', 'Sukasada', 'Banjar (Lovina)', 'Sawan', 'Gerokgak'],
-            'Karangasem': ['Amlapura / Karangasem Kota', 'Manggis', 'Rendang', 'Padangbai', 'Kubu', 'Abang'],
-            'Klungkung': ['Semarapura / Klungkung Kota', 'Dawan', 'Banjarangkan', 'Nusa Penida'],
-            'Bangli': ['Bangli Kota', 'Kintamani', 'Susut', 'Tembuku'],
-            'Jembrana': ['Negara', 'Gilimanuk', 'Mendoyo', 'Pekutatan', 'Jembrana Kota']
-        };
-
-        // Shopping Cart State
-        let shoppingCart = [];
-
-        // RENDER PRODUCT CATALOG
-        function renderProducts(productsToRender) {
-            const grid = document.getElementById('productGrid');
-            grid.innerHTML = '';
-
-            if(productsToRender.length === 0) {
-                grid.innerHTML = `<div class="col-span-full text-center py-12 text-slate-500 text-xs">Produk material tidak ditemukan. Coba kata kunci lain.</div>`;
-                return;
-            }
-
-            productsToRender.forEach(p => {
-                const card = document.createElement('div');
-                card.className = 'bg-white rounded-xl border border-slate-200 overflow-hidden hover:border-amberAccent transition-all duration-300 flex flex-col justify-between shadow-sm hover:shadow-md';
-                card.innerHTML = `
-                    <div>
-                        <div class="h-40 bg-slate-100 relative overflow-hidden">
-                            <img src="${p.image}" alt="${p.title}" class="w-full h-full object-cover">
-                            <span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded absolute top-2.5 left-2.5 uppercase tracking-wider">${p.badge}</span>
-                            <span class="bg-navyPrimary text-white text-[10px] font-mono font-bold px-2 py-0.5 rounded absolute bottom-2.5 right-2.5">${p.weightKg} Kg</span>
-                        </div>
-                        <div class="p-4">
-                            <h3 class="text-xs font-bold text-navyPrimary line-clamp-2">${p.title}</h3>
-                            <p class="text-[11px] text-slate-500 mt-1 font-mono">${p.spec}</p>
-                            
-                            <div class="mt-3 pt-2.5 border-t border-slate-100 flex items-baseline justify-between">
-                                <span class="text-[10px] text-slate-500">Harga Material</span>
-                                <span class="text-sm font-black text-amberAccent">Rp ${p.price.toLocaleString('id-ID')}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-3 bg-slate-50 border-t border-slate-100 grid grid-cols-2 gap-2">
-                        <button onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2 rounded-lg text-xs transition-all flex items-center justify-center gap-1">
-                            <i class="fa-solid fa-cart-plus text-amberAccent"></i> + Keranjang
-                        </button>
-                        <button onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2 rounded-lg text-xs transition-all flex items-center justify-center gap-1">
-                            Beli Langsung
-                        </button>
-                    </div>
-                `;
-                grid.appendChild(card);
-            });
-        }
-
-        // FILTER CATEGORY TABS
-        function filterCategory(cat) {
-            const buttons = document.querySelectorAll('.cat-btn');
-            buttons.forEach(b => {
-                b.classList.remove('active', 'bg-navyPrimary', 'text-white');
-                b.classList.add('bg-white', 'text-slate-700');
-            });
-            event.target.classList.add('active', 'bg-navyPrimary', 'text-white');
-
-            if(cat === 'all') {
-                renderProducts(PRODUCTS_DATA);
-            } else {
-                const filtered = PRODUCTS_DATA.filter(p => p.category === cat);
-                renderProducts(filtered);
-            }
-        }
-
-        // SEARCH FILTERS
-        function filterProducts() {
-            const q = document.getElementById('searchInput').value.toLowerCase();
-            const filtered = PRODUCTS_DATA.filter(p => 
-                p.title.toLowerCase().includes(q) || 
-                p.spec.toLowerCase().includes(q)
-            );
-            renderProducts(filtered);
-        }
-
-        function filterProductsMobile() {
-            const q = document.getElementById('mobileSearchInput').value.toLowerCase();
-            const filtered = PRODUCTS_DATA.filter(p => 
-                p.title.toLowerCase().includes(q) || 
-                p.spec.toLowerCase().includes(q)
-            );
-            renderProducts(filtered);
-        }
-
-        // SHOPPING CART ENGINE
-        function toggleCartDrawer() {
-            const overlay = document.getElementById('cartDrawerOverlay');
-            const drawer = document.getElementById('cartDrawer');
-            overlay.classList.toggle('hidden');
-            drawer.classList.toggle('translate-x-full');
-        }
-
-        function addToCart(productId) {
-            const product = PRODUCTS_DATA.find(p => p.id === productId);
-            if(!product) return;
-
-            const existingItem = shoppingCart.find(item => item.id === productId);
-            if(existingItem) {
-                existingItem.qty += 1;
-            } else {
-                shoppingCart.push({
-                    id: product.id,
-                    title: product.title,
-                    price: product.price,
-                    weightKg: product.weightKg,
-                    qty: 1
-                });
-            }
-
-            updateCartUI();
-            
-            if(shoppingCart.length === 1) {
-                toggleCartDrawer();
-            }
-        }
-
-        function buyNowDirect(productId) {
-            addToCart(productId);
-            openCheckoutModal();
-        }
-
-        function updateCartQty(productId, delta) {
-            const item = shoppingCart.find(i => i.id === productId);
-            if(!item) return;
-
-            item.qty += delta;
-            if(item.qty <= 0) {
-                shoppingCart = shoppingCart.filter(i => i.id !== productId);
-            }
-            updateCartUI();
-        }
-
-        function updateCartUI() {
-            const container = document.getElementById('cartItemsContainer');
-            const emptyState = document.getElementById('cartEmptyState');
-            const badge = document.getElementById('cartBadge');
-            const itemCountHeader = document.getElementById('cartItemCount');
-            const totalWeightEl = document.getElementById('cartTotalWeight');
-            const totalPriceEl = document.getElementById('cartTotalPrice');
-            const btnProceed = document.getElementById('btnProceedCheckout');
-
-            const totalItems = shoppingCart.reduce((sum, i) => sum + i.qty, 0);
-            badge.innerText = totalItems;
-            itemCountHeader.innerText = totalItems;
-
-            if(shoppingCart.length === 0) {
-                container.innerHTML = '';
-                container.appendChild(emptyState);
-                totalWeightEl.innerText = '0.0 Kg';
-                totalPriceEl.innerText = 'Rp 0';
-                btnProceed.disabled = true;
-                btnProceed.className = "w-full bg-slate-200 text-slate-400 cursor-not-allowed font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all";
-                return;
-            }
-
-            container.innerHTML = '';
-            let calcTotalWeight = 0;
-            let calcTotalPrice = 0;
-
-            shoppingCart.forEach(item => {
-                const itemSubtotal = item.price * item.qty;
-                const itemSubWeight = item.weightKg * item.qty;
-                calcTotalPrice += itemSubtotal;
-                calcTotalWeight += itemSubWeight;
-
-                const itemRow = document.createElement('div');
-                itemRow.className = 'bg-slate-50 p-3.5 rounded-xl border border-slate-200 flex justify-between items-center gap-3';
-                itemRow.innerHTML = `
-                    <div class="flex-1">
-                        <h4 class="text-xs font-bold text-navyPrimary line-clamp-1">${item.title}</h4>
-                        <div class="text-[11px] font-mono text-slate-500 mt-0.5">
-                            Rp ${item.price.toLocaleString('id-ID')} | ${(itemSubWeight).toFixed(1)} Kg
-                        </div>
-                        <div class="text-xs font-bold text-amberAccent mt-1">
-                            Subtotal: Rp ${itemSubtotal.toLocaleString('id-ID')}
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-1.5 bg-white border border-slate-300 rounded-lg p-1">
-                        <button onclick="updateCartQty('${item.id}', -1)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded font-bold text-xs">-</button>
-                        <span class="text-xs font-bold text-navyPrimary w-5 text-center">${item.qty}</span>
-                        <button onclick="updateCartQty('${item.id}', 1)" class="w-6 h-6 bg-slate-100 hover:bg-slate-200 text-slate-800 rounded font-bold text-xs">+</button>
-                    </div>
-                `;
-                container.appendChild(itemRow);
-            });
-
-            totalWeightEl.innerText = `${calcTotalWeight.toFixed(1)} Kg (${(calcTotalWeight/1000).toFixed(2)} Ton)`;
-            totalPriceEl.innerText = `Rp ${calcTotalPrice.toLocaleString('id-ID')}`;
-
-            btnProceed.disabled = false;
-            btnProceed.className = "w-full bg-amberAccent hover:bg-amberHover text-white font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all cursor-pointer";
-        }
-
-        // CHECKOUT & BALI REGIONAL DROPDOWNS
-        function openCheckoutModal() {
-            if(shoppingCart.length === 0) return;
-            toggleCartDrawer();
-
-            const totalQty = shoppingCart.reduce((sum, i) => sum + i.qty, 0);
-            const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = shoppingCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
-
-            document.getElementById('checkoutSummaryQty').innerText = `${totalQty} item barang`;
-            document.getElementById('checkoutSummaryWeight').innerText = `${totalWeight.toFixed(1)} Kg (${(totalWeight/1000).toFixed(2)} Ton)`;
-            document.getElementById('checkoutSummaryPrice').innerText = `Rp ${totalPrice.toLocaleString('id-ID')}`;
-
-            document.getElementById('checkoutModal').classList.remove('hidden');
-
-            setTimeout(() => {
-                initLeafletMap();
-            }, 300);
-        }
-
-        function closeCheckoutModal() {
-            document.getElementById('checkoutModal').classList.add('hidden');
-        }
-
-        function updateKecamatanDropdown() {
-            const kab = document.getElementById('regKabupaten').value;
-            const kecSelect = document.getElementById('regKecamatan');
-            kecSelect.innerHTML = '';
-
-            if(!kab || !BALI_REGIONS[kab]) {
-                kecSelect.innerHTML = '<option value="">-- Pilih Kabupaten Dahulu --</option>';
-                return;
-            }
-
-            kecSelect.innerHTML = '<option value="">-- Pilih Kecamatan --</option>';
-            BALI_REGIONS[kab].forEach(kec => {
-                const opt = document.createElement('option');
-                opt.value = kec;
-                opt.innerText = kec;
-                kecSelect.appendChild(opt);
-            });
-        }
-
-        // MAP PINPOINT INTERACTIVE (LEAFLET.JS)
-        let mapInstance = null;
-        let mapMarker = null;
-
-        function initLeafletMap() {
-            if(mapInstance) {
-                mapInstance.invalidateSize();
-                return;
-            }
-
-            const defaultLat = -8.670458; // Denpasar Central
-            const defaultLng = 115.212629;
-
-            mapInstance = L.map('leafletMap').setView([defaultLat, defaultLng], 12);
-
-            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                maxZoom: 19,
-                attribution: '&copy; OpenStreetMap'
-            }).addTo(mapInstance);
-
-            const customIcon = L.divIcon({
-                className: 'custom-pin',
-                html: `<div style="background-color: #D97706; width: 22px; height: 22px; border-radius: 50%; border: 3px solid white; box-shadow: 0 0 10px rgba(0,0,0,0.3);"></div>`,
-                iconSize: [22, 22],
-                iconAnchor: [11, 11]
-            });
-
-            mapMarker = L.marker([defaultLat, defaultLng], { draggable: true, icon: customIcon }).addTo(mapInstance);
-
-            mapInstance.on('click', function(e) {
-                updateMapMarkerPosition(e.latlng.lat, e.latlng.lng);
-            });
-
-            mapMarker.on('dragend', function() {
-                const pos = mapMarker.getLatLng();
-                updateMapMarkerPosition(pos.lat, pos.lng);
-            });
-        }
-
-        function updateMapMarkerPosition(lat, lng) {
-            mapMarker.setLatLng([lat, lng]);
-            mapInstance.panTo([lat, lng]);
-            
-            document.getElementById('custLat').value = lat.toFixed(6);
-            document.getElementById('custLng').value = lng.toFixed(6);
-            document.getElementById('coordsDisplay').innerText = `${lat.toFixed(6)}, ${lng.toFixed(6)}`;
-        }
-
-        function getCurrentLocationGPS() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(function(position) {
-                    updateMapMarkerPosition(position.coords.latitude, position.coords.longitude);
-                }, function() {
-                    alert('Tidak dapat mendeteksi lokasi GPS Anda. Silakan tentukan titik lokasi pada peta.');
-                });
-            } else {
-                alert('Browser Anda tidak mendukung Geolocation.');
-            }
-        }
-
-        // WHATSAPP ORDER DISPATCH
-        function submitOrderToWhatsApp(e) {
-            e.preventDefault();
-
-            const name = document.getElementById('custName').value;
-            const phone = document.getElementById('custPhone').value;
-            const kabupaten = document.getElementById('regKabupaten').value;
-            const kecamatan = document.getElementById('regKecamatan').value;
-            const address = document.getElementById('custAddress').value;
-            const lat = document.getElementById('custLat').value;
-            const lng = document.getElementById('custLng').value;
-
-            const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = shoppingCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
-
-            let itemsText = '';
-            shoppingCart.forEach((item, index) => {
-                itemsText += `${index + 1}. *${item.title}*\n   - Qty: ${item.qty} x Rp ${item.price.toLocaleString('id-ID')}\n   - Subtotal: Rp ${(item.price * item.qty).toLocaleString('id-ID')} (${(item.weightKg * item.qty).toFixed(1)} Kg)\n`;
-            });
-
-            const mapsUrl = `https://maps.google.com/?q=${lat},${lng}`;
-
-            const waMessage = `*PESANAN BARU - BALI STEEL UTAMA*\n` +
-                `----------------------------------------\n` +
-                `*INFORMASI PEMESAN:*\n` +
-                `• Nama: ${name}\n` +
-                `• No. WhatsApp: ${phone}\n\n` +
-                `*ALAMAT PENGIRIMAN:*\n` +
-                `• Kabupaten/Kota: ${kabupaten}, Bali\n` +
-                `• Kecamatan: ${kecamatan}\n` +
-                `• Detail Alamat: ${address}\n\n` +
-                `*TITIK LOKASI PETA (GPS):*\n` +
-                `📌 ${mapsUrl}\n\n` +
-                `*DAFTAR MATERIAL:* \n` +
-                `${itemsText}\n` +
-                `----------------------------------------\n` +
-                `*ESTIMASI TONASE:* ${totalWeight.toFixed(1)} Kg (${(totalWeight/1000).toFixed(2)} Ton)\n` +
-                `*TOTAL HARGA MATERIAL:* *Rp ${totalPrice.toLocaleString('id-ID')}*\n` +
-                `----------------------------------------\n` +
-                `Mohon konfirmasi ketersediaan armada dan petunjuk pembayaran. Terima kasih.`;
-
-            const adminPhone = "6281234567890";
-            const encodedUrl = `https://wa.me/${adminPhone}?text=${encodeURIComponent(waMessage)}`;
-
-            shoppingCart = [];
-            updateCartUI();
-            closeCheckoutModal();
-            window.open(encodedUrl, '_blank');
-        }
-
-        // STEEL WEIGHT CALCULATOR (RAB TOOL)
-        function calculateSteelWeight() {
-            const type = document.getElementById('calcType').value;
-            const dim1 = parseFloat(document.getElementById('calcDim1').value) || 0;
-            const dim2 = parseFloat(document.getElementById('calcDim2').value) || 0;
-            const length = parseFloat(document.getElementById('calcLength').value) || 0;
-            const qty = parseFloat(document.getElementById('calcQty').value) || 0;
-
-            const dimGroup2 = document.getElementById('dimGroup2');
-            const lblDim1 = document.getElementById('lblDim1');
-            const lblDim2 = document.getElementById('lblDim2');
-            const note = document.getElementById('calcFormulaNote');
-
-            let weightPerMeter = 0;
-
-            if (type === 'beton_polos' || type === 'beton_ulir') {
-                dimGroup2.classList.add('hidden');
-                lblDim1.innerText = "Diameter Besi (mm)";
-                weightPerMeter = 0.006165 * Math.pow(dim1, 2);
-                note.innerText = "*Perhitungan rumus baku SNI Besi Beton (0.006165 x d²).";
-            } else if (type === 'hollow') {
-                dimGroup2.classList.remove('hidden');
-                lblDim1.innerText = "Lebar Sisi (mm)";
-                lblDim2.innerText = "Tebal Dinding (mm)";
-                weightPerMeter = ((dim1 * 4) / 3.14159 - dim2) * dim2 * 0.02466;
-                note.innerText = "*Perhitungan tebal standar pipa kotak/hollow galvanis.";
-            } else if (type === 'wf') {
-                dimGroup2.classList.add('hidden');
-                lblDim1.innerText = "Ukuran Tinggi Profil WF (mm)";
-                weightPerMeter = dim1 * 0.095;
-                note.innerText = "*Perhitungan pendekatan tabel standar profil WF & H-Beam.";
-            }
-
-            const weightPerBatang = weightPerMeter * length;
-            const totalWeight = weightPerBatang * qty;
-
-            document.getElementById('calcTotalWeight').innerHTML = `${totalWeight.toFixed(1)} <span class="text-base font-normal text-slate-300">Kg (${(totalWeight/1000).toFixed(2)} Ton)</span>`;
-        }
-
-        function sendCalcToWA() {
-            const type = document.getElementById('calcType').options[document.getElementById('calcType').selectedIndex].text;
-            const dim1 = document.getElementById('calcDim1').value;
-            const length = document.getElementById('calcLength').value;
-            const qty = document.getElementById('calcQty').value;
-            const weight = document.getElementById('calcTotalWeight').innerText;
-
-            const text = `Halo Bali Steel Utama, saya menghitung estimasi berat di website:\n\n- Spesifikasi: ${type}\n- Dimensi: ${dim1} mm\n- Panjang: ${length} m\n- Jumlah: ${qty} Batang\n- Estimasi Berat Total: ${weight}\n\nMohon informasi penawaran harganya. Terima kasih!`;
-            window.open(`https://wa.me/6281234567890?text=${encodeURIComponent(text)}`, '_blank');
-        }
-
-        // INITIALIZE APPLICATION
-        window.onload = function() {
-            renderProducts(PRODUCTS_DATA);
-            calculateSteelWeight();
-
-            document.getElementById('mobileMenuBtn').addEventListener('click', () => {
-                document.getElementById('mobileMenu').classList.toggle('hidden');
-            });
-        };
-    </script>
+  </footer>
+  <div class="mobile-sticky" aria-label="Akses cepat"><a class="button button-outline" href="#kategori">Kategori</a><a class="button button-primary" href="#produk">Cari material</a></div>
 </body>
 </html>
