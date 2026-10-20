@@ -42,9 +42,9 @@
         body{font-family:'Inter',sans-serif;background:#F8FAFC;color:#0F172A}
         ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#334155;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#D97706}
         #leafletMap{height:280px;width:100%;border-radius:.75rem}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
-        .mobile-quickbar{display:none}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
+        .product-wishlist-btn{position:absolute;top:7px;right:7px;width:30px;height:30px;border-radius:999px;background:rgba(255,255,255,.95);color:#334155;box-shadow:0 2px 8px rgba(15,23,42,.14);display:flex;align-items:center;justify-content:center;font-size:14px}.product-wishlist-btn:active{transform:scale(.94)}.mobile-quickbar{display:none}.mobile-header-icon{display:none}.header-count{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#D97706;color:white;font-size:9px;font-weight:800;line-height:16px;text-align:center;border:1.5px solid white}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
         .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}
-        @media(max-width:639px){body{padding-bottom:60px}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:5px 12px calc(5px + env(safe-area-inset-bottom));background:rgba(248,250,252,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(203,213,225,.75);box-shadow:0 -5px 18px rgba(15,23,42,.06);gap:8px;transition:background .2s ease}.mobile-quick-action{display:flex;align-items:center;justify-content:center;gap:7px;min-height:40px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative}.mobile-quick-action:first-child{background:rgba(217,119,6,.94);color:#fff}.mobile-quick-action i{font-size:14px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
+        @media(max-width:639px){body{padding-bottom:56px}.mobile-header-icon{display:flex;align-items:center;justify-content:center;width:32px;height:36px;flex:0 0 32px;position:relative;border:0;border-radius:9px;background:transparent;color:#334155;font-size:16px}.mobile-header-icon:active{background:#f1f5f9}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:4px 12px calc(4px + env(safe-area-inset-bottom));background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-top:0;box-shadow:none;gap:8px;pointer-events:none}.mobile-quick-action{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:7px;min-height:38px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative;box-shadow:0 3px 12px rgba(15,23,42,.18)}.mobile-quick-action:first-child{background:rgba(217,119,6,.96);color:#fff}.mobile-quick-action i{font-size:14px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
         @media(min-width:640px){.product-open{display:block;padding:0}.market-product-image{width:100%;height:175px;border-radius:0}.market-product-copy{padding:14px}}
     
         /* Mobile-first refinements: compact header and product cards, including 320px screens */
@@ -55,10 +55,8 @@
           header a.group > div:first-child svg{width:30px;height:30px}
           header a.group span.text-xl{font-size:clamp(13px,4vw,17px);line-height:1.15;letter-spacing:-.04em;white-space:normal}
           header a.group span.text-\\[10px\\]{font-size:9px;letter-spacing:.09em}
-          header .flex.items-center.space-x-4{gap:6px}
-          header .flex.items-center.space-x-4 > button[onclick="toggleCartDrawer()"]{display:none}
-          #mobileMenuBtn{font-size:20px;padding:8px;flex:0 0 auto}
-          header .pb-3\\.5{padding-bottom:10px}
+          header .flex.items-center.gap-2.sm\\:gap-3{gap:3px}
+          #mobileMenuBtn{font-size:18px;padding:6px;flex:0 0 auto}
           #mobileSearchInput{min-height:40px;font-size:13px}
           #katalog{padding-top:32px;padding-bottom:36px}
           #katalog h2{font-size:22px;line-height:1.25}
@@ -130,34 +128,38 @@
                     <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-400 text-xs"></i>
                 </div>
 
-                <!-- Navigation & Cart Trigger -->
-                <div class="flex items-center space-x-4">
+                <!-- Navigation & Mobile Actions -->
+                <div class="flex items-center gap-2 sm:gap-3">
                     <nav class="hidden lg:flex space-x-6 text-xs font-semibold text-slate-700">
                         <a href="#katalog" class="hover:text-amberAccent transition-colors py-1">Katalog Produk</a>
                         <a href="#kalkulator" class="hover:text-amberAccent transition-colors py-1 flex items-center gap-1"><i class="fa-solid fa-calculator text-amberAccent"></i> Hitung Berat Besi</a>
                         <a href="#keunggulan" class="hover:text-amberAccent transition-colors py-1">Layanan Proyek</a>
                         <a href="#area-layanan" class="hover:text-amberAccent transition-colors py-1">Cakupan Pengiriman</a>
                     </nav>
-
-                    <!-- Cart Trigger Button -->
-                    <button onclick="toggleCartDrawer()" class="relative bg-navyPrimary hover:bg-slateNavy text-white px-4 py-2.5 rounded-xl transition-all flex items-center gap-2.5 shadow">
+                    <button id="mobileSearchToggle" type="button" onclick="toggleMobileSearch()" class="mobile-header-icon lg:hidden" aria-label="Cari produk" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="button" onclick="showWishlist()" class="mobile-header-icon lg:hidden relative" aria-label="Wishlist">
+                        <i class="fa-regular fa-heart"></i><span id="mobileWishlistBadge" class="header-count">0</span>
+                    </button>
+                    <button onclick="toggleCartDrawer()" class="relative mobile-header-icon lg:hidden" aria-label="Keranjang">
+                        <i class="fa-solid fa-cart-shopping"></i><span id="mobileHeaderCartBadge" class="header-count">0</span>
+                    </button>
+                    <!-- Desktop Cart Trigger Button -->
+                    <button onclick="toggleCartDrawer()" class="hidden lg:flex relative bg-navyPrimary hover:bg-slateNavy text-white px-4 py-2.5 rounded-xl transition-all items-center gap-2.5 shadow">
                         <i class="fa-solid fa-cart-shopping text-sm text-amberAccent"></i>
-                        <span class="hidden sm:inline text-xs font-bold">Keranjang</span>
+                        <span class="text-xs font-bold">Keranjang</span>
                         <span id="cartBadge" class="bg-amberAccent text-white font-extrabold text-[11px] px-2 py-0.5 rounded-full">0</span>
                     </button>
-
-                    <!-- Mobile Menu Button -->
-                    <button id="mobileMenuBtn" class="lg:hidden text-slate-700 hover:text-navyPrimary p-2 text-2xl focus:outline-none">
+                    <button id="mobileMenuBtn" class="lg:hidden text-slate-700 hover:text-navyPrimary p-2 text-xl focus:outline-none" aria-label="Buka menu">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </div>
 
-            <!-- Mobile Search Bar -->
-            <div class="pb-3.5 md:hidden">
+            <!-- Collapsible Mobile Search Bar -->
+            <div id="mobileSearchPanel" class="hidden pb-3.5 md:hidden">
                 <div class="relative">
-                    <input type="text" id="mobileSearchInput" onkeyup="filterProductsMobile()" placeholder="Cari produk besi..." class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-9 pr-4 py-2 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-amberAccent">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
+                    <input type="text" id="mobileSearchInput" onkeyup="filterProductsMobile()" placeholder="Cari produk besi..." class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-9 pr-4 py-2.5 text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:border-amberAccent">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3 text-slate-400 text-xs"></i>
                 </div>
             </div>
         </div>
@@ -841,8 +843,39 @@
             'Jembrana': ['Negara', 'Gilimanuk', 'Mendoyo', 'Pekutatan', 'Jembrana Kota']
         };
 
-        // Shopping Cart State
+        // Shopping cart and wishlist state
         let shoppingCart = [];
+        let wishlistIds = [];
+        function toggleMobileSearch(){
+          const panel=document.getElementById('mobileSearchPanel');
+          const button=document.getElementById('mobileSearchToggle');
+          const opening=panel.classList.contains('hidden');
+          panel.classList.toggle('hidden');
+          button.setAttribute('aria-expanded',String(opening));
+          if(opening){document.getElementById('mobileSearchInput').focus();}
+          else {document.getElementById('mobileSearchInput').value='';filterProductsMobile();}
+        }
+        function toggleWishlist(productId){
+          if(wishlistIds.includes(productId)){wishlistIds=wishlistIds.filter(id=>id!==productId);}
+          else {wishlistIds.push(productId);}
+          updateWishlistUI();
+          renderProducts(PRODUCTS_DATA.filter(p=>document.getElementById('mobileWishlistBadge').dataset.active==='true'?wishlistIds.includes(p.id):true));
+        }
+        function showWishlist(){
+          const badge=document.getElementById('mobileWishlistBadge');
+          const currentlyShowing=badge.dataset.active==='true';
+          badge.dataset.active=String(!currentlyShowing);
+          const btn=document.querySelector('button[aria-label="Wishlist"]');
+          if(btn) btn.classList.toggle('text-amber-600',!currentlyShowing);
+          renderProducts(!currentlyShowing?PRODUCTS_DATA.filter(p=>wishlistIds.includes(p.id)):PRODUCTS_DATA);
+          document.getElementById('katalog').scrollIntoView({behavior:'smooth',block:'start'});
+        }
+        function updateWishlistUI(){
+          const badge=document.getElementById('mobileWishlistBadge');
+          if(badge) badge.textContent=wishlistIds.length;
+          const btn=document.querySelector('button[aria-label="Wishlist"]');
+          if(btn){const icon=btn.querySelector('i');if(icon){icon.className=wishlistIds.length?'fa-solid fa-heart':'fa-regular fa-heart';}}
+        }
 
         // RENDER PRODUCT CATALOG
         function renderProducts(productsToRender) {
@@ -859,7 +892,7 @@
                 card.className = 'product-card-market bg-white rounded-xl border border-slate-200 overflow-hidden hover:border-amberAccent transition-all duration-300 shadow-sm hover:shadow-md';
                 card.innerHTML = `
                     <div class="product-open" role="button" tabindex="0" onclick="openProductDetail('${p.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProductDetail('${p.id}')}" aria-label="Lihat detail ${p.title}">
-                      <img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image">
+                      <div class="relative shrink-0"><img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image"><button type="button" onclick="event.stopPropagation();toggleWishlist('${p.id}')" class="product-wishlist-btn" aria-label="Simpan ke wishlist"><i class="${wishlistIds.includes(p.id)?'fa-solid':'fa-regular'} fa-heart"></i></button></div>
                       <div class="market-product-copy"><span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded inline-flex mb-2 uppercase tracking-wider">${p.badge}</span><h3 class="text-sm sm:text-base font-bold text-navyPrimary leading-snug">${p.title}</h3><p class="text-xs text-slate-500 mt-1">${p.spec}</p><p class="text-[11px] text-slate-500 mt-2"><i class="fa-solid fa-weight-hanging mr-1"></i> Estimasi berat: ${p.weightKg} kg / unit</p><strong class="block text-lg font-black text-amberAccent mt-2">Rp ${p.price.toLocaleString('id-ID')}</strong><span class="block text-[11px] text-slate-500 mt-1">Harga & stok perlu dikonfirmasi</span><span class="inline-flex items-center gap-1 text-xs font-bold text-navyPrimary mt-3 underline underline-offset-2">Lihat spesifikasi lengkap <i class="fa-solid fa-chevron-right"></i></span></div>
                     </div><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Beli / Tanyakan</button></div>`;
                 grid.appendChild(card);
@@ -976,6 +1009,7 @@
             badge.innerText = totalItems;
             itemCountHeader.innerText = totalItems;
             const mobileBadge=document.getElementById('mobileCartBadge'); if(mobileBadge) mobileBadge.innerText=totalItems;
+            const mobileHeaderBadge=document.getElementById('mobileHeaderCartBadge'); if(mobileHeaderBadge) mobileHeaderBadge.innerText=totalItems;
 
             if(shoppingCart.length === 0) {
                 container.innerHTML = '';
