@@ -1,39 +1,40 @@
-# Besi Bali Murah
+# Bali Besi Murah
 
-Katalog statis awal untuk proyek bisnis material besi dan konstruksi di Bali.
+Katalog statis awal untuk proyek material besi dan konstruksi di Bali. Situs ini saat ini disiapkan sebagai **katalog dan alur permintaan penawaran**, bukan checkout pembayaran otomatis.
 
 ## Website
 Target GitHub Pages: https://baguskristiansianturi.github.io/basi-bali-murah/
 
-URL ini baru menjadi situs publik setelah GitHub Pages berhasil diaktifkan dan deployment selesai.
+URL publik baru dianggap terverifikasi setelah deployment berhasil dan halaman dicek langsung di browser.
 
 ## Status implementasi
-- [x] Halaman katalog responsif untuk ponsel
-- [x] Pencarian dan filter kategori produk
-- [x] Kalkulator estimasi berat besi beton
-- [x] FAQ dasar untuk membantu pembeli menyiapkan permintaan penawaran
-- [x] robots.txt dan sitemap awal
-- [x] Workflow GitHub Actions untuk deploy ke Pages
-- [x] Dokumen riset kompetitor dan strategi SEO Bali
-- [ ] Konfirmasi nomor WhatsApp bisnis yang benar
-- [ ] Konfirmasi identitas usaha, alamat/area operasional, dan jam layanan
-- [ ] Verifikasi produk, pemasok, spesifikasi, stok, harga, margin, serta ongkir
-- [ ] Aktifkan Google Search Console dan kirim sitemap
-- [ ] Tambah halaman produk mendalam setelah data produk diverifikasi
+- [x] Katalog produk dengan pencarian dan filter kategori
+- [x] Tampilan responsif dasar dan panel detail produk
+- [x] Daftar permintaan material dan estimasi berat katalog
+- [x] Form permintaan penawaran dengan kolom material, jumlah, lokasi, dan catatan
+- [x] Metadata SEO dasar, canonical, Open Graph, dan JSON-LD WebSite
+- [x] robots.txt, sitemap awal, dan workflow deploy GitHub Pages
+- [x] Dokumen riset kompetitor dan strategi SEO
+- [ ] Konfirmasi nomor WhatsApp resmi dan isi konstanta `WHATSAPP_NUMBER` di `index.html`
+- [ ] Sambungkan dan uji pengiriman formulir setelah nomor resmi dikonfirmasi
+- [ ] Verifikasi seluruh nama produk, spesifikasi, satuan, berat, merek, foto, stok, dan harga
+- [ ] Konfirmasi identitas usaha, alamat/area operasional, jam layanan, ongkir, dan metode pembayaran
+- [ ] Uji tampilan di perangkat nyata pada lebar 320px, 360px, 390px, tablet, dan desktop
+- [ ] Aktifkan Google Search Console dan kirim sitemap setelah deployment diverifikasi
+- [ ] Buat halaman kategori mendalam setelah data produk dan area layanan valid
 
-## Mengaktifkan GitHub Pages
-1. Buka repository Settings.
-2. Pilih Pages.
-3. Pada Build and deployment, pilih Source: GitHub Actions jika belum dipilih.
-4. Buka tab Actions dan pastikan workflow “Deploy static site to GitHub Pages” selesai dengan status sukses.
-5. Setelah sukses, buka target URL di atas lewat browser HP.
+## Penting sebelum menerima pesanan
+Nomor WhatsApp resmi belum dikonfirmasi. Untuk mencegah pesan dikirim ke nomor contoh, tautan WhatsApp langsung tidak diaktifkan. Fungsi pengiriman akan menampilkan pemberitahuan sampai konstanta `WHATSAPP_NUMBER` diisi dengan nomor resmi format internasional tanpa tanda plus atau spasi. Form belum mengirim data ke server; jangan menganggap permintaan terkirim otomatis.
 
-Jika GitHub Pages sudah disetel untuk deploy dari branch, pastikan konfigurasi hanya memakai satu metode deployment agar tidak bertabrakan dengan workflow.
+Harga katalog sebelumnya belum diverifikasi, jadi tampilan pelanggan menggunakan “Minta penawaran” dan total harga menunggu penawaran. Berat katalog juga harus diperlakukan sebagai perkiraan sampai pemasok mengonfirmasi spesifikasi dan berat aktual.
 
-## Sebelum menerima order
-Nomor WhatsApp contoh dari desain awal sengaja tidak digunakan. Tombol penawaran sekarang memberi tahu bahwa kontak bisnis belum diatur. Isi nomor WhatsApp format internasional pada konstanta WHATSAPP_NUMBER di index.html setelah nomor bisnis resmi dikonfirmasi. Jangan memakai nomor contoh.
+Jangan mengklaim distributor resmi, sertifikat SNI/Mill Test, harga termurah, stok, armada sendiri, gratis potong, pengiriman ke seluruh Bali, alamat fisik, jam operasional, atau testimoni sebelum klaim tersebut benar dan dapat dibuktikan.
 
-Jangan mengklaim distributor resmi, produk bersertifikat SNI, harga termurah, stok tersedia, gratis potong, pengiriman ke seluruh Bali, alamat fisik, atau testimoni sebelum klaim tersebut benar dan bisa dibuktikan.
+## Deployment GitHub Pages
+1. Buka repository Settings → Pages.
+2. Pilih Source: GitHub Actions jika belum diatur.
+3. Buka tab Actions dan pastikan workflow deploy selesai dengan status sukses.
+4. Buka URL website di atas lewat browser ponsel; commit GitHub saja belum membuktikan halaman publik telah diperbarui.
 
 ## SEO
-Lihat [dokumen riset kompetitor dan strategi SEO Bali](docs/riset-seo-kompetitor-bali.md). Kata kunci dalam dokumen adalah hipotesis intent, bukan volume pencarian terukur. Peringkat halaman pertama Google tidak dapat dijamin.
+Lihat [SEO-STRATEGY.md](SEO-STRATEGY.md) dan [dokumen riset kompetitor dan strategi SEO Bali](docs/riset-seo-kompetitor-bali.md). Keyword di dokumen adalah hipotesis intent, bukan volume pencarian terukur. Peringkat halaman pertama Google tidak dapat dijamin.
