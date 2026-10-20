@@ -43,8 +43,41 @@
         ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#334155;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#D97706}
         #leafletMap{height:280px;width:100%;border-radius:.75rem}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
         .mobile-quickbar{display:none}.mobile-header-icon{display:none}.header-count{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#D97706;color:white;font-size:9px;font-weight:800;line-height:16px;text-align:center;border:1.5px solid white}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
-        .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}.cart-toast{position:fixed;left:50%;bottom:76px;z-index:100;transform:translate(-50%,14px);opacity:0;pointer-events:none;background:#0f172a;color:#fff;padding:11px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.22);font-size:12px;font-weight:700;transition:opacity .22s ease,transform .22s ease;max-width:calc(100vw - 32px);text-align:center}.cart-toast.is-visible{opacity:1;transform:translate(-50%,0)}@media(min-width:640px){.cart-toast{bottom:24px}}
-        @media(max-width:639px){body{padding-bottom:56px}.mobile-header-icon{display:flex;align-items:center;justify-content:center;width:32px;height:36px;flex:0 0 32px;position:relative;border:0;border-radius:9px;background:transparent;color:#334155;font-size:16px}.mobile-header-icon:active{background:#f1f5f9}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:4px 12px calc(4px + env(safe-area-inset-bottom));background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-top:0;box-shadow:none;gap:8px;pointer-events:none}.mobile-quick-action{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:7px;min-height:38px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative;box-shadow:0 3px 12px rgba(15,23,42,.18)}.mobile-quick-action:first-child{background:rgba(217,119,6,.96);color:#fff}.mobile-quick-action i{font-size:14px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
+        .chat-question{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:10px;padding:10px 8px;text-align:left;font-size:11px;font-weight:700;line-height:1.25;transition:background .15s,border-color .15s}.chat-question:hover,.chat-question:focus{background:#fffbeb;border-color:#d97706;outline:none}.chat-bot-bubble{max-width:88%;margin-right:auto;background:#fff;border:1px solid #e2e8f0;color:#334155;border-radius:16px 16px 16px 3px;padding:10px 12px;font-size:12px;line-height:1.55;box-shadow:0 1px 3px rgba(15,23,42,.04)}.chat-user-bubble{max-width:88%;margin-left:auto;background:#0f172a;color:#fff;border-radius:16px 16px 3px 16px;padding:10px 12px;font-size:12px;line-height:1.5}.panel-open{overflow:hidden}.cart-toast{position:fixed;left:50%;bottom:76px;z-index:100;transform:translate(-50%,14px);opacity:0;pointer-events:none;background:#0f172a;color:#fff;padding:11px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.22);font-size:12px;font-weight:700;transition:opacity .22s ease,transform .22s ease;max-width:calc(100vw - 32px);text-align:center}.cart-toast.is-visible{opacity:1;transform:translate(-50%,0)}@media(min-width:640px){.cart-toast{bottom:24px}}
+        @media(max-width:639px){
+          body{padding-bottom:54px}
+          header{position:sticky;top:0;z-index:60}
+          header .max-w-7xl{padding-left:12px;padding-right:12px}
+          header .max-w-7xl > .flex{min-height:60px;height:auto;gap:5px}
+          header a.group{min-width:0;flex:1;gap:6px}
+          header a.group > div:first-child{width:34px;height:34px;flex:0 0 34px;border-radius:9px}
+          header a.group > div:first-child svg{width:27px;height:27px}
+          header a.group span.text-xl{font-size:clamp(12px,3.7vw,15px);line-height:1.15;letter-spacing:-.04em;white-space:nowrap}
+          header a.group span.text-\\[10px\\]{font-size:8px;letter-spacing:.07em}
+          header .flex.items-center.gap-2.sm\\:gap-3{gap:2px}
+          .mobile-header-icon{display:flex;align-items:center;justify-content:center;width:30px;height:34px;flex:0 0 30px;position:relative;border:0;border-radius:8px;background:transparent;color:#334155;font-size:15px}
+          .mobile-header-icon:active{background:#f1f5f9}
+          #mobileMenuBtn{font-size:17px;padding:5px;flex:0 0 28px}
+          #mobileSearchPanel{padding-bottom:10px}
+          .mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:3px 12px calc(3px + env(safe-area-inset-bottom));background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-top:0;box-shadow:none;gap:8px;pointer-events:none}
+          .mobile-quick-action{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:7px;min-height:36px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative;box-shadow:0 3px 12px rgba(15,23,42,.18)}
+          .mobile-quick-action:first-child{background:rgba(217,119,6,.96);color:#fff}
+          .mobile-quick-action i{font-size:14px}
+          .mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}
+          #productGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+          .product-card-market{border-radius:12px;min-width:0}
+          .product-open{display:block;padding:8px}
+          .market-product-image{display:block;width:100%;height:clamp(94px,31vw,140px);object-fit:cover;border-radius:8px}
+          .market-product-copy{min-width:0;overflow-wrap:anywhere;padding:9px 0 2px}
+          .market-product-copy h3{font-size:12px;line-height:1.35;font-weight:800;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+          .market-product-copy p{font-size:10px;line-height:1.4}
+          .market-product-copy .text-xl,.market-product-copy .text-lg{font-size:13px;line-height:1.3}
+          .market-product-copy .text-\\[10px\\],.market-product-copy .text-\\[11px\\]{font-size:9px}
+          .market-card-actions{grid-template-columns:1fr;gap:6px;padding:8px}
+          .market-card-actions button{min-width:0;white-space:normal;line-height:1.2;padding:8px 4px;font-size:10px;border-radius:8px}
+          .cat-btn{min-height:38px}
+          .faq-panel,.product-detail-panel,#cartDrawer{max-width:none}
+        }
         @media(min-width:640px){.product-open{display:block;padding:0}.market-product-image{width:100%;height:175px;border-radius:0}.market-product-copy{padding:14px}}
     
         /* Mobile-first refinements: compact header and product cards, including 320px screens */
@@ -74,15 +107,18 @@
           .cat-btn{min-height:40px}
         }
         @media(max-width:359px){
-          header .max-w-7xl{padding-left:10px;padding-right:10px}
-          header a.group{gap:6px}
-          header a.group span.text-xl{font-size:12px;max-width:150px}
-          header a.group span.text-\\[10px\\]{font-size:8px}
-          #mobileMenuBtn{padding:6px;font-size:18px}
-          .product-open{gap:8px;padding:9px}
-          .market-product-image{width:72px;height:84px;flex-basis:72px}
-          .market-card-actions{gap:5px;padding:7px}
-          .market-card-actions button{font-size:10px;padding:8px 3px}
+          header .max-w-7xl{padding-left:8px;padding-right:8px}
+          header a.group{gap:5px}
+          header a.group span.text-xl{font-size:11px}
+          header a.group span.text-\\[10px\\]{font-size:7px}
+          #mobileMenuBtn{padding:4px;font-size:16px}
+          .mobile-header-icon{width:27px;flex-basis:27px}
+          #productGrid{gap:7px}
+          .product-open{padding:6px}
+          .market-product-image{height:92px}
+          .market-product-copy h3{font-size:11px}
+          .market-card-actions{gap:5px;padding:6px}
+          .market-card-actions button{font-size:9px;padding:7px 2px}
         }
 
     </style>
@@ -300,18 +336,27 @@
     <nav class="mobile-quickbar" aria-label="Menu cepat"><button type="button" onclick="toggleCartDrawer()" class="mobile-quick-action"><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span><b id="mobileCartBadge">0</b></button><button type="button" onclick="openFaqPanel()" class="mobile-quick-action"><i class="fa-regular fa-comments"></i><span>Live Chat</span></button></nav>
     <div id="faqOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[70] hidden" onclick="closeFaqPanel()"></div>
     <aside id="faqPanel" class="faq-panel fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-[71] translate-x-full transition-transform duration-300 flex flex-col" aria-label="Live Chat" aria-modal="true" role="dialog">
-      <div class="p-5 bg-navyPrimary text-white flex justify-between items-center"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Bali Besi Murah</p><h3 class="text-lg font-extrabold">Live Chat</h3><p class="text-xs text-slate-300 mt-1">Pilih pertanyaan untuk melihat jawaban cepat</p></div><button type="button" onclick="closeFaqPanel()" class="text-white text-2xl p-2" aria-label="Tutup bantuan">&times;</button></div>
-      <div class="p-4 overflow-y-auto space-y-3 flex-1">
-        <details class="faq-item" open><summary>Bagaimana mendapatkan harga terbaik?</summary><p>Harga mengikuti jenis, ukuran, merek, dan jumlah material. Hubungi admin untuk meminta penawaran terbaru sebelum memesan.</p></details>
-        <details class="faq-item"><summary>Apakah semua produk tersedia?</summary><p>Stok, ukuran, merek, dan varian perlu dikonfirmasi terlebih dahulu karena dapat berubah.</p></details>
-        <details class="faq-item"><summary>Apakah tersedia gratis ongkir?</summary><p>Promo dan biaya pengiriman bergantung pada ketentuan pesanan serta lokasi. Tanyakan kepada admin apakah alamat Anda memenuhi syarat gratis ongkir sebelum transaksi.</p></details>
-        <details class="faq-item"><summary>Apakah pengiriman menjangkau seluruh Bali?</summary><p>Permintaan pengiriman dapat ditanyakan untuk berbagai wilayah Bali. Admin akan memeriksa lokasi, akses kendaraan, jadwal, dan biaya yang berlaku.</p></details>
-        <details class="faq-item"><summary>Bagaimana jika truk tidak bisa masuk?</summary><p>Pilih kondisi akses mobil engkel/truk 3/4 dan truk long pada formulir pengiriman. Tambahkan catatan tentang gang sempit, portal, atau titik bongkar.</p></details>
-        <details class="faq-item"><summary>Apakah pesanan langsung dikonfirmasi otomatis?</summary><p>Tidak. Pesan WhatsApp hanya mengirim detail permintaan. Tunggu konfirmasi admin mengenai stok, harga, kendaraan, ongkos kirim, dan pembayaran.</p></details>
-        <details class="faq-item"><summary>Bagaimana cara mengubah jumlah produk?</summary><p>Buka keranjang, lalu gunakan tombol minus dan plus di samping produk.</p></details>
-      </div><div class="p-4 border-t border-slate-200 bg-slate-50"><p class="text-xs text-slate-500 mb-3">Masih ada pertanyaan?</p><a class="w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Lanjutkan ke Admin via WhatsApp</a></div>
+      <div class="p-5 bg-navyPrimary text-white flex justify-between items-center">
+        <div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Bali Besi Murah</p><h3 class="text-lg font-extrabold">Live Chat</h3><p class="text-xs text-slate-300 mt-1">Asisten otomatis · pilih pertanyaan di bawah</p></div>
+        <button type="button" onclick="closeFaqPanel()" class="text-white text-2xl p-2" aria-label="Tutup live chat">&times;</button>
+      </div>
+      <div id="liveChatMessages" class="p-4 overflow-y-auto flex-1 bg-slate-50 space-y-3" aria-live="polite">
+        <div class="flex justify-start"><div class="chat-bot-bubble">Halo! Saya asisten otomatis Bali Besi Murah. Pilih pertanyaan yang ingin Anda tanyakan, dan saya akan menampilkan jawabannya di sini.</div></div>
+      </div>
+      <div class="p-3 border-t border-slate-200 bg-white">
+        <p class="text-[10px] uppercase tracking-wide text-slate-400 font-bold mb-2">Pertanyaan cepat</p>
+        <div class="grid grid-cols-2 gap-2" id="liveChatQuestions">
+          <button type="button" onclick="askLiveChat('Harga produk')" class="chat-question">Harga produk</button>
+          <button type="button" onclick="askLiveChat('Ketersediaan stok')" class="chat-question">Cek stok</button>
+          <button type="button" onclick="askLiveChat('Gratis ongkir')" class="chat-question">Gratis ongkir</button>
+          <button type="button" onclick="askLiveChat('Pengiriman seluruh Bali')" class="chat-question">Area pengiriman</button>
+          <button type="button" onclick="askLiveChat('Cara memesan')" class="chat-question">Cara memesan</button>
+          <button type="button" onclick="askLiveChat('Kendaraan dan akses lokasi')" class="chat-question">Akses kendaraan</button>
+        </div>
+        <a class="mt-3 w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Chat Admin via WhatsApp</a>
+      </div>
     </aside>
-    <div id="productDetailOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[65] hidden" onclick="closeProductDetail()"></div>
+        <div id="productDetailOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[65] hidden" onclick="closeProductDetail()"></div>
     <aside id="productDetailPanel" class="product-detail-panel fixed top-0 right-0 h-full w-full max-w-xl bg-white shadow-2xl z-[66] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Detail produk"><div class="p-5 bg-navyPrimary text-white flex items-center justify-between"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Detail produk</p><h3 id="detailTitle" class="text-lg font-extrabold">Informasi produk</h3></div><button type="button" onclick="closeProductDetail()" class="text-white text-2xl p-2" aria-label="Tutup detail">&times;</button></div><div id="productDetailContent" class="p-5 overflow-y-auto flex-1"></div><div class="p-4 border-t border-slate-200 grid grid-cols-2 gap-3"><button id="detailAddButton" type="button" class="border border-slate-300 rounded-xl py-3 text-sm font-bold text-navyPrimary"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><a id="detailAskButton" class="bg-navyPrimary text-white rounded-xl py-3 text-center text-sm font-bold" href="https://wa.me/628218187917" target="_blank" rel="noopener noreferrer">Tanya stok & harga</a></div></aside>
 
     <!-- 6. SHOPPING CART DRAWER (SLIDE-OVER MODAL) -->
@@ -898,6 +943,23 @@
         function closeProductDetail(){document.getElementById('productDetailOverlay').classList.add('hidden');document.getElementById('productDetailPanel').classList.add('translate-x-full');document.body.classList.remove('panel-open');}
         function openFaqPanel(){document.getElementById('faqOverlay').classList.remove('hidden');document.getElementById('faqPanel').classList.remove('translate-x-full');document.body.classList.add('panel-open');}
         function closeFaqPanel(){document.getElementById('faqOverlay').classList.add('hidden');document.getElementById('faqPanel').classList.add('translate-x-full');document.body.classList.remove('panel-open');}
+        function askLiveChat(question){
+          const answers = {
+            'Harga produk':'Harga mengikuti jenis material, ukuran, merek, dan jumlah pembelian. Angka di katalog hanya informasi awal; minta penawaran terbaru dari admin sebelum transaksi.',
+            'Ketersediaan stok':'Stok dapat berubah. Sebutkan nama produk, ukuran, merek atau spesifikasi, serta jumlah yang dibutuhkan agar admin dapat memeriksanya.',
+            'Gratis ongkir':'Ketentuan gratis ongkir bergantung pada produk, jumlah pesanan, dan lokasi. Admin perlu mengonfirmasi apakah pesanan Anda memenuhi syarat.',
+            'Pengiriman seluruh Bali':'Anda dapat menanyakan pengiriman ke wilayah Bali. Admin akan memeriksa alamat, jadwal, akses kendaraan, dan biaya yang berlaku.',
+            'Cara memesan':'Pilih produk dan jumlahnya, lalu tekan “Beli / Tanyakan” atau hubungi admin WhatsApp. Pastikan harga, stok, ongkir, dan metode pembayaran dikonfirmasi sebelum membayar.',
+            'Kendaraan dan akses lokasi':'Sampaikan alamat atau titik peta serta kondisi jalan—misalnya gang sempit, portal, atau lokasi bongkar. Admin akan memeriksa jenis kendaraan yang memungkinkan.'
+          };
+          const messages=document.getElementById('liveChatMessages');
+          if(!messages)return;
+          const user=document.createElement('div');user.className='flex justify-end';
+          const ub=document.createElement('div');ub.className='chat-user-bubble';ub.textContent=question;user.appendChild(ub);messages.appendChild(user);
+          const bot=document.createElement('div');bot.className='flex justify-start';
+          const bb=document.createElement('div');bb.className='chat-bot-bubble';bb.textContent=answers[question]||'Untuk informasi ini, silakan hubungi admin agar mendapat jawaban yang sesuai dengan kebutuhan Anda.';bot.appendChild(bb);messages.appendChild(bot);
+          messages.scrollTop=messages.scrollHeight;
+        }
 
         // FILTER CATEGORY TABS
         function filterCategory(cat) {
