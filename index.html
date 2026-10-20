@@ -42,8 +42,8 @@
         body{font-family:'Inter',sans-serif;background:#F8FAFC;color:#0F172A}
         ::-webkit-scrollbar{width:8px;height:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#334155;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#D97706}
         #leafletMap{height:280px;width:100%;border-radius:.75rem}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
-        .product-wishlist-btn{position:absolute;top:7px;right:7px;width:30px;height:30px;border-radius:999px;background:rgba(255,255,255,.95);color:#334155;box-shadow:0 2px 8px rgba(15,23,42,.14);display:flex;align-items:center;justify-content:center;font-size:14px}.product-wishlist-btn:active{transform:scale(.94)}.mobile-quickbar{display:none}.mobile-header-icon{display:none}.header-count{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#D97706;color:white;font-size:9px;font-weight:800;line-height:16px;text-align:center;border:1.5px solid white}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
-        .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}
+        .mobile-quickbar{display:none}.mobile-header-icon{display:none}.header-count{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;padding:0 4px;border-radius:999px;background:#D97706;color:white;font-size:9px;font-weight:800;line-height:16px;text-align:center;border:1.5px solid white}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
+        .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}.cart-toast{position:fixed;left:50%;bottom:76px;z-index:100;transform:translate(-50%,14px);opacity:0;pointer-events:none;background:#0f172a;color:#fff;padding:11px 16px;border-radius:12px;box-shadow:0 8px 24px rgba(15,23,42,.22);font-size:12px;font-weight:700;transition:opacity .22s ease,transform .22s ease;max-width:calc(100vw - 32px);text-align:center}.cart-toast.is-visible{opacity:1;transform:translate(-50%,0)}@media(min-width:640px){.cart-toast{bottom:24px}}
         @media(max-width:639px){body{padding-bottom:56px}.mobile-header-icon{display:flex;align-items:center;justify-content:center;width:32px;height:36px;flex:0 0 32px;position:relative;border:0;border-radius:9px;background:transparent;color:#334155;font-size:16px}.mobile-header-icon:active{background:#f1f5f9}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:4px 12px calc(4px + env(safe-area-inset-bottom));background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;border-top:0;box-shadow:none;gap:8px;pointer-events:none}.mobile-quick-action{pointer-events:auto;display:flex;align-items:center;justify-content:center;gap:7px;min-height:38px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative;box-shadow:0 3px 12px rgba(15,23,42,.18)}.mobile-quick-action:first-child{background:rgba(217,119,6,.96);color:#fff}.mobile-quick-action i{font-size:14px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
         @media(min-width:640px){.product-open{display:block;padding:0}.market-product-image{width:100%;height:175px;border-radius:0}.market-product-copy{padding:14px}}
     
@@ -94,10 +94,10 @@
         <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
             <div class="flex items-center space-x-2 text-[11px] sm:text-xs">
                 <span class="bg-amberAccent text-white font-bold px-2 py-0.5 rounded text-[10px] uppercase tracking-wider">Layanan Bali</span>
-                <span>Katalog besi dan material bangunan di Bali</span>
+                <span>Material bangunan untuk kebutuhan proyek di Bali</span>
             </div>
             <div class="hidden md:flex items-center space-x-6 text-xs text-slate-300">
-                <span><i class="fa-solid fa-truck text-amberAccent mr-1"></i> Tanyakan jangkauan kirim</span>
+                <span><i class="fa-solid fa-truck text-amberAccent mr-1"></i> Pengiriman ke seluruh Bali*</span>
                 <span><i class="fa-solid fa-scissors text-amberAccent mr-1"></i> Tanyakan layanan potong</span>
                 <a href="https://wa.me/628218187917" target="_blank" class="hover:text-amberAccent font-medium transition-colors">
                     <i class="fa-brands fa-whatsapp text-emeraldSuccess mr-1"></i> Hotline: 0821-8187-917
@@ -137,10 +137,7 @@
                         <a href="#area-layanan" class="hover:text-amberAccent transition-colors py-1">Cakupan Pengiriman</a>
                     </nav>
                     <button id="mobileSearchToggle" type="button" onclick="toggleMobileSearch()" class="mobile-header-icon lg:hidden" aria-label="Cari produk" aria-expanded="false"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    <button type="button" onclick="showWishlist()" class="mobile-header-icon lg:hidden relative" aria-label="Wishlist">
-                        <i class="fa-regular fa-heart"></i><span id="mobileWishlistBadge" class="header-count">0</span>
-                    </button>
-                    <button onclick="toggleCartDrawer()" class="relative mobile-header-icon lg:hidden" aria-label="Keranjang">
+<button onclick="toggleCartDrawer()" class="relative mobile-header-icon lg:hidden" aria-label="Keranjang">
                         <i class="fa-solid fa-cart-shopping"></i><span id="mobileHeaderCartBadge" class="header-count">0</span>
                     </button>
                     <!-- Desktop Cart Trigger Button -->
@@ -184,11 +181,11 @@
                     </div>
 
                     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight tracking-tight">
-                        Bali Besi Murah untuk Kebutuhan Bangunan
+                        Material Bangunan Berkualitas dengan Harga Kompetitif
                     </h1>
 
                     <p class="text-sm sm:text-base text-slate-300 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Temukan pilihan besi beton, hollow, baja berat, atap, dan material bangunan lain. Periksa spesifikasi, lalu tanyakan harga, ketersediaan stok, serta ongkos kirim sebelum memesan.
+                        Cari besi beton, hollow, baja berat, atap, dan material bangunan untuk proyek Anda di Bali. Tanyakan penawaran harga yang bersaing, periksa spesifikasi, dan konfirmasi pilihan pengiriman ke seluruh Bali langsung kepada admin.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
@@ -209,8 +206,8 @@
                                 <i class="fa-solid fa-truck-ramp-box"></i>
                             </div>
                             <div class="text-left text-xs">
-                                <p class="text-white font-bold">Pengiriman Perlu Dikonfirmasi</p>
-                                <p class="text-slate-400 text-[11px]">Tanyakan jangkauan, kendaraan, dan biaya kirim sesuai lokasi proyek.</p>
+                                <p class="text-white font-bold">Pengiriman ke Seluruh Bali*</p>
+                                <p class="text-slate-400 text-[11px]">Pilihan kendaraan dan biaya kirim disesuaikan dengan lokasi serta kebutuhan proyek.</p>
                             </div>
                         </div>
                     </div>
@@ -299,19 +296,20 @@
         </div>
     </section>
 
-    <!-- Mobile quick bar: cart and self-service FAQ -->
-    <nav class="mobile-quickbar" aria-label="Menu cepat"><button type="button" onclick="toggleCartDrawer()" class="mobile-quick-action"><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span><b id="mobileCartBadge">0</b></button><button type="button" onclick="openFaqPanel()" class="mobile-quick-action"><i class="fa-regular fa-comments"></i><span>Pusat Bantuan</span></button></nav>
+    <!-- Mobile quick bar: cart and live chat -->
+    <nav class="mobile-quickbar" aria-label="Menu cepat"><button type="button" onclick="toggleCartDrawer()" class="mobile-quick-action"><i class="fa-solid fa-cart-shopping"></i><span>Keranjang</span><b id="mobileCartBadge">0</b></button><button type="button" onclick="openFaqPanel()" class="mobile-quick-action"><i class="fa-regular fa-comments"></i><span>Live Chat</span></button></nav>
     <div id="faqOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[70] hidden" onclick="closeFaqPanel()"></div>
-    <aside id="faqPanel" class="faq-panel fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-[71] translate-x-full transition-transform duration-300 flex flex-col" aria-label="Pusat bantuan" aria-modal="true" role="dialog">
-      <div class="p-5 bg-navyPrimary text-white flex justify-between items-center"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Bali Besi Murah</p><h3 class="text-lg font-extrabold">Pusat Bantuan</h3><p class="text-xs text-slate-300 mt-1">Jawaban cepat sebelum menghubungi admin</p></div><button type="button" onclick="closeFaqPanel()" class="text-white text-2xl p-2" aria-label="Tutup bantuan">&times;</button></div>
+    <aside id="faqPanel" class="faq-panel fixed top-0 right-0 h-full w-full max-w-md bg-white shadow-2xl z-[71] translate-x-full transition-transform duration-300 flex flex-col" aria-label="Live Chat" aria-modal="true" role="dialog">
+      <div class="p-5 bg-navyPrimary text-white flex justify-between items-center"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Bali Besi Murah</p><h3 class="text-lg font-extrabold">Live Chat</h3><p class="text-xs text-slate-300 mt-1">Pilih pertanyaan untuk melihat jawaban cepat</p></div><button type="button" onclick="closeFaqPanel()" class="text-white text-2xl p-2" aria-label="Tutup bantuan">&times;</button></div>
       <div class="p-4 overflow-y-auto space-y-3 flex-1">
-        <details class="faq-item" open><summary>Apakah harga di katalog sudah pasti?</summary><p>Harga di katalog merupakan informasi awal dan bisa berubah. Konfirmasi harga terbaru kepada admin sebelum pembayaran.</p></details>
+        <details class="faq-item" open><summary>Bagaimana mendapatkan harga terbaik?</summary><p>Harga mengikuti jenis, ukuran, merek, dan jumlah material. Hubungi admin untuk meminta penawaran terbaru sebelum memesan.</p></details>
         <details class="faq-item"><summary>Apakah semua produk tersedia?</summary><p>Stok, ukuran, merek, dan varian perlu dikonfirmasi terlebih dahulu karena dapat berubah.</p></details>
-        <details class="faq-item"><summary>Bagaimana cara mengetahui ongkos kirim?</summary><p>Siapkan alamat atau titik peta, daftar material, dan jumlah kebutuhan. Ongkos kirim dikonfirmasi setelah lokasi dan kendaraan diperiksa.</p></details>
+        <details class="faq-item"><summary>Apakah tersedia gratis ongkir?</summary><p>Promo dan biaya pengiriman bergantung pada ketentuan pesanan serta lokasi. Tanyakan kepada admin apakah alamat Anda memenuhi syarat gratis ongkir sebelum transaksi.</p></details>
+        <details class="faq-item"><summary>Apakah pengiriman menjangkau seluruh Bali?</summary><p>Permintaan pengiriman dapat ditanyakan untuk berbagai wilayah Bali. Admin akan memeriksa lokasi, akses kendaraan, jadwal, dan biaya yang berlaku.</p></details>
         <details class="faq-item"><summary>Bagaimana jika truk tidak bisa masuk?</summary><p>Pilih kondisi akses mobil engkel/truk 3/4 dan truk long pada formulir pengiriman. Tambahkan catatan tentang gang sempit, portal, atau titik bongkar.</p></details>
         <details class="faq-item"><summary>Apakah pesanan langsung dikonfirmasi otomatis?</summary><p>Tidak. Pesan WhatsApp hanya mengirim detail permintaan. Tunggu konfirmasi admin mengenai stok, harga, kendaraan, ongkos kirim, dan pembayaran.</p></details>
         <details class="faq-item"><summary>Bagaimana cara mengubah jumlah produk?</summary><p>Buka keranjang, lalu gunakan tombol minus dan plus di samping produk.</p></details>
-      </div><div class="p-4 border-t border-slate-200 bg-slate-50"><p class="text-xs text-slate-500 mb-3">Belum menemukan jawaban?</p><a class="w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Tanya Admin via WhatsApp</a></div>
+      </div><div class="p-4 border-t border-slate-200 bg-slate-50"><p class="text-xs text-slate-500 mb-3">Masih ada pertanyaan?</p><a class="w-full bg-emeraldSuccess hover:bg-emerald-700 text-white font-bold py-3 rounded-xl flex items-center justify-center gap-2 text-sm" href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah.%20Saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp text-lg"></i> Lanjutkan ke Admin via WhatsApp</a></div>
     </aside>
     <div id="productDetailOverlay" class="fixed inset-0 bg-slate-950/60 backdrop-blur-sm z-[65] hidden" onclick="closeProductDetail()"></div>
     <aside id="productDetailPanel" class="product-detail-panel fixed top-0 right-0 h-full w-full max-w-xl bg-white shadow-2xl z-[66] translate-x-full transition-transform duration-300 flex flex-col" role="dialog" aria-modal="true" aria-label="Detail produk"><div class="p-5 bg-navyPrimary text-white flex items-center justify-between"><div><p class="text-[10px] uppercase tracking-widest text-amberAccent font-bold">Detail produk</p><h3 id="detailTitle" class="text-lg font-extrabold">Informasi produk</h3></div><button type="button" onclick="closeProductDetail()" class="text-white text-2xl p-2" aria-label="Tutup detail">&times;</button></div><div id="productDetailContent" class="p-5 overflow-y-auto flex-1"></div><div class="p-4 border-t border-slate-200 grid grid-cols-2 gap-3"><button id="detailAddButton" type="button" class="border border-slate-300 rounded-xl py-3 text-sm font-bold text-navyPrimary"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><a id="detailAskButton" class="bg-navyPrimary text-white rounded-xl py-3 text-center text-sm font-bold" href="https://wa.me/628218187917" target="_blank" rel="noopener noreferrer">Tanya stok & harga</a></div></aside>
@@ -688,9 +686,12 @@
             </div>
             <div class="border-t border-steelBorder pt-5 text-center text-[11px] text-slate-400">
                 <p>&copy; 2026 BALI BESI MURAH. All Rights Reserved.</p>
+                <p class="mt-2 text-[10px] text-slate-500">Designed &amp; Developed by <a href="https://baguskristiansianturi.github.io/bagusin/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-amberAccent transition-colors">Bagusin</a></p>
             </div>
         </div>
     </footer>
+
+    <div id="cartToast" class="cart-toast" role="status" aria-live="polite"></div>
 
     <!-- JAVASCRIPT LOGIC & APPLICATION ENGINE -->
     <script>
@@ -843,9 +844,17 @@
             'Jembrana': ['Negara', 'Gilimanuk', 'Mendoyo', 'Pekutatan', 'Jembrana Kota']
         };
 
-        // Shopping cart and wishlist state
+        // Shopping cart state
         let shoppingCart = [];
-        let wishlistIds = [];
+        let cartToastTimer = null;
+        function showCartToast(message) {
+          const toast = document.getElementById("cartToast");
+          if (!toast) return;
+          toast.textContent = message;
+          toast.classList.add("is-visible");
+          if (cartToastTimer) clearTimeout(cartToastTimer);
+          cartToastTimer = setTimeout(() => toast.classList.remove("is-visible"), 2200);
+        }
         function toggleMobileSearch(){
           const panel=document.getElementById('mobileSearchPanel');
           const button=document.getElementById('mobileSearchToggle');
@@ -855,28 +864,6 @@
           if(opening){document.getElementById('mobileSearchInput').focus();}
           else {document.getElementById('mobileSearchInput').value='';filterProductsMobile();}
         }
-        function toggleWishlist(productId){
-          if(wishlistIds.includes(productId)){wishlistIds=wishlistIds.filter(id=>id!==productId);}
-          else {wishlistIds.push(productId);}
-          updateWishlistUI();
-          renderProducts(PRODUCTS_DATA.filter(p=>document.getElementById('mobileWishlistBadge').dataset.active==='true'?wishlistIds.includes(p.id):true));
-        }
-        function showWishlist(){
-          const badge=document.getElementById('mobileWishlistBadge');
-          const currentlyShowing=badge.dataset.active==='true';
-          badge.dataset.active=String(!currentlyShowing);
-          const btn=document.querySelector('button[aria-label="Wishlist"]');
-          if(btn) btn.classList.toggle('text-amber-600',!currentlyShowing);
-          renderProducts(!currentlyShowing?PRODUCTS_DATA.filter(p=>wishlistIds.includes(p.id)):PRODUCTS_DATA);
-          document.getElementById('katalog').scrollIntoView({behavior:'smooth',block:'start'});
-        }
-        function updateWishlistUI(){
-          const badge=document.getElementById('mobileWishlistBadge');
-          if(badge) badge.textContent=wishlistIds.length;
-          const btn=document.querySelector('button[aria-label="Wishlist"]');
-          if(btn){const icon=btn.querySelector('i');if(icon){icon.className=wishlistIds.length?'fa-solid fa-heart':'fa-regular fa-heart';}}
-        }
-
         // RENDER PRODUCT CATALOG
         function renderProducts(productsToRender) {
             const grid = document.getElementById('productGrid');
@@ -892,9 +879,9 @@
                 card.className = 'product-card-market bg-white rounded-xl border border-slate-200 overflow-hidden hover:border-amberAccent transition-all duration-300 shadow-sm hover:shadow-md';
                 card.innerHTML = `
                     <div class="product-open" role="button" tabindex="0" onclick="openProductDetail('${p.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProductDetail('${p.id}')}" aria-label="Lihat detail ${p.title}">
-                      <div class="relative shrink-0"><img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image"><button type="button" onclick="event.stopPropagation();toggleWishlist('${p.id}')" class="product-wishlist-btn" aria-label="Simpan ke wishlist"><i class="${wishlistIds.includes(p.id)?'fa-solid':'fa-regular'} fa-heart"></i></button></div>
+                      <div class="relative shrink-0"><img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image"></div>
                       <div class="market-product-copy"><span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded inline-flex mb-2 uppercase tracking-wider">${p.badge}</span><h3 class="text-sm sm:text-base font-bold text-navyPrimary leading-snug">${p.title}</h3><p class="text-xs text-slate-500 mt-1">${p.spec}</p><p class="text-[11px] text-slate-500 mt-2"><i class="fa-solid fa-weight-hanging mr-1"></i> Estimasi berat: ${p.weightKg} kg / unit</p><strong class="block text-lg font-black text-amberAccent mt-2">Rp ${p.price.toLocaleString('id-ID')}</strong><span class="block text-[11px] text-slate-500 mt-1">Harga & stok perlu dikonfirmasi</span><span class="inline-flex items-center gap-1 text-xs font-bold text-navyPrimary mt-3 underline underline-offset-2">Lihat spesifikasi lengkap <i class="fa-solid fa-chevron-right"></i></span></div>
-                    </div><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Beli / Tanyakan</button></div>`;
+                    </div><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> + Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Beli / Tanyakan</button></div>`;
                 grid.appendChild(card);
             });
         }
@@ -974,10 +961,7 @@
             }
 
             updateCartUI();
-            
-            if(shoppingCart.length === 1) {
-                toggleCartDrawer();
-            }
+            showCartToast(`${product.title} ditambahkan ke keranjang`);
         }
 
         function buyNowDirect(productId) {
