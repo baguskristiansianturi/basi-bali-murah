@@ -101,3 +101,20 @@ body{font-family:'Inter',sans-serif;background:#F8FAFC;color:#0F172A}
   #productGrid .product-open { padding: 6px; }
   #productGrid .detail-button { font-size: 10px; }
 }
+
+
+/* Emergency contrast guard: readable default text and opaque light page surfaces. */
+html, body { background-color: #e5ecf3 !important; color: #0f172a !important; }
+body { color: #0f172a !important; }
+section.bg-white, #katalog, #keunggulan, #area-layanan {
+  background-color: #e5ecf3 !important;
+  color: #0f172a !important;
+}
+#katalog h1, #katalog h2, #katalog h3, #katalog p, #katalog label,
+#keunggulan h1, #keunggulan h2, #keunggulan h3, #keunggulan h4, #keunggulan p, #keunggulan li,
+#area-layanan h1, #area-layanan h2, #area-layanan h3, #area-layanan p {
+  color: #0f172a;
+}
+#productGrid .product-card-market,
+#productGrid .product-open,
+#productGrid .market-card-actions { background-color: #ffffff !important; }
