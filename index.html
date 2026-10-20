@@ -580,67 +580,58 @@
         </div>
     </div>
 
-    <!-- 8. STEEL WEIGHT CALCULATOR (RAB TOOL) -->
-    <section id="kalkulator" class="py-16 bg-navyPrimary text-white border-y border-steelBorder">
+    <!-- 8. PERMINTAAN PENAWARAN HARGA KHUSUS -->
+    <section id="penawaran" class="py-14 sm:py-16 bg-navyPrimary text-white border-y border-steelBorder">
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-2 mb-10">
-                <span class="text-amberAccent font-bold text-xs uppercase tracking-widest">Kalkulator Estimasi Tonase</span>
-                <h2 class="text-2xl sm:text-3xl font-black text-white">Hitung Kebutuhan Berat Besi Proyek</h2>
-                <p class="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto">Gunakan kalkulator ini untuk mengestimasi berat total (kg/ton) berdasarkan rumus standar besi SNI.</p>
-            </div>
-
-            <div class="bg-slateNavy rounded-2xl p-6 sm:p-8 shadow-xl border border-steelBorder">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    
-                    <div class="space-y-4">
-                        <div>
-                            <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Pilih Jenis Material</label>
-                            <select id="calcType" onchange="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                                <option value="beton_polos">Besi Beton Polos SNI (Diameter mm)</option>
-                                <option value="beton_ulir">Besi Beton Ulir TS420B (Diameter mm)</option>
-                                <option value="hollow">Besi Hollow / Pipa Kotak (Sisi mm x Tebal mm)</option>
-                                <option value="wf">Besi WF / H-Beam Standard (Tinggi Profil mm)</option>
-                            </select>
-                        </div>
-
-                        <div id="dimGroup1">
-                            <label id="lblDim1" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Diameter Besi (mm)</label>
-                            <input type="number" id="calcDim1" value="12" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                        </div>
-
-                        <div id="dimGroup2" class="hidden">
-                            <label id="lblDim2" class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Tebal Dinding (mm)</label>
-                            <input type="number" id="calcDim2" value="1.8" step="0.1" min="0.1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                        </div>
-
-                        <div class="grid grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Panjang (Meter)</label>
-                                <input type="number" id="calcLength" value="12" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                            </div>
-                            <div>
-                                <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Jumlah (Batang)</label>
-                                <input type="number" id="calcQty" value="100" min="1" oninput="calculateSteelWeight()" class="w-full bg-navyPrimary border border-steelBorder rounded-lg px-3.5 py-2.5 text-white text-xs focus:outline-none focus:border-amberAccent">
-                            </div>
-                        </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+                <div class="space-y-4">
+                    <span class="inline-flex items-center gap-2 rounded-full border border-amberAccent/40 bg-white/5 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-amberAccent">
+                        <i class="fa-solid fa-tags"></i> Untuk proyek & pembelian besar
+                    </span>
+                    <h2 class="text-2xl sm:text-3xl font-black leading-tight">Dapatkan Harga Spesial untuk Pesanan Anda</h2>
+                    <p class="text-sm leading-relaxed text-slate-300">Punya kebutuhan material dalam jumlah banyak? Kirim detail pesanan Anda. Tim kami akan meninjau kebutuhan dan menghubungi Anda untuk membahas penawaran harga khusus.</p>
+                    <div class="space-y-3 pt-2 text-sm text-slate-200">
+                        <div class="flex gap-3"><i class="fa-solid fa-check-circle text-amberAccent mt-0.5"></i><span>Cocok untuk kebutuhan proyek, kontraktor, toko, dan pembelian partai besar.</span></div>
+                        <div class="flex gap-3"><i class="fa-solid fa-check-circle text-amberAccent mt-0.5"></i><span>Anda bisa mengirim beberapa jenis material sekaligus.</span></div>
+                        <div class="flex gap-3"><i class="fa-solid fa-check-circle text-amberAccent mt-0.5"></i><span>Harga, ketersediaan, dan pengiriman dikonfirmasi setelah kebutuhan ditinjau.</span></div>
                     </div>
-
-                    <div class="bg-navyPrimary rounded-xl p-6 border border-steelBorder flex flex-col justify-between">
-                        <div>
-                            <div class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-1">Hasil Estimasi Tonase</div>
-                            <div class="text-3xl sm:text-4xl font-black text-amberAccent tracking-tight my-2" id="calcTotalWeight">106.5 <span class="text-base font-normal text-slate-300">Kg</span></div>
-                            <p class="text-[11px] text-slate-400 leading-relaxed mb-4" id="calcFormulaNote">
-                                *Perhitungan berdasarkan rumus toleransi berat standar SNI.
-                            </p>
-                        </div>
-
-                        <button onclick="sendCalcToWA()" class="w-full bg-amberAccent hover:bg-amberHover text-white font-bold py-3 px-4 rounded-lg shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all">
-                            <i class="fa-brands fa-whatsapp text-base"></i>
-                            <span>Kirim Hasil Hitungan ke Sales WA</span>
-                        </button>
-                    </div>
-
+                    <p class="text-xs leading-relaxed text-slate-400">Belum tahu berat tonase? Tidak masalah—isi perkiraan jumlah atau kebutuhan material yang Anda ketahui.</p>
                 </div>
+
+                <form id="quoteRequestForm" class="rounded-2xl border border-steelBorder bg-slateNavy p-5 sm:p-7 shadow-xl space-y-4" onsubmit="sendQuoteRequest(event)">
+                    <div>
+                        <h3 class="text-lg font-extrabold">Form Permintaan Penawaran</h3>
+                        <p class="mt-1 text-xs text-slate-400">Isi detail berikut agar tim kami memahami kebutuhan Anda.</p>
+                    </div>
+                    <div>
+                        <label for="quoteName" class="mb-1.5 block text-xs font-bold text-slate-200">Nama Anda</label>
+                        <input id="quoteName" name="name" type="text" autocomplete="name" required placeholder="Nama atau nama usaha" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent">
+                    </div>
+                    <div>
+                        <label for="quotePhone" class="mb-1.5 block text-xs font-bold text-slate-200">Nomor WhatsApp aktif</label>
+                        <input id="quotePhone" name="phone" type="tel" autocomplete="tel" required placeholder="Contoh: 08xxxxxxxxxx" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent">
+                    </div>
+                    <div>
+                        <label for="quoteMaterial" class="mb-1.5 block text-xs font-bold text-slate-200">Material yang dibutuhkan</label>
+                        <input id="quoteMaterial" name="material" type="text" required placeholder="Contoh: besi beton, hollow, WF, spandek" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent">
+                    </div>
+                    <div>
+                        <label for="quoteQuantity" class="mb-1.5 block text-xs font-bold text-slate-200">Jumlah atau perkiraan kebutuhan</label>
+                        <input id="quoteQuantity" name="quantity" type="text" required placeholder="Contoh: 500 batang, 3 ton, atau daftar kebutuhan" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent">
+                    </div>
+                    <div>
+                        <label for="quoteLocation" class="mb-1.5 block text-xs font-bold text-slate-200">Lokasi pengiriman di Bali</label>
+                        <input id="quoteLocation" name="location" type="text" required placeholder="Contoh: Denpasar, Gianyar, atau nama proyek" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent">
+                    </div>
+                    <div>
+                        <label for="quoteNotes" class="mb-1.5 block text-xs font-bold text-slate-200">Detail tambahan <span class="font-normal text-slate-400">(opsional)</span></label>
+                        <textarea id="quoteNotes" name="notes" rows="2" placeholder="Ukuran, tipe, standar, jadwal, atau kebutuhan khusus" class="w-full rounded-lg border border-steelBorder bg-navyPrimary px-3.5 py-3 text-sm text-white placeholder:text-slate-500 focus:outline-none focus:border-amberAccent"></textarea>
+                    </div>
+                    <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-xl bg-amberAccent px-4 py-3.5 text-sm font-extrabold text-white shadow transition hover:bg-amberHover">
+                        <i class="fa-solid fa-paper-plane"></i><span>Kirim Permintaan Penawaran</span>
+                    </button>
+                    <p class="text-[11px] leading-relaxed text-slate-400">Permintaan akan disiapkan melalui WhatsApp agar Anda dapat memeriksa detailnya sebelum mengirim.</p>
+                </form>
             </div>
         </div>
     </section>
@@ -1389,59 +1380,34 @@
         }
 
         // STEEL WEIGHT CALCULATOR (RAB TOOL)
-        function calculateSteelWeight() {
-            const type = document.getElementById('calcType').value;
-            const dim1 = parseFloat(document.getElementById('calcDim1').value) || 0;
-            const dim2 = parseFloat(document.getElementById('calcDim2').value) || 0;
-            const length = parseFloat(document.getElementById('calcLength').value) || 0;
-            const qty = parseFloat(document.getElementById('calcQty').value) || 0;
+        function sendQuoteRequest(event) {
+            event.preventDefault();
+            const name = document.getElementById('quoteName').value.trim();
+            const phone = document.getElementById('quotePhone').value.trim();
+            const material = document.getElementById('quoteMaterial').value.trim();
+            const quantity = document.getElementById('quoteQuantity').value.trim();
+            const location = document.getElementById('quoteLocation').value.trim();
+            const notes = document.getElementById('quoteNotes').value.trim();
+            if (!name || !phone || !material || !quantity || !location) return;
 
-            const dimGroup2 = document.getElementById('dimGroup2');
-            const lblDim1 = document.getElementById('lblDim1');
-            const lblDim2 = document.getElementById('lblDim2');
-            const note = document.getElementById('calcFormulaNote');
-
-            let weightPerMeter = 0;
-
-            if (type === 'beton_polos' || type === 'beton_ulir') {
-                dimGroup2.classList.add('hidden');
-                lblDim1.innerText = "Diameter Besi (mm)";
-                weightPerMeter = 0.006165 * Math.pow(dim1, 2);
-                note.innerText = "*Perhitungan rumus baku SNI Besi Beton (0.006165 x d²).";
-            } else if (type === 'hollow') {
-                dimGroup2.classList.remove('hidden');
-                lblDim1.innerText = "Lebar Sisi (mm)";
-                lblDim2.innerText = "Tebal Dinding (mm)";
-                weightPerMeter = ((dim1 * 4) / 3.14159 - dim2) * dim2 * 0.02466;
-                note.innerText = "*Perhitungan tebal standar pipa kotak/hollow galvanis.";
-            } else if (type === 'wf') {
-                dimGroup2.classList.add('hidden');
-                lblDim1.innerText = "Ukuran Tinggi Profil WF (mm)";
-                weightPerMeter = dim1 * 0.095;
-                note.innerText = "*Perhitungan pendekatan tabel standar profil WF & H-Beam.";
-            }
-
-            const weightPerBatang = weightPerMeter * length;
-            const totalWeight = weightPerBatang * qty;
-
-            document.getElementById('calcTotalWeight').innerHTML = `${totalWeight.toFixed(1)} <span class="text-base font-normal text-slate-300">Kg (${(totalWeight/1000).toFixed(2)} Ton)</span>`;
-        }
-
-        function sendCalcToWA() {
-            const type = document.getElementById('calcType').options[document.getElementById('calcType').selectedIndex].text;
-            const dim1 = document.getElementById('calcDim1').value;
-            const length = document.getElementById('calcLength').value;
-            const qty = document.getElementById('calcQty').value;
-            const weight = document.getElementById('calcTotalWeight').innerText;
-
-            const text = `Halo Bali Besi Murah, saya menghitung estimasi berat di website:\n\n- Spesifikasi: ${type}\n- Dimensi: ${dim1} mm\n- Panjang: ${length} m\n- Jumlah: ${qty} Batang\n- Estimasi Berat Total: ${weight}\n\nMohon informasi penawaran harganya. Terima kasih!`;
-            window.open(`https://wa.me/628218187917?text=${encodeURIComponent(text)}`, '_blank');
+            const message = [
+                'Halo Bali Besi Murah, saya ingin meminta penawaran harga khusus untuk pesanan material.',
+                '',
+                '*Nama:* ' + name,
+                '*Nomor WhatsApp:* ' + phone,
+                '*Material:* ' + material,
+                '*Jumlah/perkiraan kebutuhan:* ' + quantity,
+                '*Lokasi pengiriman:* ' + location,
+                notes ? '*Detail tambahan:* ' + notes : '',
+                '',
+                'Mohon informasi harga khusus, ketersediaan, dan estimasi pengiriman. Terima kasih.'
+            ].filter(Boolean).join('\n');
+            window.open('https://wa.me/628218187917?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
         }
 
         // INITIALIZE APPLICATION
         window.onload = function() {
             renderProducts(PRODUCTS_DATA);
-            calculateSteelWeight();
 
             document.getElementById('mobileMenuBtn').addEventListener('click', () => {
                 document.getElementById('mobileMenu').classList.toggle('hidden');
