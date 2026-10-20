@@ -1,42 +1,91 @@
-# Bali Besi Murah — SEO dan Google product readiness
+# Bali Besi Murah — SEO, konten, dan kesiapan penjualan
 
-## Positioning
-Fokus pada pencarian dengan niat membeli material bangunan di Bali. Jangan mengaku distributor resmi, memiliki stok tertentu, pengiriman seluruh Bali, atau harga termurah sebelum ada bukti dan detail operasional yang dikonfirmasi.
+## Sasaran dan positioning
 
-## Peta kata kunci awal
-- Utama: toko material bangunan Bali; bahan bangunan Bali; toko besi Bali; supplier material bangunan Bali.
-- Kategori: harga besi beton Bali; jual seng atap Bali; harga pasir Bali; Semen Gresik Bali; Semen Dynamix Bali; harga bata ringan Bali; kawat bendrat Bali; kayu pasang Bali.
-- Lokal lanjutan (buat halaman hanya jika benar-benar dilayani): toko material bangunan Denpasar, Badung, Gianyar, Tabanan, dan area spesifik yang benar-benar dijangkau.
-- Long-tail: harga [produk] [ukuran] di Bali; [produk] per sak/per batang/per kubik; biaya kirim material ke [area]. Isi angka hanya setelah harga, satuan, dan tanggal update diverifikasi.
+Sasaran awal adalah menangkap pencarian dengan niat membeli atau meminta penawaran material bangunan di Bali. Posisi yang realistis: **katalog yang membantu pembeli menyusun kebutuhan material dan meminta penawaran berdasarkan ukuran, jumlah, dan lokasi proyek**.
+
+Jangan mengklaim harga termurah, distributor resmi, pasokan langsung pabrik, stok, sertifikat, armada sendiri, jam operasional, atau pengiriman seluruh Bali sebelum setiap klaim dibuktikan dan disetujui pemilik bisnis.
+
+## Kata kunci awal (hipotesis, bukan volume terukur)
+
+### Prioritas 1 — pemasok dan kategori inti
+- toko besi Bali
+- toko material bangunan Bali
+- supplier besi Bali
+- jual besi beton Bali
+- besi beton polos / ulir Bali
+- besi hollow galvanis Bali
+- baja WF Bali
+- wiremesh Bali
+- baja ringan Bali
+
+### Prioritas 2 — spesifikasi dan niat harga
+- harga besi beton 8 mm Bali
+- harga besi beton 10 mm Bali
+- besi hollow 20 x 40 Bali
+- baja WF 150 x 75 Bali
+- wiremesh M8 Bali
+- harga baja ringan Bali
+- harga material bangunan per batang / lembar / unit
+
+Gunakan keyword ukuran hanya jika ukuran, satuan, dan produk tersebut benar-benar tersedia atau dapat dipesan. Jangan menampilkan angka harga tanpa harga yang sah, satuan yang jelas, dan tanggal pembaruan.
+
+### Prioritas 3 — lokasi dan proyek
+- toko besi Denpasar
+- supplier material Badung
+- material bangunan Gianyar
+- supplier besi untuk proyek villa Bali
+- pengiriman material bangunan ke [area]
+
+Buat halaman lokasi hanya bila bisnis memang melayani area tersebut dan halaman memuat informasi unik yang berguna. Hindari membuat banyak halaman kota yang hanya mengganti nama tempat.
+
+## Struktur halaman yang disarankan
+
+1. **Beranda** — fokus pada toko besi/material Bali, kategori utama, proses permintaan penawaran, dan cakupan layanan yang benar-benar dikonfirmasi.
+2. **Halaman kategori besi beton** — jenis polos/ulir, diameter, panjang, kelas/merek jika terverifikasi, satuan, foto produk, dan cara meminta penawaran.
+3. **Halaman hollow dan pipa** — ukuran luar, ketebalan, panjang, material/lapisan, satuan dan catatan konfirmasi.
+4. **Halaman baja profil** — WF/H-Beam/UNP/CNP dipisahkan sesuai katalog aktual; jangan menyatukan spesifikasi berbeda hanya untuk SEO.
+5. **Halaman wiremesh dan plat** — tipe/ukuran, satuan, kegunaan umum, serta hal yang perlu dikonfirmasi.
+6. **Halaman atap dan baja ringan** — bedakan penjualan material dari jasa pemasangan; tampilkan jasa hanya jika tersedia.
+7. **Panduan pembeli** — cara membaca spesifikasi, menghitung kebutuhan awal, memahami satuan, meminta penawaran, dan menyiapkan alamat pengiriman.
+
+Halaman kategori harus berisi informasi asli dan cukup berbeda. Jangan menerbitkan halaman produk/area massal dengan teks generik.
+
+## Perbaikan on-page yang sudah diterapkan
+
+- Judul halaman dan meta description dibuat spesifik terhadap pencarian toko besi/material bangunan Bali.
+- Canonical URL dan metadata Open Graph ditambahkan untuk URL GitHub Pages.
+- JSON-LD WebSite dasar ditambahkan; belum menambahkan Product, AggregateRating, LocalBusiness, atau alamat/nomor telepon karena data bisnis dan katalog belum terverifikasi.
+- Copy hero dan katalog diarahkan ke alur pilih material → jelaskan ukuran/jumlah/lokasi → minta penawaran.
+- Harga yang belum terverifikasi tidak ditampilkan sebagai harga jual final.
+- Klaim operasional yang belum terbukti diubah menjadi informasi yang meminta konfirmasi.
+
+## Teknis dan indeksasi
+
+1. Pastikan GitHub Pages aktif dan workflow deployment sukses.
+2. Buka halaman HTTPS di ponsel dan desktop; periksa navigasi, pencarian, filter, detail produk, daftar permintaan, dan formulir.
+3. Buka `/robots.txt` dan `/sitemap.xml`; pastikan URL sitemap menunjuk ke URL publik yang benar.
+4. Verifikasi properti URL-prefix di Google Search Console dan kirim sitemap setelah halaman publik bisa diakses.
+5. Pantau laporan Pages indexing, query, impressions, clicks, CTR, dan Core Web Vitals.
+6. Periksa HTML dan JavaScript di browser; jangan menganggap commit sama dengan deployment sukses.
+7. Pertimbangkan domain sendiri setelah model bisnis dan identitas usaha stabil. GitHub Pages cocok untuk validasi awal, tetapi bukan pengganti profil bisnis lokal yang memenuhi syarat.
+
+## Data yang wajib dikonfirmasi sebelum penjualan
+
+- Nomor WhatsApp resmi dalam format internasional.
+- Nama/identitas usaha yang akan dipublikasikan, alamat atau area layanan yang benar, dan jam operasional.
+- Produk yang benar-benar bisa dipasok, spesifikasi, merek, ukuran, satuan, berat, harga, stok, dan frekuensi pembaruan.
+- Foto produk asli atau foto pemasok yang penggunaannya diizinkan.
+- Biaya dan cakupan pengiriman, akses kendaraan, metode pembayaran, kebijakan retur/komplain, dan proses pemenuhan pesanan.
+- Dokumen mutu/SNI hanya untuk SKU yang memiliki bukti valid.
+- Istilah produk yang masih ambigu dari brief sebelumnya (misalnya “siir”, “sekolah”, “vakum”, dan “flip-flap”) sebelum dimasukkan ke katalog.
 
 ## Kompetitor yang perlu dipantau
-- Pama Makmur: katalog material dan narasi pasokan proyek/logistik.
-- UD Jaya Mapan Abadi: halaman lokal Kerobokan, katalog kategori, tanya stok/harga dan pengiriman.
-- Sinar Nadi: banyak kategori dan bukti sosial proyek.
-- Lagas Jaya dan Tiga Mitra Bali: halaman harga bata ringan dan semen mortar.
 
-Bandingkan bulanan: cakupan kategori, halaman kategori, harga/tanggal update, kejelasan area kirim, bukti usaha, profil Google Business, kualitas halaman mobile, dan tautan yang mengarah ke kontak.
+Riset kompetitor awal di `docs/riset-seo-kompetitor-bali.md` mencakup contoh pemasok lokal dan pola konten yang terlihat dari halaman publik. Tinjau ulang secara berkala: kategori, harga bertanggal, spesifikasi, cakupan pengiriman, bukti usaha, ulasan asli, kualitas halaman mobile, dan cara menghubungi penjual.
 
-## Rintangan SEO utama
-1. GitHub Pages memakai subdomain github.io, bukan domain toko sendiri; ini layak untuk validasi awal tetapi kurang ideal untuk kepercayaan, branding, dan Local SEO.
-2. Katalog belum mempunyai harga, satuan, stok, foto produk asli, nomor WhatsApp terverifikasi, alamat toko, dan detail pengiriman yang telah disahkan. Jangan membuat harga atau stok fiktif.
-3. Satu halaman beranda tidak cukup menargetkan semua kata kunci. Buat halaman kategori yang unik setelah data dan jangkauan layanan terkonfirmasi.
-4. Google tidak menjamin posisi halaman pertama; kompetisi, relevansi, lokasi pencari, kualitas konten, tautan, dan reputasi ikut menentukan.
-5. Google Merchant Center dan Product structured data memerlukan data produk yang akurat. Produk tanpa harga/stok final belum siap untuk feed Shopping.
+Angka volume pencarian, CPC, difficulty, dan peringkat belum diverifikasi dengan Keyword Planner atau Search Console. Semua kelompok kata kunci di dokumen ini adalah hipotesis berdasarkan intent, bukan statistik pasar yang terukur.
 
-## Prioritas teknis
-1. Pastikan GitHub Pages berhasil dan halaman HTTPS dapat diakses.
-2. Verifikasi properti URL-prefix di Google Search Console, lalu kirim sitemap.xml.
-3. Buat halaman kategori dengan judul, deskripsi, teks unik, foto asli, spesifikasi, satuan, harga/tanggal update jika tersedia, area layanan dan FAQ.
-4. Tambahkan Product structured data per produk hanya saat nama, gambar, harga, currency, availability, dan URL produk akurat. Jangan menambahkan aggregate rating palsu.
-5. Untuk Google Merchant Center: buat akun, verifikasi/klaim website, isi informasi bisnis dan kebijakan pengiriman/pengembalian yang sesuai, lalu unggah feed produk dengan ID, title, description, link, image_link, availability, price, condition, brand/GTIN/MPN jika berlaku, serta shipping yang akurat. Periksa Diagnostics sebelum meminta penayangan.
-6. Untuk Local SEO, klaim Google Business Profile hanya jika memenuhi syarat sebagai bisnis nyata. Gunakan alamat/area layanan dan jam operasional yang benar; jangan membuat lokasi fiktif.
-7. Pantau Search Console: indexing, query, impressions, clicks, CTR, Core Web Vitals dan masalah structured data.
+## Ekspektasi
 
-## Data yang harus dikonfirmasi sebelum peluncuran penjualan
-- Nomor WhatsApp resmi toko.
-- Alamat atau area layanan yang benar dan batas pengiriman.
-- Harga, satuan, ukuran/varian, merek, ketersediaan dan frekuensi pembaruan.
-- Foto asli atau foto pemasok yang diizinkan.
-- Ketentuan pengiriman, pembayaran, retur/komplain, jam operasional dan nama badan usaha bila ada.
-- Makna produk yang masih ambigu dalam brief: “siir”, “sekolah”, “vakum”, “flip-flap”. Jangan dipublikasikan sebagai kategori final sebelum istilahnya dipastikan.
+SEO membutuhkan data bisnis yang benar, halaman yang berguna, indeksasi, reputasi, tautan, dan waktu. Tidak ada jaminan halaman pertama Google. Jangan membeli tautan spam atau membuat ulasan/lokasi/testimoni palsu.
