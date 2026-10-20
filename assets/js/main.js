@@ -1,7 +1,7 @@
 /* Bali Besi Murah: content-first catalogue interactions.
    Contact details and live prices are intentionally not fabricated. */
 const STORE_CONFIG = {
-  whatsappNumber: "", // Add the verified store number in international format, digits only.
+  whatsappNumber: "628218187917", // Verified WhatsApp contact for enquiries and order details.
   currency: "IDR"
 };
 
@@ -59,7 +59,7 @@ function requestProduct(productId) {
   if (!STORE_CONFIG.whatsappNumber) {
     const contactNote = document.querySelector("#contactNote");
     if (contactNote) {
-      contactNote.textContent = "Tombol pemesanan sudah disiapkan, tetapi nomor WhatsApp toko yang terverifikasi belum dimasukkan. Hubungi pemilik situs untuk mengaktifkan pemesanan.";
+      contactNote.textContent = "Nomor WhatsApp sudah disiapkan, tetapi pesan belum dapat dibuka. Silakan coba lagi atau hubungi toko melalui WhatsApp.";
       contactNote.scrollIntoView({behavior:"smooth",block:"center"});
     }
     return;
