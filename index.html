@@ -44,7 +44,7 @@
         #leafletMap{height:280px;width:100%;border-radius:.75rem}.no-scrollbar::-webkit-scrollbar{display:none}.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
         .mobile-quickbar{display:none}.product-card-market{min-width:0}.product-open{display:flex;width:100%;gap:14px;text-align:left;padding:12px;align-items:flex-start;background:white;border:0;cursor:pointer;color:inherit}.market-product-image{width:112px;height:112px;flex:0 0 112px;object-fit:cover;border-radius:10px;background:#f1f5f9}.market-product-copy{min-width:0;flex:1;padding:2px 0}.market-card-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:10px 12px;background:#f8fafc;border-top:1px solid #e2e8f0}
         .faq-item{border:1px solid #e2e8f0;border-radius:12px;padding:14px}.faq-item summary{font-size:13px;font-weight:750;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px}.faq-item summary:after{content:'+';color:#D97706;font-size:18px;line-height:1}.faq-item[open] summary:after{content:'−'}.faq-item p{font-size:12px;color:#64748b;line-height:1.6;margin:10px 0 0}.panel-open{overflow:hidden}
-        @media(max-width:639px){body{padding-bottom:76px}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:8px 14px calc(8px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-top:1px solid #e2e8f0;gap:10px}.mobile-quick-action{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;border-radius:12px;background:#0F172A;color:white;font-size:13px;font-weight:800;position:relative}.mobile-quick-action:first-child{background:#D97706;color:#fff}.mobile-quick-action i{font-size:16px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:18px;padding:2px 5px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
+        @media(max-width:639px){body{padding-bottom:60px}.mobile-quickbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:40;bottom:0;left:0;right:0;padding:5px 12px calc(5px + env(safe-area-inset-bottom));background:rgba(248,250,252,.82);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid rgba(203,213,225,.75);box-shadow:0 -5px 18px rgba(15,23,42,.06);gap:8px;transition:background .2s ease}.mobile-quick-action{display:flex;align-items:center;justify-content:center;gap:7px;min-height:40px;border-radius:10px;background:rgba(15,23,42,.94);color:white;font-size:12px;font-weight:800;position:relative}.mobile-quick-action:first-child{background:rgba(217,119,6,.94);color:#fff}.mobile-quick-action i{font-size:14px}.mobile-quick-action b{background:#fff;color:#0F172A;font-size:10px;border-radius:999px;min-width:17px;padding:1px 4px}.product-open{gap:12px;padding:10px}.market-product-image{width:96px;height:112px;flex-basis:96px}.market-product-copy h3{font-size:13px}.market-card-actions{padding:9px;gap:7px}.market-card-actions button{font-size:11px}.faq-panel,.product-detail-panel,#cartDrawer{max-width:none}}
         @media(min-width:640px){.product-open{display:block;padding:0}.market-product-image{width:100%;height:175px;border-radius:0}.market-product-copy{padding:14px}}
     
         /* Mobile-first refinements: compact header and product cards, including 320px screens */
@@ -657,61 +657,38 @@
     </section>
 
     <!-- 11. FOOTER -->
-    <footer class="bg-navyPrimary text-slate-400 py-12 text-xs border-t border-steelBorder">
+    <footer class="bg-navyPrimary text-slate-400 py-9 text-xs border-t border-steelBorder">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mb-7">
                 <div class="space-y-3">
-                    <div class="flex items-center space-x-2">
-                        <div class="w-8 h-8 bg-amberAccent rounded flex items-center justify-center text-white font-black text-base">
-                            BBM
-                        </div>
+                    <div class="flex items-center gap-2">
+                        <div class="w-8 h-8 bg-amberAccent rounded-lg flex items-center justify-center text-white font-black text-xs">BBM</div>
                         <span class="text-base font-extrabold text-white">BALI BESI MURAH</span>
                     </div>
                     <p class="text-[11px] leading-relaxed text-slate-300">
-                        Distributor resmi besi &amp; baja material bangunan di Bali. Menyediakan Besi Beton SNI, Hollow Galvanis, WF, H-Beam, Wiremesh, &amp; Galvalum.
+                        Katalog besi dan material bangunan untuk kebutuhan proyek di Bali. Pastikan spesifikasi, stok, harga terbaru, dan ongkos kirim melalui konfirmasi sebelum transaksi.
                     </p>
                 </div>
-
                 <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Alamat Gudang Utama</h4>
-                    <p class="text-[11px] leading-relaxed text-slate-300">
-                        Jl. Teuku Umar Barat No. 88 &amp; Jl. Mahendradatta, Padangsambian, Denpasar Barat, Bali 80119.
+                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-2 uppercase tracking-wider">Alamat</h4>
+                    <p class="flex items-start gap-2 text-[11px] leading-relaxed text-slate-300">
+                        <i class="fa-solid fa-location-dot text-amberAccent mt-0.5"></i>
+                        <span>Bali, Indonesia</span>
                     </p>
                 </div>
-
                 <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Kontak Sales Admin</h4>
-                    <ul class="space-y-2 text-[11px] text-slate-300">
-                        <li><i class="fa-solid fa-phone text-amberAccent mr-2"></i> (0361) 890-1234</li>
-                        <li><i class="fa-brands fa-whatsapp text-emeraldSuccess mr-2"></i> +62 812-3456-7890</li>
-                        <li><i class="fa-solid fa-envelope text-amberAccent mr-2"></i> sales@balisteelutama.com</li>
+                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-2 uppercase tracking-wider">Jam Operasional & Pengiriman</h4>
+                    <ul class="space-y-2 text-[11px] leading-relaxed text-slate-300">
+                        <li class="flex items-start gap-2"><i class="fa-regular fa-clock text-amberAccent mt-0.5"></i><span>Jam operasional: 08.00–17.00 WITA</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-truck text-amberAccent mt-0.5"></i><span>Permintaan pengiriman terakhir: pukul 15.00 WITA, bergantung pada lokasi dan kondisi pengiriman.</span></li>
                     </ul>
                 </div>
-
-                <div>
-                    <h4 class="text-white font-bold mb-3 border-b border-steelBorder pb-1 uppercase tracking-wider">Metode Pembayaran</h4>
-                    <p class="text-[11px] text-slate-300 mb-2">Transfer Bank BCA / Mandiri / BRI atau COD (Cash on Delivery) setelah konfirmasi Admin Sales.</p>
-                </div>
-
             </div>
-
-            <div class="border-t border-steelBorder pt-6 text-center text-[11px] flex flex-col sm:flex-row justify-between items-center gap-3 text-slate-400">
+            <div class="border-t border-steelBorder pt-5 text-center text-[11px] text-slate-400">
                 <p>&copy; 2026 BALI BESI MURAH. All Rights Reserved.</p>
-                <div class="flex space-x-4">
-                    <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook text-sm"></i></a>
-                    <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram text-sm"></i></a>
-                    <a href="https://wa.me/628218187917" target="_blank" class="hover:text-white text-emeraldSuccess"><i class="fa-brands fa-whatsapp text-sm"></i></a>
-                </div>
             </div>
         </div>
     </footer>
-
-    <!-- FLOATING WHATSAPP BUTTON -->
-    <a href="https://wa.me/628218187917?text=Halo%20Bali%20Besi%20Murah,%20saya%20ingin%20tanya%20stok%20dan%20harga%20besi." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emeraldSuccess hover:bg-emerald-700 text-white p-3.5 rounded-full shadow-2xl flex items-center gap-2 transition-all transform hover:scale-105">
-        <i class="fa-brands fa-whatsapp text-2xl"></i>
-        <span class="hidden md:inline text-xs font-bold pr-1">Chat Sales WA</span>
-    </a>
 
     <!-- JAVASCRIPT LOGIC & APPLICATION ENGINE -->
     <script>
