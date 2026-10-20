@@ -71,25 +71,38 @@ body{font-family:'Inter',sans-serif;background:#F8FAFC;color:#0F172A}
 }
 
 
-/* Final palette correction: grey-blue page surfaces, white only for content cards. */
-html, body { background-color: #e9eef4; }
-body { background-color: #e9eef4 !important; }
-
-/* Large white sections were washing out the page; keep the header and cards white. */
-section.bg-white { background-color: #e9eef4 !important; }
-#katalog { background-color: #e9eef4 !important; }
-#area-layanan { background-color: #e3eaf2 !important; }
-
-/* White surfaces remain distinct against the steel-grey canvas. */
-header { background-color: #fff; }
+/* Palette reset: restore visible steel-grey surfaces; white is reserved for cards and header. */
+html, body {
+  background: #dce5ee !important;
+  color: #0f172a;
+}
+body.bg-lightBg {
+  background: #dce5ee !important;
+}
+section.bg-white,
+#katalog,
+#area-layanan {
+  background-color: #e5ecf3 !important;
+}
+header.bg-white,
 #productGrid > .product-card-market,
-#productGrid .product-open { background: #fff; }
-#productGrid .market-card-actions { grid-template-columns: minmax(0, 1fr); background: #fff; border-top: 1px solid #e8edf3; }
-#productGrid .detail-button { width: 100%; min-height: 38px; font-size: 11px; letter-spacing: .01em; }
-.detail-product-image { background: #e9eef4; object-fit: cover; }
+#productGrid .product-open {
+  background-color: #ffffff !important;
+}
+#productGrid .market-card-actions {
+  grid-template-columns: minmax(0, 1fr);
+  background-color: #ffffff;
+  border-top: 1px solid #dbe3ec;
+}
+#productGrid .detail-button {
+  width: 100%;
+  min-height: 38px;
+  font-size: 11px;
+  letter-spacing: .01em;
+}
+.detail-product-image { background: #dce5ee; object-fit: cover; }
 .detail-description { border-radius: 12px; background: #f1f5f9; padding: 15px; }
 .detail-actions { background: #f8fafc; }
-
 @media (max-width: 639px) {
   #productGrid .market-card-actions { padding: 0 8px 8px; }
   #productGrid .detail-button { min-height: 36px; padding: 8px 4px; font-size: 10px; }
