@@ -329,7 +329,7 @@
             <a href="#katalog" class="block py-1 hover:text-amberAccent">Katalog Material Bangunan</a>
             <a href="#penawaran" class="block py-1 text-amberAccent font-bold">Minta Penawaran Harga Khusus</a>
             <a href="#keunggulan" class="block py-1 hover:text-amberAccent">Keunggulan Layanan BBM</a>
-            <a href="#area-layanan" class="block py-1 hover:text-amberAccent">Cakupan Pengiriman Seluruh Bali</a>
+            <a href="#area-layanan" class="block py-1 hover:text-amberAccent">Cakupan Pengiriman</a>
         </div>
     </header>
 
@@ -369,7 +369,7 @@
                                 <i class="fa-solid fa-truck-ramp-box"></i>
                             </div>
                             <div class="text-left text-xs">
-                                <p class="text-white font-bold">Pengiriman ke Seluruh Bali*</p>
+                                <p class="text-white font-bold">Pengiriman berdasarkan konfirmasi</p>
                                 <p class="text-slate-400 text-[11px]">Pilihan kendaraan dan biaya kirim disesuaikan dengan lokasi serta kebutuhan proyek.</p>
                             </div>
                         </div>
@@ -476,7 +476,7 @@
           <button type="button" onclick="askLiveChat('Harga produk')" class="chat-question">Harga produk</button>
           <button type="button" onclick="askLiveChat('Ketersediaan stok')" class="chat-question">Cek stok</button>
           <button type="button" onclick="askLiveChat('Gratis ongkir')" class="chat-question">Gratis ongkir</button>
-          <button type="button" onclick="askLiveChat('Pengiriman seluruh Bali')" class="chat-question">Area pengiriman</button>
+          <button type="button" onclick="askLiveChat('Cakupan pengiriman')" class="chat-question">Area pengiriman</button>
           <button type="button" onclick="askLiveChat('Cara memesan')" class="chat-question">Cara memesan</button>
           <button type="button" onclick="askLiveChat('Kendaraan dan akses lokasi')" class="chat-question">Akses kendaraan</button>
         </div>
@@ -627,7 +627,7 @@
                         </button>
                     </div>
 
-                    <p class="text-[11px] text-slate-500">Klik atau geser penanda di peta untuk memastikan armada pengiriman tidak salah alamat:</p>
+                    <p class="text-[11px] text-slate-500">Klik atau geser penanda untuk menandai lokasi tujuan pengiriman:</p>
                     
                     <div id="leafletMap" class="shadow-inner border border-slate-300"></div>
 
@@ -654,7 +654,7 @@
                         <span>Total Biaya Material:</span>
                         <span id="checkoutSummaryPrice" class="text-amberAccent font-bold text-base">Rp 0</span>
                     </div>
-                    <p class="text-[10px] text-slate-500 italic pt-1">*Ongkos kirim armada dan metode pembayaran Transfer/COD akan dikonfirmasi manual oleh Admin CS via WhatsApp.</p>
+                    <p class="text-[10px] text-slate-500 italic pt-1">Ongkos kirim, pilihan kendaraan, dan metode pembayaran harus dikonfirmasi sebelum transaksi.</p>
                 </div>
 
                 <!-- Submit Button -->
@@ -682,13 +682,13 @@
                         <div class="flex gap-3"><i class="fa-solid fa-check-circle text-amberAccent mt-0.5"></i><span>Anda bisa mengirim beberapa jenis material sekaligus.</span></div>
                         <div class="flex gap-3"><i class="fa-solid fa-check-circle text-amberAccent mt-0.5"></i><span>Harga, merek, ketersediaan, dan ongkos kirim perlu dikonfirmasi sebelum transaksi.</span></div>
                     </div>
-                    <p class="text-xs leading-relaxed text-slate-400">Belum tahu berat tonase? Tidak masalah—isi perkiraan jumlah atau kebutuhan material yang Anda ketahui.</p>
+                    <p class="text-xs leading-relaxed text-slate-400">Belum tahu tonase? Isi perkiraan jumlah atau ukuran yang diketahui. Pastikan satuan dan berat akhir dikonfirmasi sebelum pembelian.</p>
                 </div>
 
                 <form id="quoteRequestForm" class="rounded-2xl border border-steelBorder bg-slateNavy p-5 sm:p-7 shadow-xl space-y-4" onsubmit="sendQuoteRequest(event)">
                     <div>
                         <h3 class="text-lg font-extrabold">Form Permintaan Penawaran</h3>
-                        <p class="mt-1 text-xs text-slate-400">Isi detail berikut agar tim kami memahami kebutuhan Anda.</p>
+                        <p class="mt-1 text-xs text-slate-400">Isi detail kebutuhan material dan lokasi proyek. Form belum dapat mengirim otomatis sampai kontak bisnis resmi dikonfirmasi.</p>
                     </div>
                     <div>
                         <label for="quoteName" class="mb-1.5 block text-xs font-bold text-slate-200">Nama Anda</label>
@@ -875,7 +875,7 @@
             {
                 id: 'p1',
                 category: 'beton',
-                title: 'Besi Beton Polos 8 mm TP280 SNI – Bali',
+                title: 'Besi Beton Polos 8 mm x 12 m – Bali',
                 spec: 'Besi beton polos diameter 8 mm, panjang 12 meter',
                 seoDescription: 'Besi beton polos 8 mm TP280 untuk kebutuhan tulangan dan konstruksi di Bali. Tanyakan pilihan diameter, merek, stok, harga terbaru, dan pengiriman ke Denpasar serta wilayah Bali.',
                 sizeOptions: ['Besi beton polos 6 mm x 12 m','Besi beton polos 8 mm x 12 m','Besi beton polos 10 mm x 12 m','Besi beton polos 12 mm x 12 m'],
@@ -889,7 +889,7 @@
             {
                 id: 'p2',
                 category: 'beton',
-                title: 'Besi Beton Polos 10 mm TP280 SNI – Bali',
+                title: 'Besi Beton Polos 10 mm x 12 m – Bali',
                 spec: 'Besi beton polos diameter 10 mm, panjang 12 meter',
                 seoDescription: 'Besi beton polos 10 mm TP280 untuk proyek bangunan di Bali. Konfirmasikan diameter, merek, ketersediaan, harga per batang, dan biaya pengiriman sebelum pemesanan.',
                 sizeOptions: ['Besi beton polos 6 mm x 12 m','Besi beton polos 8 mm x 12 m','Besi beton polos 10 mm x 12 m','Besi beton polos 12 mm x 12 m'],
@@ -903,7 +903,7 @@
             {
                 id: 'p3',
                 category: 'beton',
-                title: 'Besi Beton Ulir 13 mm TS420B SNI – Bali',
+                title: 'Besi Beton Ulir 13 mm x 12 m – Bali',
                 spec: 'Besi beton ulir diameter 13 mm, panjang 12 meter',
                 seoDescription: 'Besi beton ulir 13 mm TS420B untuk tulangan struktur beton di Bali. Tanyakan opsi diameter besi ulir, merek, sertifikasi, stok, harga, dan pengiriman.',
                 sizeOptions: ['Besi beton ulir 10 mm x 12 m','Besi beton ulir 13 mm x 12 m','Besi beton ulir 16 mm x 12 m','Besi beton ulir 19 mm x 12 m','Besi beton ulir 22 mm x 12 m','Besi beton ulir 25 mm x 12 m'],
@@ -917,7 +917,7 @@
             {
                 id: 'p4',
                 category: 'beton',
-                title: 'Besi Beton Ulir 16 mm TS420B SNI – Bali',
+                title: 'Besi Beton Ulir 16 mm x 12 m – Bali',
                 spec: 'Besi beton ulir diameter 16 mm, panjang 12 meter',
                 seoDescription: 'Besi beton ulir 16 mm TS420B untuk pekerjaan struktur dan tulangan beton di Bali. Hubungi admin untuk konfirmasi diameter, merek, stok, harga terbaru, dan ongkir.',
                 sizeOptions: ['Besi beton ulir 10 mm x 12 m','Besi beton ulir 13 mm x 12 m','Besi beton ulir 16 mm x 12 m','Besi beton ulir 19 mm x 12 m','Besi beton ulir 22 mm x 12 m','Besi beton ulir 25 mm x 12 m'],
@@ -973,7 +973,7 @@
             {
                 id: 'p8',
                 category: 'profile',
-                title: 'Baja WF 150 x 75 mm SNI (Wide Flange) – Bali',
+                title: 'Baja WF 150 x 75 mm (Wide Flange) – Bali',
                 spec: 'Profil baja WF 150 x 75 mm, panjang 12 meter',
                 seoDescription: 'Baja WF 150x75 untuk struktur baja dan konstruksi di Bali. Minta konfirmasi berat profil, panjang, merek, stok, harga per batang, dan biaya pengiriman proyek.',
                 sizeOptions: ['Baja WF 100 x 50 mm','Baja WF 150 x 75 mm','Baja WF 200 x 100 mm','Baja WF 250 x 125 mm','Baja WF 300 x 150 mm'],
@@ -987,7 +987,7 @@
             {
                 id: 'p9',
                 category: 'profile',
-                title: 'Baja WF 200 x 100 mm SNI Gunung Garuda – Bali',
+                title: 'Baja WF 200 x 100 mm (Wide Flange) – Bali',
                 spec: 'Profil baja WF 200 x 100 mm, panjang 12 meter',
                 seoDescription: 'Baja WF 200x100 merek Gunung Garuda untuk kebutuhan struktur baja di Bali. Konfirmasikan sertifikat, berat, panjang, ketersediaan, harga, dan ongkir.',
                 sizeOptions: ['Baja WF 100 x 50 mm','Baja WF 150 x 75 mm','Baja WF 200 x 100 mm','Baja WF 250 x 125 mm','Baja WF 300 x 150 mm'],
@@ -1001,7 +1001,7 @@
             {
                 id: 'p10',
                 category: 'atap',
-                title: 'Kanal C Baja Ringan C75 Tebal 0,75 mm AZ100 – Bali',
+                title: 'Kanal C Baja Ringan C75 Tebal 0,75 mm – Bali',
                 spec: 'Kanal C75, tebal 0,75 mm, panjang 6 meter, galvalum AZ100',
                 seoDescription: 'Kanal C baja ringan C75 tebal 0,75 mm untuk rangka atap di Bali. Tanyakan ketebalan dan ukuran kanal C lain, merek, stok, harga per batang, serta pengiriman.',
                 sizeOptions: ['Kanal C baja ringan C75 tebal 0,65 mm','Kanal C baja ringan C75 tebal 0,70 mm','Kanal C baja ringan C75 tebal 0,75 mm','Kanal C baja ringan C100 tebal 0,75 mm'],
@@ -1029,7 +1029,7 @@
             {
                 id: 'p12',
                 category: 'wiremesh',
-                title: 'Wiremesh M8 SNI Diameter 8 mm – Bali',
+                title: 'Wiremesh M8 Diameter 8 mm – Bali',
                 spec: 'Wiremesh M8, diameter kawat 8 mm, lembar sekitar 2,1 x 5,4 meter',
                 seoDescription: 'Wiremesh M8 diameter 8 mm untuk pekerjaan lantai dan pelat beton di Bali. Tanyakan ukuran wiremesh M6, M7, M8, M9, atau M10 sesuai kebutuhan, ukuran lembar, stok, harga, dan ongkir.',
                 sizeOptions: ['Wiremesh M5','Wiremesh M6','Wiremesh M7','Wiremesh M8','Wiremesh M9','Wiremesh M10','Wiremesh M12'],
@@ -1179,7 +1179,7 @@
             'Harga produk':'Harga mengikuti jenis material, ukuran, merek, dan jumlah pembelian. Angka di katalog hanya informasi awal; minta penawaran terbaru dari admin sebelum transaksi.',
             'Ketersediaan stok':'Stok dapat berubah. Sebutkan nama produk, ukuran, merek atau spesifikasi, serta jumlah yang dibutuhkan agar admin dapat memeriksanya.',
             'Gratis ongkir':'Ketentuan gratis ongkir bergantung pada produk, jumlah pesanan, dan lokasi. Admin perlu mengonfirmasi apakah pesanan Anda memenuhi syarat.',
-            'Pengiriman seluruh Bali':'Anda dapat menanyakan pengiriman ke wilayah Bali. Admin akan memeriksa alamat, jadwal, akses kendaraan, dan biaya yang berlaku.',
+            'Cakupan pengiriman':'Anda dapat menanyakan pengiriman ke wilayah Bali. Admin akan memeriksa alamat, jadwal, akses kendaraan, dan biaya yang berlaku.',
             'Cara memesan':'Pilih produk dan jumlahnya, lalu tekan “Tambah untuk Ditanyakan” atau hubungi admin WhatsApp. Pastikan harga, stok, ongkir, dan metode pembayaran dikonfirmasi sebelum membayar.',
             'Kendaraan dan akses lokasi':'Sampaikan alamat atau titik peta serta kondisi jalan—misalnya gang sempit, portal, atau lokasi bongkar. Admin akan memeriksa jenis kendaraan yang memungkinkan.'
           };
