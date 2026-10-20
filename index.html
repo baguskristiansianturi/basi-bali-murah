@@ -444,7 +444,7 @@
             <!-- Category Filter Buttons -->
             <div class="flex overflow-x-auto no-scrollbar space-x-2 pb-3 mb-8 border-b border-slate-200 text-xs font-semibold">
                 <button onclick="filterCategory('all')" class="cat-btn active bg-navyPrimary text-white px-4 py-2.5 rounded-lg whitespace-nowrap transition-all shadow-sm">Semua Produk</button>
-                <button onclick="filterCategory('beton')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Besi Beton SNI</button>
+                <button onclick="filterCategory('beton')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Besi Beton</button>
                 <button onclick="filterCategory('hollow')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Hollow Galvanis &amp; Pipa</button>
                 <button onclick="filterCategory('profile')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Baja Berat (WF / H-Beam)</button>
                 <button onclick="filterCategory('atap')" class="cat-btn bg-white text-slate-700 hover:text-navyPrimary border border-slate-200 px-4 py-2.5 rounded-lg whitespace-nowrap transition-all">Atap Galvalum &amp; Spandek</button>
@@ -493,7 +493,7 @@
         <div class="p-5 bg-navyPrimary text-white flex justify-between items-center">
             <div class="flex items-center gap-2.5">
                 <i class="fa-solid fa-cart-shopping text-amberAccent text-base"></i>
-                <h3 class="font-extrabold text-base">Keranjang Belanja</h3>
+                <h3 class="font-extrabold text-base">Daftar Permintaan Material</h3>
                 <span class="text-xs text-slate-400 font-normal">(<span id="cartItemCount">0</span> barang)</span>
             </div>
             <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white text-xl p-1">
@@ -524,7 +524,7 @@
             </div>
 
             <button id="btnProceedCheckout" onclick="openCheckoutModal()" disabled class="w-full bg-slate-300 text-slate-500 cursor-not-allowed font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all">
-                <span>Lanjut ke Checkout Alamat Bali</span>
+                <span>Lanjutkan Permintaan Material</span>
                 <i class="fa-solid fa-arrow-right"></i>
             </button>
         </div>
@@ -540,7 +540,7 @@
                         <i class="fa-solid fa-truck-ramp-box"></i>
                     </div>
                     <div>
-                        <h3 class="font-extrabold text-base">Formulir Checkout &amp; Lokasi Pengiriman Bali</h3>
+                        <h3 class="font-extrabold text-base">Formulir Permintaan Material &amp; Lokasi Pengiriman</h3>
                         <p class="text-[11px] text-slate-300">Isi data pemesan &amp; tandai lokasi proyek di peta se-Bali.</p>
                     </div>
                 </div>
@@ -870,7 +870,7 @@
                 baseSize: 'Besi beton polos 8 mm x 12 m',
                 price: 52000,
                 weightKg: 4.74,
-                badge: 'SNI Presisi',
+                badge: 'Periksa Spesifikasi',
                 badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
                 image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
             },
@@ -884,7 +884,7 @@
                 baseSize: 'Besi beton polos 10 mm x 12 m',
                 price: 78500,
                 weightKg: 7.40,
-                badge: 'Terlaris Proyek',
+                badge: 'Pilihan Katalog',
                 badgeStyle: 'bg-amber-100 text-amber-800 border-amber-300',
                 image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
             },
@@ -912,7 +912,7 @@
                 baseSize: 'Besi beton ulir 16 mm x 12 m',
                 price: 198000,
                 weightKg: 18.96,
-                badge: 'SNI Presisi',
+                badge: 'Periksa Spesifikasi',
                 badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
                 image: 'https://images.unsplash.com/photo-1535813547-99c456a41d4a?auto=format&fit=crop&w=400&q=80'
             },
@@ -926,7 +926,7 @@
                 baseSize: 'Hollow galvanis 20 x 40 mm',
                 price: 68000,
                 weightKg: 6.20,
-                badge: 'Anti Karat',
+                badge: 'Cek Lapisan',
                 badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
                 image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
             },
@@ -940,7 +940,7 @@
                 baseSize: 'Hollow galvanis 40 x 40 mm',
                 price: 115000,
                 weightKg: 11.20,
-                badge: 'Anti Karat',
+                badge: 'Cek Lapisan',
                 badgeStyle: 'bg-emerald-100 text-emerald-800 border-emerald-300',
                 image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
             },
@@ -954,7 +954,7 @@
                 baseSize: 'Hollow hitam 50 x 100 mm',
                 price: 245000,
                 weightKg: 22.50,
-                badge: 'Tebal Murni',
+                badge: 'Cek Ketebalan',
                 badgeStyle: 'bg-slate-100 text-slate-800 border-slate-300',
                 image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
             },
@@ -982,7 +982,7 @@
                 baseSize: 'Baja WF 200 x 100 mm',
                 price: 3420000,
                 weightKg: 256.0,
-                badge: 'GG Sertifikat',
+                badge: 'Periksa Dokumen',
                 badgeStyle: 'bg-purple-100 text-purple-800 border-purple-300',
                 image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
             },
@@ -996,7 +996,7 @@
                 baseSize: 'Kanal C baja ringan C75 tebal 0,75 mm',
                 price: 82000,
                 weightKg: 5.10,
-                badge: 'Galvalum AZ100',
+                badge: 'Periksa Spesifikasi',
                 badgeStyle: 'bg-amber-100 text-amber-800 border-amber-300',
                 image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=400&q=80'
             },
@@ -1079,8 +1079,8 @@
                 card.innerHTML = `
                     <div class="product-open" role="button" tabindex="0" onclick="openProductDetail('${p.id}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openProductDetail('${p.id}')}" aria-label="Lihat detail ${p.title}">
                       <div class="relative shrink-0"><img src="${p.image}" alt="${p.title}" loading="lazy" class="market-product-image"></div>
-                      <div class="market-product-copy"><span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded inline-flex mb-2 uppercase tracking-wider">${p.badge}</span><h3 class="text-sm sm:text-base font-bold text-navyPrimary leading-snug">${p.title}</h3><p class="text-xs text-slate-600 mt-1">${p.spec}</p><p class="text-xs text-slate-600 mt-2 leading-relaxed">${p.seoDescription}</p><p class="text-[11px] text-slate-500 mt-2"><i class="fa-solid fa-weight-hanging mr-1"></i> Estimasi berat: ${p.weightKg} kg / unit</p><strong class="block text-lg font-black text-amberAccent mt-2">Rp ${p.price.toLocaleString('id-ID')}</strong><span class="block text-[11px] text-slate-500 mt-1">Harga & stok perlu dikonfirmasi</span><span class="inline-flex items-center gap-1 text-xs font-bold text-navyPrimary mt-3 underline underline-offset-2">Lihat spesifikasi lengkap <i class="fa-solid fa-chevron-right"></i></span></div>
-                    </div><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> + Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Beli / Tanyakan</button></div>`;
+                      <div class="market-product-copy"><span class="${p.badgeStyle} border text-[10px] font-bold px-2 py-0.5 rounded inline-flex mb-2 uppercase tracking-wider">${p.badge}</span><h3 class="text-sm sm:text-base font-bold text-navyPrimary leading-snug">${p.title}</h3><p class="text-xs text-slate-600 mt-1">${p.spec}</p><p class="text-xs text-slate-600 mt-2 leading-relaxed">${p.seoDescription}</p><p class="text-[11px] text-slate-500 mt-2"><i class="fa-solid fa-weight-hanging mr-1"></i> Estimasi berat: ${p.weightKg} kg / unit</p><strong class="block text-lg font-black text-amberAccent mt-2">Minta penawaran</strong><span class="block text-[11px] text-slate-500 mt-1">Harga dan stok belum dikonfirmasi</span><span class="inline-flex items-center gap-1 text-xs font-bold text-navyPrimary mt-3 underline underline-offset-2">Lihat spesifikasi lengkap <i class="fa-solid fa-chevron-right"></i></span></div>
+                    </div><div class="market-card-actions"><button type="button" onclick="addToCart('${p.id}')" class="bg-white hover:bg-slate-100 text-navyPrimary border border-slate-300 font-bold py-2.5 rounded-lg text-xs"><i class="fa-solid fa-cart-plus text-amberAccent mr-1"></i> + Keranjang</button><button type="button" onclick="buyNowDirect('${p.id}')" class="bg-navyPrimary hover:bg-slateNavy text-white font-bold py-2.5 rounded-lg text-xs">Tambah untuk Ditanyakan</button></div>`;
                 grid.appendChild(card);
             });
         }
@@ -1093,7 +1093,7 @@
           selectedProductSize = size;
           const isBaseSize = size === p.baseSize;
           const priceNote = document.getElementById('selectedSizePriceNote');
-          if(priceNote) priceNote.textContent = isBaseSize ? 'Harga dan berat di atas adalah estimasi untuk ukuran katalog ini.' : 'Harga dan berat untuk ukuran pilihan perlu dikonfirmasi kepada admin.';
+          if(priceNote) priceNote.textContent = isBaseSize ? 'Berat katalog merupakan perkiraan dan perlu dikonfirmasi.' : 'Ukuran pilihan, berat, ketersediaan, dan harga perlu dikonfirmasi.';
           const addButton = document.getElementById('detailAddButton');
           if(addButton) {
             addButton.disabled = !isBaseSize;
@@ -1118,7 +1118,7 @@
               <div class="detail-buy-info">
                 <div class="flex flex-wrap items-center gap-2 mb-3"><span class="${p.badgeStyle} border rounded-md px-2 py-1 text-[10px] font-bold">${p.badge}</span><span class="text-[11px] text-slate-500"><i class="fa-solid fa-location-dot mr-1 text-amberAccent"></i>Area layanan: Bali</span></div>
                 <h4 class="text-xl sm:text-2xl font-extrabold text-navyPrimary leading-snug">${p.title}</h4>
-                <div class="detail-price-block"><span class="detail-price">Rp ${p.price.toLocaleString('id-ID')}</span><span class="detail-price-unit">/ unit katalog</span><p class="text-xs text-slate-600 mt-1">Harga indikatif — konfirmasi harga terbaru sebelum transaksi.</p></div>
+                <div class="detail-price-block"><span class="detail-price">Minta penawaran</span><p class="text-xs text-slate-600 mt-1">Harga belum dipublikasikan. Minta penawaran berdasarkan ukuran, jumlah, merek, dan lokasi pengiriman.</p></div>
                 <div class="detail-summary-list">
                   <div><span>Jenis material</span><strong>${categoryName}</strong></div>
                   <div><span>Spesifikasi katalog</span><strong>${p.spec}</strong></div>
@@ -1126,7 +1126,7 @@
                   <div><span>Ketersediaan</span><strong class="text-amber-700">Perlu konfirmasi</strong></div>
                 </div>
                 <div class="detail-size-select"><label for="productSizeSelect" class="block text-sm font-bold text-navyPrimary mb-2">Pilih ukuran / tipe</label><select id="productSizeSelect" class="w-full rounded-lg border border-slate-300 bg-white px-3 py-3 text-sm text-slate-800 focus:outline-none focus:border-amberAccent">${options}</select><p class="text-[11px] text-slate-500 mt-2">Ukuran lain merupakan pilihan untuk ditanyakan, bukan jaminan stok.</p></div>
-                <div class="detail-note"><i class="fa-solid fa-circle-info mt-0.5"></i><p id="selectedSizePriceNote">Harga dan berat di atas adalah estimasi untuk ukuran katalog ini.</p></div>
+                <div class="detail-note"><i class="fa-solid fa-circle-info mt-0.5"></i><p id="selectedSizePriceNote">Berat katalog merupakan perkiraan dan perlu dikonfirmasi.</p></div>
               </div>
             </div>
             <section class="detail-description-section"><h5><i class="fa-solid fa-list-check text-amberAccent mr-2"></i>Deskripsi & informasi produk</h5><p>${p.seoDescription}</p></section>
@@ -1154,7 +1154,7 @@
             'Ketersediaan stok':'Stok dapat berubah. Sebutkan nama produk, ukuran, merek atau spesifikasi, serta jumlah yang dibutuhkan agar admin dapat memeriksanya.',
             'Gratis ongkir':'Ketentuan gratis ongkir bergantung pada produk, jumlah pesanan, dan lokasi. Admin perlu mengonfirmasi apakah pesanan Anda memenuhi syarat.',
             'Pengiriman seluruh Bali':'Anda dapat menanyakan pengiriman ke wilayah Bali. Admin akan memeriksa alamat, jadwal, akses kendaraan, dan biaya yang berlaku.',
-            'Cara memesan':'Pilih produk dan jumlahnya, lalu tekan “Beli / Tanyakan” atau hubungi admin WhatsApp. Pastikan harga, stok, ongkir, dan metode pembayaran dikonfirmasi sebelum membayar.',
+            'Cara memesan':'Pilih produk dan jumlahnya, lalu tekan “Tambah untuk Ditanyakan” atau hubungi admin WhatsApp. Pastikan harga, stok, ongkir, dan metode pembayaran dikonfirmasi sebelum membayar.',
             'Kendaraan dan akses lokasi':'Sampaikan alamat atau titik peta serta kondisi jalan—misalnya gang sempit, portal, atau lokasi bongkar. Admin akan memeriksa jenis kendaraan yang memungkinkan.'
           };
           const messages=document.getElementById('liveChatMessages');
@@ -1268,7 +1268,7 @@
                 container.innerHTML = '';
                 container.appendChild(emptyState);
                 totalWeightEl.innerText = '0.0 Kg';
-                totalPriceEl.innerText = 'Rp 0';
+                totalPriceEl.innerText = 'Menunggu penawaran';
                 btnProceed.disabled = true;
                 btnProceed.className = "w-full bg-slate-200 text-slate-400 cursor-not-allowed font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all";
                 return;
@@ -1279,9 +1279,7 @@
             let calcTotalPrice = 0;
 
             shoppingCart.forEach(item => {
-                const itemSubtotal = item.price * item.qty;
                 const itemSubWeight = item.weightKg * item.qty;
-                calcTotalPrice += itemSubtotal;
                 calcTotalWeight += itemSubWeight;
 
                 const itemRow = document.createElement('div');
@@ -1290,10 +1288,10 @@
                     <div class="flex-1">
                         <h4 class="text-xs font-bold text-navyPrimary line-clamp-1">${item.title}</h4>
                         <div class="text-[11px] font-mono text-slate-500 mt-0.5">
-                            Rp ${item.price.toLocaleString('id-ID')} | ${(itemSubWeight).toFixed(1)} Kg
+                            Harga menunggu penawaran | ${(itemSubWeight).toFixed(1)} Kg
                         </div>
                         <div class="text-xs font-bold text-amberAccent mt-1">
-                            Subtotal: Rp ${itemSubtotal.toLocaleString('id-ID')}
+                            Subtotal menunggu penawaran
                         </div>
                     </div>
                     <div class="flex items-center gap-1.5 bg-white border border-slate-300 rounded-lg p-1">
@@ -1306,7 +1304,7 @@
             });
 
             totalWeightEl.innerText = `${calcTotalWeight.toFixed(1)} Kg (${(calcTotalWeight/1000).toFixed(2)} Ton)`;
-            totalPriceEl.innerText = `Rp ${calcTotalPrice.toLocaleString('id-ID')}`;
+            totalPriceEl.innerText = 'Menunggu penawaran';
 
             btnProceed.disabled = false;
             btnProceed.className = "w-full bg-amberAccent hover:bg-amberHover text-white font-bold py-3.5 rounded-xl shadow flex items-center justify-center gap-2 text-xs uppercase tracking-wider transition-all cursor-pointer";
@@ -1319,10 +1317,10 @@
 
             const totalQty = shoppingCart.reduce((sum, i) => sum + i.qty, 0);
             const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = shoppingCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+            const totalPrice = null;
             document.getElementById('checkoutSummaryQty').innerText = `${totalQty} item barang`;
             document.getElementById('checkoutSummaryWeight').innerText = `${totalWeight.toFixed(1)} Kg (${(totalWeight/1000).toFixed(2)} Ton)`;
-            document.getElementById('checkoutSummaryPrice').innerText = `Rp ${totalPrice.toLocaleString('id-ID')}`;
+            document.getElementById('checkoutSummaryPrice').innerText = 'Menunggu penawaran';
 
             document.getElementById('checkoutModal').classList.remove('hidden');
 
@@ -1429,11 +1427,11 @@
             const accessLong = document.getElementById('accessLong').value;
 
             const totalWeight = shoppingCart.reduce((sum, i) => sum + (i.weightKg * i.qty), 0);
-            const totalPrice = shoppingCart.reduce((sum, i) => sum + (i.price * i.qty), 0);
+            const totalPrice = null;
 
             let itemsText = '';
             shoppingCart.forEach((item, index) => {
-                itemsText += `${index + 1}. *${item.title}*\n   - Qty: ${item.qty} x Rp ${item.price.toLocaleString('id-ID')}\n   - Subtotal: Rp ${(item.price * item.qty).toLocaleString('id-ID')} (${(item.weightKg * item.qty).toFixed(1)} Kg)\n`;
+                itemsText += `${index + 1}. *${item.title}*\n   - Jumlah: ${item.qty} unit\n   - Estimasi berat katalog: ${(item.weightKg * item.qty).toFixed(1)} Kg (perlu konfirmasi)\n`;
             });
 
             const mapsUrl = `https://maps.google.com/?q=${lat},${lng}`;
@@ -1455,7 +1453,7 @@
                 `${itemsText}\n` +
                 `----------------------------------------\n` +
                 `*ESTIMASI TONASE:* ${totalWeight.toFixed(1)} Kg (${(totalWeight/1000).toFixed(2)} Ton)\n` +
-                `*ESTIMASI TOTAL MATERIAL (PERLU KONFIRMASI):* *Rp ${totalPrice.toLocaleString('id-ID')}*\n` +
+                `*HARGA MATERIAL:* Menunggu penawaran resmi\n` +
                 `----------------------------------------\n` +
                 `Mohon konfirmasi stok, harga, kendaraan yang sesuai, ongkos kirim, dan petunjuk pembayaran sebelum transaksi. Terima kasih.`;
 
